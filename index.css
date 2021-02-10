@@ -174,12 +174,15 @@ header {
 
 .title p {
 	color: #1e1a1b;
-//	text-transform: lowercase;
 	font-style: italic;
 	font-weight: 400;
 	font-size: 1.6rem;
 	left: 0;
 	width: 100%;
+}
+
+.title h3{
+	color: #f4fff8;
 }
 
 .title hr {
@@ -200,12 +203,38 @@ header {
 
 }
 
+.empower{
+	margin-top: 6rem;
+}
+
+#dr-heading{
+	margin-left: 8vw;
+	color: #E50914;
+}
+
+#empo{
+	width: 80vw;
+	margin: 2vw 10vw;
+}
+
+#safety{
+	width: 92vw;
+  margin: 2vw 4vw;
+	margin-bottom: 14vw;
+}
+
 /* ------------------------------------------------------------------ */
 /* About Section
 /* ------------------------------------------------------------------ */
 
 #about {
-	padding-top: 96px;
+//	background-image: url("drone.png");
+ 	background-color: #cccccc;
+	background-repeat: no-repeat;
+background-size: 100vw 50vh;
+background-position: center;
+height: 60%;
+ 	padding-top: 96px;
 	padding-bottom: 66px;
 	overflow: hidden;
 	border-bottom-color: #E8E8EE;
@@ -214,7 +243,6 @@ header {
 	padding: 50px 0 10px;
 }
 #about h1 {
-	color: #1e1a1b;
 	line-height: 1.25em;
 	font-size: 2rem;
 	margin-right: auto;
@@ -235,7 +263,7 @@ header {
 	text-align: left;
 	color: #1e1a1b;
 	line-height: 1.25em;
-	font-size: 54px;
+	font-size: 2rem;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -245,6 +273,11 @@ header {
 	font-size: 20px;
 }
 }
+
+.container .caption{
+	font-size: 2.2rem;
+}
+
 /* ------------------------------------------------------------------ */
 /* Formula Section
 /* ------------------------------------------------------------------ */
@@ -916,12 +949,17 @@ hr {
 @media screen and (min-width: 700px) {
   svg#drone {
     position: absolute;
-    top: 38%;
+    top: 42%;
     right: 10%;
     display:block;
     width:20%;
     margin:12% auto;
   }
+	#empo{
+		width: 70vw;
+		margin: 2vh 15vw;
+		margin-bottom: 12vh;
+	}
 }
 
 svg#drone {
