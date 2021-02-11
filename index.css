@@ -136,6 +136,11 @@ img {
 	width: 100%;
 	height: auto;
 }
+#leftmargin{
+	margin-left: 5vw;
+	color: #f37700;
+}
+
 /* ------------------------------------------------------------------ */
 /* Header Styles
 /* ------------------------------------------------------------------ */
@@ -204,7 +209,7 @@ header {
 }
 
 .empower{
-	margin-top: 6rem;
+	margin-top: 7rem;
 }
 
 #dr-heading{
