@@ -55,7 +55,7 @@ body {
   .three.columns                  { width: 22%;            }
   .four.columns                   { width: 30.6666666667%; }
   .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
+  .six.columns                    {width: 48%;margin-top: 18vh;}
   .seven.columns                  { width: 56.6666666667%; }
   .eight.columns                  { width: 65.3333333333%; }
   .nine.columns                   { width: 74.0%;          }
@@ -118,7 +118,7 @@ body {
   svg#drone{
     position: absolute;
     top:auto;
-    width: 30%;
+    width: 35%;
   }
 }
 
@@ -218,8 +218,8 @@ header {
 }
 
 #safety{
-	width: 92vw;
-  margin: 1vw 4vw;
+	width: 90vw;
+	margin: 1vw 4vw;
 	margin-bottom: 14vw;
 }
 
@@ -227,24 +227,10 @@ header {
 /* About Section
 /* ------------------------------------------------------------------ */
 
-#about {
-//	background-image: url("drone.png");
- 	background-color: #cccccc;
-	background-repeat: no-repeat;
-background-size: 100vw 50vh;
-background-position: center;
-height: 60%;
- 	padding-top: 96px;
-	padding-bottom: 66px;
-	overflow: hidden;
-	border-bottom-color: #E8E8EE;
-	border-bottom-width: 3px;
-	border-bottom-style: solid;
-	padding: 50px 0 10px;
-}
+#about {background-image: url("drones/drone.png");/* background-color: #e5e5e5; */background-repeat: no-repeat;background-size: 105vw 80vh;background-position: center;/* height: 60%; */padding-top: 96px;padding-bottom: 66px;overflow: hidden;/* border-bottom-color: #E8E8EE; *//* border-bottom-width: 3px; *//* border-bottom-style: solid; *//* padding: 50px 0 10px; */}
 #about h1 {
 	line-height: 1.25em;
-	font-size: 2rem;
+	font-size: 3rem;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -261,9 +247,9 @@ height: 60%;
 @media only screen and (max-width:768px) {
 #about h1 {
 	text-align: left;
-	color: #1e1a1b;
+	color: whitesmoke;
 	line-height: 1.25em;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -957,7 +943,7 @@ hr {
   }
 	#empo{
 		width: 70vw;
-		margin: 2vh 15vw;
+		margin: 2vh 14vw;
 		margin-bottom: 12vh;
 	}
 }
@@ -965,7 +951,7 @@ hr {
 svg#drone {
   position: absolute;
   display:block;
-  margin:12% auto;
+  margin: 10% auto;
 }
 
 
