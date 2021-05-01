@@ -140,6 +140,11 @@ img {
 	margin-left: 5vw;
 	color: #f37700;
 }
+#bgwhite{
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+	background-color: white; 
+}
 
 /* ------------------------------------------------------------------ */
 /* Header Styles
@@ -268,6 +273,21 @@ header {
 .container .caption{
 	font-size: 2.2rem;
 }
+
+
+
+
+
+
+@media(max-width: 700px){
+video{
+	width: 95vw;
+	margin:none;
+	padding: none;
+	}
+}
+
+
 
 /* ------------------------------------------------------------------ */
 /* Formula Section
@@ -1139,3 +1159,112 @@ a:hover{
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tumber*/
+
+div.photoset {
+	 padding: 2px;
+	 background-color: #fff;
+	 max-width: 55vw;
+	 width: 100%;
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 margin-left: 9vw;
+}
+ div.photoset .photo {
+	 position: relative;
+	 flex-grow: 1;
+	 min-width: calc(100% / 3);
+	 background-size: cover;
+	 background-position: center;
+}
+ div.photoset .hori{
+ 	height: 30vw;
+ }
+  div.photoset .lesshori{
+ 	width: 60vw;
+ 	height: 20vw;
+ }
+ @media screen and (max-width: 700px) {
+	 div.photoset .photo {
+		 min-width: calc(100% / 2);
+	}
+	div.photoset {
+	 max-width: 80vw;
+	 margin-left: 2vw;
+	}
+}
+ @media screen and (max-width: 460px) {
+	 div.photoset .photo {
+		 min-width: 100%;
+	}
+}
+ div.photoset .photo:after {
+	 padding-top: 83.33333%;
+	 display: block;
+	 content: "";
+}
+ div.photoset .photo:before {
+	 z-index: 2;
+	 position: absolute;
+	 content: "";
+	 top: 0px;
+	 right: 0px;
+	 bottom: 0px;
+	 left: 0px;
+	 box-shadow: inset 0 0 0 2px #fff;
+}
+ div.photoset .photo:nth-child(1) {
+	 width: 100%;
+}
+ div.photoset.square .photo:after {
+	 padding-top: 100%;
+}
+ div.photoset.portrait .photo:after {
+	 padding-top: 120%;
+}
+ body {
+	 background-color: #ece9e2;
+	 overflow-y: scroll;
+/*	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 margin: 10px;
+*/}
