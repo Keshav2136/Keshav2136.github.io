@@ -217,9 +217,14 @@ header {
 	margin-top: 7rem;
 }
 
-#dr-heading{
+#woman-heading{
 	margin-left: 8vw;
 	color: #e10048;
+}
+
+#traf-heading{
+	margin-left: 8vw;
+	color: #0046d6;
 }
 
 #empo{
@@ -237,7 +242,7 @@ header {
 /* About Section
 /* ------------------------------------------------------------------ */
 
-#about {background-image: url("drones/drone.png");/* background-color: #e5e5e5; */background-repeat: no-repeat;background-size: 105vw 80vh;background-position: center;/* height: 60%; */padding-top: 96px;padding-bottom: 66px;overflow: hidden;/* border-bottom-color: #E8E8EE; *//* border-bottom-width: 3px; *//* border-bottom-style: solid; *//* padding: 50px 0 10px; */}
+#about {background-image: url("drones/drone.png"); background-color: #e5e5e5; background-repeat: no-repeat;background-size: 100vw 50vw;background-position: center;/* height: 60%; */padding-top: 96px;padding-bottom: 66px;overflow: hidden;/* border-bottom-color: #E8E8EE; *//* border-bottom-width: 3px; *//* border-bottom-style: solid; *//* padding: 50px 0 10px; */}
 #about h1 {
 	line-height: 1.25em;
 	font-size: 3rem;
