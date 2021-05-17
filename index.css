@@ -8,11 +8,18 @@
 body {
 	background: #FFFFFF;
 	font-family: 'Playfair Display', serif;
-  margin: 0;
+	margin: 0;
 }
 
 .row{
   margin: 0;
+}
+
+#dispblock{
+	display: block;
+	width:100%;
+	padding:1vw 0;
+	padding:0;
 }
 
 /* ------------------------------------------------------------------ */
@@ -141,8 +148,7 @@ img {
 	color: #f37700;
 }
 #bgwhite{
-	padding-top: 4vw;
-	padding-bottom: 2vw;
+	padding:3vw 0;
 	background-color: white; 
 }
 
@@ -203,18 +209,13 @@ header {
 }
 
 @media only screen and (max-width:768px) {
-.title h1 {
-	font-size: 3rem;
-}
+	.title h1 {
+		font-size: 3rem;
+	}
 
-.title p {
-	font-size: 20px;
-}
-
-}
-
-.empower{
-	margin-top: 7rem;
+	.title p {
+		font-size: 20px;
+	}
 }
 
 #woman-heading{
@@ -223,19 +224,19 @@ header {
 }
 
 #traf-heading{
-	margin-left: 8vw;
+	margin-left: 7vw;
 	color: #0046d6;
 }
 
 #empo{
-	width: 80vw;
+	width: 70vw;
 	margin: 2vw 10vw;
 }
 
 #safety{
-	width: 90vw;
-	margin: 1vw 4vw;
-	margin-bottom: 14vw;
+	width: 58vw;
+	margin: 2vw 19vw;
+	margin-bottom: 6vw;
 }
 
 /* ------------------------------------------------------------------ */
@@ -318,7 +319,6 @@ header {
 @media(max-width: 700px){
 video {
     width: 95vw;
-    margin-left: -3vw;
 	}
 #about{
 	padding: 20vw 0 2vw;
@@ -1005,8 +1005,8 @@ hr {
     margin:12% auto;
   }
 	#empo{
-		width: 70vw;
-		margin: 2vh 14vw;
+		width: 60vw;
+		margin: 2vh 19vw;
 		margin-bottom: 12vh;
 	}
 }
@@ -1092,7 +1092,7 @@ a:hover{
 }
 
 .team{
-  margin:40px;
+  margin:3vw;
 }
 
 .team-member {
@@ -1220,31 +1220,17 @@ a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*tumber*/
 
 div.photoset {
 	 padding: 2px;
 	 background-color: #fff;
-	 max-width: 55vw;
+	 max-width: 60vw;
 	 width: 100%;
 	 display: flex;
 	 flex-direction: row;
 	 flex-wrap: wrap;
-	 margin-left: 9vw;
+	 margin-left: 6vw;
 }
  div.photoset .photo {
 	 position: relative;
