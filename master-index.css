@@ -105,15 +105,15 @@ footer,
   font-size: 2em;
 }*/
 @media (min-width:700px){
-  div{
+  div, .box-ryt{
     color: white;
-    border-radius: 42px;
+    border-radius: 36px;
   }
   div.box-left{
     height: 45vh;
-    width: 40vw;
+    width: 45vw;
     position: absolute;
-    left: 5vw;
+    left: 3vw;
     top: 20vh;
     background: url(growth/physical/834264.jpg) no-repeat;
     background-position: center;
@@ -124,11 +124,17 @@ footer,
     top: -42vh;
     font-size: 2em;
   }
+  .box-left a{
+    color: red;
+    font-family: helvetica;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
   div.box-ryt{
     height: 45vh;
     width: 40vw;
     position: absolute;
-    left: 55vw;
+    left: 54vw;
     top: 20vh;
     background: url(growth/psychological/1.jpg) no-repeat;
     background-position: top;
@@ -138,5 +144,11 @@ footer,
     width: auto;
     top: -42vh;
     font-size: 2em;
+  }
+  .box-ryt a{
+    color: cyan;
+    font-family: helvetica;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 }
