@@ -131,6 +131,7 @@ footer,
     font-family: helvetica;
     text-decoration: none;
     text-transform: uppercase;
+    top: -2vh;
   }
   div.box-ryt{
     /* height: 45vh; */
@@ -152,6 +153,7 @@ footer,
     font-family: helvetica;
     text-decoration: none;
     text-transform: uppercase;
+    top: 13vh;
   }
 }
 
