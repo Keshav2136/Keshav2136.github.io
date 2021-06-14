@@ -126,7 +126,7 @@ footer,
     top: -42vh;
     font-size: 2em;
   }
-  .box-left a{
+  #a-phy .box-left h1{
     color: red;
     font-family: helvetica;
     text-decoration: none;
@@ -147,7 +147,7 @@ footer,
     top: -42vh;
     font-size: 2em;
   }
-  .box-ryt a{
+  #a-psy div.box-ryt h1 {
     color: cyan;
     font-family: helvetica;
     text-decoration: none;
