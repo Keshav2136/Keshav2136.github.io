@@ -1,3 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: hnow;
+  src: url(br/HelveticaNowDisplayXBlk.otf);
+}
+body{
+  background-color: rgb(230, 230, 230);
+}
+div.top-nav{
+  padding: 1.4vw 0 1.4vw 0vw;
+  background-color: rgb(24, 24, 24);
+}
+h1.comp-font{
+  font-family: hnow;
+  padding: 1vw 0 1vw 45vw;
+  color: aliceblue;
+  background-color: crimson;
+}
+/*
 h1.top-name{
   color: #F99157;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -19,3 +41,5 @@ img.logo{
 h1.history{
   color: #6699CC;
 }
+)
+*/

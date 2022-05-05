@@ -1,8 +1,0 @@
-*{box-sizing: border-box;}
-body{
-  height: 100vh;
-  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 30%;
-  top: 0;
-  z-index: -1;
-  background-repeat: no-repeat;
-}
