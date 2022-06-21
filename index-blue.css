@@ -5,7 +5,7 @@ body { background-color: rgb(245, 245, 245); }
 }
 @media screen and (min-width: 300px) and (max-width: 700px) {
   div.top-nav {/* padding: .1vw 0px 1.2vw 0vw; */}
-  h1.comp-font {position: absolute;top: 0.32rem;left: 0px;right: 0px;font-family: hnow;padding: 1vw 0px 1vw 36vw;color: #0077CC;background-color: white;font-size: 1.8rem;z-index: 0;}
+  h1.comp-font {position: absolute;top: 0.32rem;left: 0px;right: 0px;font-family: hnow;padding: 1vw 0px 1vw 36vw;color: #087BE4;background-color: white;font-size: 1.8rem;z-index: 0;}
   img.om-yoga{width:100%;z-index: 99;}
   div.middle-range {padding-top: 5vw; height: 100vh; }
   .navbar .menu-items { display: flex; }
@@ -42,7 +42,7 @@ body { background-color: rgb(245, 245, 245); }
 @media (min-width: 700px) and (max-width: 1500px) {
   nav { position: absolute; }
   div.top-nav { padding: 1.2vw 0px 1.6vw 0vw; background-color: rgb(24, 24, 24); height: 3.6rem; }
-  h1.comp-font {position: absolute;left: 0px;right: 0px;font-family: hnow;padding: 1vw 0px 1vw 45vw;color: #0082dd;background-color: white;}
+  h1.comp-font {position: absolute;left: 0px;right: 0px;font-family: hnow;padding: 1vw 0px 1vw 45vw;color: #0077B9;background-color: white;}
   img.om-yoga{margin-left: 25vw; width:50%;}
   div.middle-range { height: 100vh; }
   .container { max-width: 1050px; width: 90%; margin: auto; }
