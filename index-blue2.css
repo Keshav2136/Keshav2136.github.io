@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo');
+@font-face { font-family: hnow; src: url("static/HelveticaNowDisplayXBlk.otf"); }
 body {
 	background-color: #007fbf;
 }
