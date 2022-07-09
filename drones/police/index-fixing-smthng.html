@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="index.css">
+<style type="text/stylesheet">
+
+.empo > img{
+    float: right;width: 40vw;margin-left:0;top: 10vh;position: relative;
+}
+.empo > h1{
+    float: left;width: 20vw;position:relative;top: 50vh;
+}
+@media screen and (min-width: 700px) {
+	h1#traf-heading {
+		float: left;
+		width: 20vw;
+		position: relative;
+		top: 50vh;
+	}
+	
+	img#empo {
+		float: right;
+		width: 40vw;
+		margin-left: 0;
+		top: 10vh;
+		position: relative;
+	}
+  svg#drone {
+    position: absolute;
+    top: 42%;
+    right: 10%;
+    display:block;
+    width:20%;
+    margin:12% auto;
+  }
+	#empo{
+		width: 60vw;
+		margin: 2vh 19vw;
+		margin-bottom: 12vh;
+	}
+}
+
+
+@media only screen and (max-width:768px) {
+	.title h1 {
+		font-size: 3rem;
+	}
+
+	.title p {
+		font-size: 20px;
+	}
+}
+
+#woman-heading{
+	margin-left: 8vw;
+	color: #e10048;
+}
+
+#traf-heading{
+	margin-left: 7vw;
+	color: #0046d6;
+}
+
+#empo{
+	width: 70vw;
+	margin: 2vw 10vw;
+}
+
+#safety{
+	width: 58vw;
+	margin: 2vw 19vw;
+	margin-bottom: 6vw;
+}
+
+</style>
+
+</head>
+<body>
+    
+<section class="empo">
+    <div id="dispblock"><h1 id="woman-heading" 12vh;">Safety.<br> For women.</h1><img src="../usecases/empo.jpg" alt="girls don't feel safe in their own cities at night" id="empo" loading="eager"/></div>
+    <div id="dispblock"><h1 id="traf-heading">Road Safety.</h1><img src="../usecases/yolo_car_chase.gif" id="empo"/></div>
+  </section>
+  
+</body>
+</html>
