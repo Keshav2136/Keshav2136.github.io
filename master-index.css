@@ -1,12 +1,18 @@
 * { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; }
 @font-face { font-family: hnow; src: url("static/HelveticaNowDisplayXBlk.otf"); }
 body { background-color: rgb(245, 245, 245); }
+.middle-section{width:100%;}
+.main-keshav-face-img{border-radius: 100vw; margin-left:25vw;width:50vw;}
+.hnow{
+  margin-left:1vw;
+  font-weight: 50;
+}
 @media screen and (min-width: 800px) {
 }
 .mid-container, .middle-range{background: #0a0009;}
 @media screen and (min-width: 300px) and (max-width: 700px) {
   div.top-nav {padding: .1vw 0px 1.2vw 0vw;background-color: rgb(24, 24, 24);}
-  h1.comp-font {position: absolute;top: 0.5rem;left: 0px;right: 0px;font-family: hnow;padding: 1vw 0px 1vw 37vw;color: #ecf6ff;background-color: crimson;font-size: 1.8rem;z-index: 0;}
+  h1.comp-font {position: absolute;top: 0.5rem;left: 0px;right: 0px;font-family: hnow;padding: 1vw 0px 1vw 30vw;color: #ecf6ff;background-color: crimson;font-size: 1.8rem;z-index: 0;}
   img.om-yoga{width:100%;z-index: 99;}
   div.middle-range {padding-top: 5vw; height: 100vh; }
   .navbar .menu-items { display: flex; }
