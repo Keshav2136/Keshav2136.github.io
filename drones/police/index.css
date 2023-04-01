@@ -8,13 +8,6 @@
     margin: 0
 }
 
-#dispblock {
-    /* display:block; */
-    /* width:100%; */
-    /* padding:1vw 0; */
-    /* padding:0; */
-}
-
 .container {
     position: relative;
     width: 100%;
@@ -70,12 +63,12 @@
     }
 }
 /*
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {*/
     /* font-family: 'Fjalla One',sans-serif; */
     /* margin-top: 0; */
     /* margin-bottom: 2rem; */
     /* font-weight: 300; */
-}
+/*}
 */
 img {
     width: 100%;
@@ -813,21 +806,6 @@ div[class^=poly-] {
 }
 
 @media screen and (min-width: 700px) {
-    h1#traf-heading {
-        /* float:left; */
-        /* width: 20vw; */
-        /* position: relative; */
-        /* top: 50vh; */
-    }
-
-    img#empo {
-        /* float: right; */
-        /* width: 40vw; */
-        /* margin-left: 0; */
-        /* top: 10vh; */
-        /* position: relative; */
-    }
-
     svg#drone {
         position: absolute;
         top: 42%;
@@ -835,12 +813,6 @@ div[class^=poly-] {
         display: block;
         width: 20%;
         margin: 12% auto
-    }
-
-    #empo {
-        /* width: 60vw; */
-        /* margin: 2vh 19vw; */
-        /* margin-bottom: 12vh; */
     }
 }
 
