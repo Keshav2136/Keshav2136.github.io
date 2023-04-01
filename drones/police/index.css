@@ -1141,7 +1141,9 @@ body {
 
 
 
-
+section.police>img {
+    width: 100%;
+}
 .explain-text{
     color: #7a7a7a;
     font-family: 'Roboto',sans-serif;
