@@ -1199,3 +1199,13 @@ section.row.container.text-center {
     margin: 2vw 0;
   }
 }
+
+.wrapper {
+  background-color: #ecf0f1;
+  width: 100%;
+}
+svg#drone {
+  display: block;
+  width: 25%;
+  margin: 12% auto;
+}
