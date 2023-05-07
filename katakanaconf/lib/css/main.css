@@ -9,27 +9,27 @@
 
 @font-face {
     font-family: Roboto-Thin;
-    src: url(/lib/font/Roboto-Thin.woff) format("woff")
+    src: url(lib/font/Roboto-Thin.woff) format("woff")
 }
 
 @font-face {
     font-family: Roboto-Light;
-    src: url(/lib/font/Roboto-Light.woff) format("woff")
+    src: url(lib/font/Roboto-Light.woff) format("woff")
 }
 
 @font-face {
     font-family: Roboto-Regular;
-    src: url(/lib/font/Roboto-Regular.woff) format("woff")
+    src: url(lib/font/Roboto-Regular.woff) format("woff")
 }
 
 @font-face {
     font-family: Roboto-Bold;
-    src: url(/lib/font/Roboto-Bold.woff) format("woff")
+    src: url(lib/font/Roboto-Bold.woff) format("woff")
 }
 
 @font-face {
     font-family: SunlightGothic;
-    src: url(/lib/font/SunlightGothic.woff) format("woff")
+    src: url(lib/font/SunlightGothic.woff) format("woff")
 }
 
 body {
@@ -142,7 +142,7 @@ a:hover {
 }
 
 .wavebar-svg-object {
-    background: url(/img/graphics/svg/wavebar.svg) repeat-x;
+    background: url(img/graphics/svg/wavebar.svg) repeat-x;
     position: absolute;
     top: -198px;
     width: 6144px;
@@ -187,7 +187,7 @@ a:hover {
 }
 
 .mini-menu-ico-logo {
-    background: url("/img/icons/menu/logo-wide-color.png") left center/180px no-repeat;
+    background: url("img/icons/menu/logo-wide-color.png") left center/180px no-repeat;
     position: relative;
     width: 200px;
     height: 40px;
@@ -310,7 +310,7 @@ a:hover {
     animation-duration: .5s;
     animation-iteration-count: 1;
     border-radius: 100%;
-    background-image: url(/img/icons/menu/close.png);
+    background-image: url(img/icons/menu/close.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: initial;
@@ -324,7 +324,7 @@ a:hover {
 .menu-btn-close:hover {
     transform: scale(.9);
     border-color: red;
-    background: url("/img/icons/menu/close.png") center center/cover no-repeat rgb(255,0,0)!important
+    background: url("img/icons/menu/close.png") center center/cover no-repeat rgb(255,0,0)!important
 }
 
 .menu-tx1-tooltip {
@@ -362,7 +362,7 @@ a:hover {
     width: 45px;
     height: 70px;
     border-bottom: 2px solid transparent;
-    background: url("/img/icons/menu/logo.png") center center/36px no-repeat;
+    background: url("img/icons/menu/logo.png") center center/36px no-repeat;
     transition: all .1s ease-in-out 0s
 }
 
@@ -434,7 +434,7 @@ a:hover {
 }
 
 .menu-btn-backtotop {
-    background: url("/img/icons/buttons/backtotop.png") center center/24px no-repeat rgb(255,255,255);
+    background: url("img/icons/buttons/backtotop.png") center center/24px no-repeat rgb(255,255,255);
     width: 44px;
     height: 44px;
     position: fixed;
@@ -450,7 +450,7 @@ a:hover {
 }
 
 .menu-btn-backtotop:hover {
-    background: url("/img/icons/buttons/backtotop-h.png") center center/24px no-repeat rgb(26,188,156);
+    background: url("img/icons/buttons/backtotop-h.png") center center/24px no-repeat rgb(26,188,156);
     box-shadow: rgba(46,204,113,.4) 0 10px 32px 0;
     border: 2px solid #57e694
 }
@@ -479,7 +479,7 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 2px solid transparent;
-    background: url("/img/icons/menu/menu.png") center center/32px no-repeat
+    background: url("img/icons/menu/menu.png") center center/32px no-repeat
 }
 
 .mobile-menu-btn-open:hover {
@@ -496,7 +496,7 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 2px solid transparent;
-    background: url("/img/icons/submenu/darkmode-h.png") center center/26px no-repeat;
+    background: url("img/icons/submenu/darkmode-h.png") center center/26px no-repeat;
     z-index: 9999;
     display: none
 }
@@ -618,7 +618,7 @@ a:hover {
 .mobile-menu-btn-icon {
     width: 50px;
     height: 54px;
-    background: url("/img/icons/arrows/left-h.png") center center/18px no-repeat;
+    background: url("img/icons/arrows/left-h.png") center center/18px no-repeat;
     position: relative;
     animation-name: fadeInDown;
     animation-duration: .5s;
@@ -640,7 +640,7 @@ a:hover {
     height: 100%;
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    background: url("/img/icons/menu/settings.png") center center/20px no-repeat;
+    background: url("img/icons/menu/settings.png") center center/20px no-repeat;
     animation-name: fadeIn;
     animation-duration: .5s;
     animation-iteration-count: 1;
@@ -661,7 +661,7 @@ a:hover {
     height: 60px;
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    background: url("/img/icons/menu/darkmode-off.png") center center/20px no-repeat
+    background: url("img/icons/menu/darkmode-off.png") center center/20px no-repeat
 }
 
 .menu-btn-darkmode:hover {
@@ -714,32 +714,32 @@ a:hover {
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-darkmode {
-    background: url("/img/icons/submenu/darkmode.png") center center/24px no-repeat;
+    background: url("img/icons/submenu/darkmode.png") center center/24px no-repeat;
     filter: invert(1)
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-particles {
-    background: url("/img/icons/submenu/particles.png") center center/24px no-repeat;
+    background: url("img/icons/submenu/particles.png") center center/24px no-repeat;
     filter: invert(1)
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-pulsate {
-    background: url("/img/icons/submenu/pulsate.png") center center/24px no-repeat;
+    background: url("img/icons/submenu/pulsate.png") center center/24px no-repeat;
     filter: invert(1)
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-waves {
-    background: url("/img/icons/submenu/waves.png") center center/24px no-repeat;
+    background: url("img/icons/submenu/waves.png") center center/24px no-repeat;
     filter: invert(1)
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-transparency {
-    background: url("/img/icons/submenu/transparency.png") center center/24px no-repeat;
+    background: url("img/icons/submenu/transparency.png") center center/24px no-repeat;
     filter: invert(1)
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-theme {
-    background: url("/img/icons/submenu/theme.png") center center/24px no-repeat;
+    background: url("img/icons/submenu/theme.png") center center/24px no-repeat;
     filter: invert(1)
 }
 
@@ -771,7 +771,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/darkmode-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/darkmode-h.png") center center/24px no-repeat
 }
 
 .settings-menu-ico-particles {
@@ -779,7 +779,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/particles-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/particles-h.png") center center/24px no-repeat
 }
 
 .settings-menu-ico-pulsate {
@@ -787,7 +787,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/pulsate-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/pulsate-h.png") center center/24px no-repeat
 }
 
 .settings-menu-ico-waves {
@@ -795,7 +795,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/waves-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/waves-h.png") center center/24px no-repeat
 }
 
 .settings-menu-ico-transparency {
@@ -803,7 +803,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/transparency-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/transparency-h.png") center center/24px no-repeat
 }
 
 .settings-menu-ico-theme {
@@ -811,7 +811,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/theme-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/theme-h.png") center center/24px no-repeat
 }
 
 .support-con-menu {
@@ -831,7 +831,7 @@ a:hover {
     right: 0;
     width: 120px;
     height: 70px;
-    background: url("/img/icons/submenu/support.png") center center/contain no-repeat;
+    background: url("img/icons/submenu/support.png") center center/contain no-repeat;
     cursor: pointer;
     transition: all .1s ease-in-out 0s;
     animation-name: fadeInRight;
@@ -844,7 +844,7 @@ a:hover {
     right: 0;
     width: 120px;
     height: 70px;
-    background: url("/img/icons/submenu/support-h.png") center center/contain no-repeat;
+    background: url("img/icons/submenu/support-h.png") center center/contain no-repeat;
     cursor: pointer
 }
 
@@ -897,19 +897,19 @@ a:hover {
 }
 
 .support-con-wrapper:hover .support-ico-patreon {
-    background: url("/img/icons/submenu/patreon-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/patreon-h.png") center center/24px no-repeat
 }
 
 .support-con-wrapper:hover .support-ico-alipay {
-    background: url("/img/icons/submenu/alipay-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/alipay-h.png") center center/24px no-repeat
 }
 
 .support-con-wrapper:hover .support-ico-github {
-    background: url("/img/icons/submenu/code-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/code-h.png") center center/24px no-repeat
 }
 
 .support-con-wrapper:hover .support-ico-testing {
-    background: url("/img/icons/submenu/testing-h.png") center center/24px no-repeat
+    background: url("img/icons/submenu/testing-h.png") center center/24px no-repeat
 }
 
 .support-btn-button {
@@ -931,7 +931,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/patreon.png") center center/28px no-repeat;
+    background: url("img/icons/submenu/patreon.png") center center/28px no-repeat;
     transition: all .1s ease-in-out 0s
 }
 
@@ -940,7 +940,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/alipay-h.png") center center/28px no-repeat;
+    background: url("img/icons/submenu/alipay-h.png") center center/28px no-repeat;
     transition: all .1s ease-in-out 0s
 }
 
@@ -949,7 +949,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/code-h.png") center center/28px no-repeat;
+    background: url("img/icons/submenu/code-h.png") center center/28px no-repeat;
     transition: all .1s ease-in-out 0s
 }
 
@@ -958,7 +958,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("/img/icons/submenu/testing-h.png") center center/28px no-repeat;
+    background: url("img/icons/submenu/testing-h.png") center center/28px no-repeat;
     transition: all .1s ease-in-out 0s
 }
 
@@ -984,7 +984,7 @@ a:hover {
     width: 62px;
     height: 62px;
     position: fixed;
-    background: url("/img/icons/menu/exit.png") center center/16px no-repeat;
+    background: url("img/icons/menu/exit.png") center center/16px no-repeat;
     right: 0;
     top: 0;
     z-index: 4;
@@ -1025,7 +1025,7 @@ a:hover {
 }
 
 .theme-ico-spinner {
-    background: url("/img/icons/menu/loading.png") center center/46px no-repeat;
+    background: url("img/icons/menu/loading.png") center center/46px no-repeat;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -1053,7 +1053,7 @@ a:hover {
     position: relative;
     width: 100%;
     height: 90px;
-    background: url("/img/icons/services/alipay.png") center center/130px no-repeat
+    background: url("img/icons/services/alipay.png") center center/130px no-repeat
 }
 
 .alipay-ico-alipay {
@@ -1061,7 +1061,7 @@ a:hover {
     width: 100%;
     height: 384px;
     cursor: pointer;
-    background: url("/img/icons/qr/alipay.png") center center/304px no-repeat rgb(255,255,255)
+    background: url("img/icons/qr/alipay.png") center center/304px no-repeat rgb(255,255,255)
 }
 
 .alipay-tx1-prompt {
@@ -1121,7 +1121,7 @@ a:hover {
     height: 70px;
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    background: url("/img/icons/menu/menu.png") center center/18px no-repeat;
+    background: url("img/icons/menu/menu.png") center center/18px no-repeat;
     transition: all .1s ease-in-out 0s
 }
 
@@ -1661,7 +1661,7 @@ a:hover {
     width: 100px;
     height: 100px;
     margin-top: -50px;
-    background: url("/img/icons/arrows/left.png") center center/64px no-repeat;
+    background: url("img/icons/arrows/left.png") center center/64px no-repeat;
     transition: all .1s ease-in-out 0s;
     animation-name: drifting-left;
     animation-duration: 2s;
@@ -1676,7 +1676,7 @@ a:hover {
     width: 100px;
     height: 100px;
     margin-top: -50px;
-    background: url("/img/icons/arrows/right.png") center center/64px no-repeat;
+    background: url("img/icons/arrows/right.png") center center/64px no-repeat;
     transition: all .1s ease-in-out 0s;
     animation-name: drifting-right;
     animation-duration: 2s;
@@ -1687,13 +1687,13 @@ a:hover {
 .content-btn-left:hover {
     cursor: pointer;
     text-decoration: underline;
-    background: url("/img/icons/arrows/left-a.png") center center/64px no-repeat!important
+    background: url("img/icons/arrows/left-a.png") center center/64px no-repeat!important
 }
 
 .content-btn-right:hover {
     cursor: pointer;
     text-decoration: underline;
-    background: url("/img/icons/arrows/right-a.png") center center/64px no-repeat!important
+    background: url("img/icons/arrows/right-a.png") center center/64px no-repeat!important
 }
 
 .landing-ico-scrolldown {
@@ -1707,7 +1707,7 @@ a:hover {
     animation-name: bobbing;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    background: url("/img/icons/arrows/down.png") center center/42px no-repeat
+    background: url("img/icons/arrows/down.png") center center/42px no-repeat
 }
 
 .landing-img-backdrop {
@@ -1909,7 +1909,7 @@ a:hover {
     width: 100%;
     height: 64px;
     margin-bottom: 18px;
-    background: url("/img/icons/menu/logo.png") left center/64px no-repeat;
+    background: url("img/icons/menu/logo.png") left center/64px no-repeat;
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-iteration-count: 1
@@ -1968,7 +1968,7 @@ a:hover {
 }
 
 .github-img-backdrop {
-    background: url("/img/graphics/landing/bg-github.png") center center/cover repeat;
+    background: url("img/graphics/landing/bg-github.png") center center/cover repeat;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1996,7 +1996,7 @@ a:hover {
 .github-img-logo {
     height: 100%;
     width: 100%;
-    background: url("/img/graphics/landing/hero-github.png") center center/contain no-repeat
+    background: url("img/graphics/landing/hero-github.png") center center/contain no-repeat
 }
 
 .github-tx1-mantra {
@@ -2039,7 +2039,7 @@ a:hover {
 }
 
 .github-btn-button:hover .github-ico-button {
-    background: url("/img/icons/buttons/github-h.png") center center/24px no-repeat
+    background: url("img/icons/buttons/github-h.png") center center/24px no-repeat
 }
 
 .github-btn-button:hover .github-tx1-button {
@@ -2047,7 +2047,7 @@ a:hover {
 }
 
 .github-ico-button {
-    background: url("/img/icons/buttons/github.png") center center/24px no-repeat;
+    background: url("img/icons/buttons/github.png") center center/24px no-repeat;
     height: 46px;
     width: 46px;
     float: left
@@ -2130,7 +2130,7 @@ a:hover {
 .discord-img-logo {
     height: 100%;
     width: 100%;
-    background: url("/img/graphics/landing/hero-discord.png") center center/400px no-repeat
+    background: url("img/graphics/landing/hero-discord.png") center center/400px no-repeat
 }
 
 .discord-tx1-mantra {
@@ -2174,7 +2174,7 @@ a:hover {
 }
 
 .discord-btn-button:hover .discord-ico-button {
-    background: url("/img/icons/buttons/discord-h.png") center center/24px no-repeat
+    background: url("img/icons/buttons/discord-h.png") center center/24px no-repeat
 }
 
 .discord-btn-button:hover .discord-tx1-button {
@@ -2182,7 +2182,7 @@ a:hover {
 }
 
 .discord-ico-button {
-    background: url("/img/icons/buttons/discord.png") center center/24px no-repeat;
+    background: url("img/icons/buttons/discord.png") center center/24px no-repeat;
     height: 46px;
     width: 46px;
     float: left
@@ -2206,7 +2206,7 @@ a:hover {
 }
 
 .patreon-img-backdrop {
-    background: url("/img/graphics/landing/bg-patreon.jpg") center bottom/cover repeat;
+    background: url("img/graphics/landing/bg-patreon.jpg") center bottom/cover repeat;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -2234,7 +2234,7 @@ a:hover {
 .patreon-img-logo {
     height: 100%;
     width: 100%;
-    background: url("/img/graphics/landing/hero-patreon.png") center center/400px no-repeat
+    background: url("img/graphics/landing/hero-patreon.png") center center/400px no-repeat
 }
 
 .patreon-tx1-mantra {
@@ -2281,7 +2281,7 @@ a:hover {
 }
 
 .patreon-btn-button:hover .patreon-ico-patreon {
-    background: url("/img/icons/buttons/patreon-h.png") center center/24px no-repeat
+    background: url("img/icons/buttons/patreon-h.png") center center/24px no-repeat
 }
 
 .patreon-btn-button:hover .patreon-tx1-patreon {
@@ -2289,7 +2289,7 @@ a:hover {
 }
 
 .patreon-ico-button {
-    background: url("/img/icons/buttons/patreon.png") center center/24px no-repeat;
+    background: url("img/icons/buttons/patreon.png") center center/24px no-repeat;
     height: 46px;
     width: 46px;
     float: left
@@ -2434,7 +2434,7 @@ a:hover {
     left: 0;
     width: 50px;
     height: 50px;
-    background: url("/img/icons/menu/search.png") center center/20px no-repeat
+    background: url("img/icons/menu/search.png") center center/20px no-repeat
 }
 
 .search-con-author {
@@ -2467,7 +2467,7 @@ a:hover {
     margin-right: 4px;
     box-shadow: rgba(0,0,0,.2) 0 0 10px 0;
     border: 2px solid #fff;
-    background: url("/img/users/ani.png") center center/cover no-repeat;
+    background: url("img/users/ani.png") center center/cover no-repeat;
     transition: all .2s ease-in-out 0s
 }
 
@@ -2610,7 +2610,7 @@ a:hover {
     width: 70px;
     height: 70px;
     transition: all .2s ease-in-out 0s;
-    background: url("/img/icons/menu/play.png") center center/cover no-repeat rgba(255,255,255,0.1);
+    background: url("img/icons/menu/play.png") center center/cover no-repeat rgba(255,255,255,0.1);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     border-radius: 100%;
@@ -2627,7 +2627,7 @@ a:hover {
     width: 114px;
     height: 40px;
     pointer-events: none;
-    background: url("/img/icons/services/youtube.png") right center/contain no-repeat
+    background: url("img/icons/services/youtube.png") right center/contain no-repeat
 }
 
 .video-con-animate {
@@ -2685,7 +2685,7 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("/img/icons/services/youtube.png") center center/360px no-repeat rgba(0,0,0,0.2);
+    background: url("img/icons/services/youtube.png") center center/360px no-repeat rgba(0,0,0,0.2);
     z-index: 1
 }
 
@@ -3441,7 +3441,7 @@ a:hover {
 }
 
 .version-ico-package {
-    background: url(/img/graphics/download/package.png) no-repeat center;
+    background: url(img/graphics/download/package.png) no-repeat center;
     background-size: cover;
     width: 100px;
     height: 100px;
@@ -3453,7 +3453,7 @@ a:hover {
 }
 
 .version-img-package {
-    background: url(/img/graphics/download/playstation.png) no-repeat center;
+    background: url(img/graphics/download/playstation.png) no-repeat center;
     background-size: 600px;
     width: 100%;
     height: 100%;
@@ -3569,7 +3569,7 @@ a:hover {
 }
 
 .drives-ico-bluray {
-    background: url("/img/icons/list/bd.png") left center/26px no-repeat;
+    background: url("img/icons/list/bd.png") left center/26px no-repeat;
     height: 50px;
     width: 38px;
     position: relative;
@@ -3815,7 +3815,7 @@ a:hover {
     left: 0;
     width: 42px;
     height: 42px;
-    background: url("/img/icons/menu/logo.png") center center/36px no-repeat
+    background: url("img/icons/menu/logo.png") center center/36px no-repeat
 }
 
 .footer-con-bound {
