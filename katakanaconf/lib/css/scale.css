@@ -419,7 +419,7 @@
     .menu-ico-logo {
         height: 70px;
         width: 140px;
-        background: url("img/icons/menu/logo-wide-light.png") center center/36px no-repeat;
+        background: url("../../img/icons/menu/logo-wide-light.png") center center/36px no-repeat;
         background-size: contain
     }
 
@@ -435,7 +435,7 @@
 
     .content-btn-left {
         left: 6px;
-        background: rgba(255,255,255,.8) url(img/icons/arrows/left.png) no-repeat center!important;
+        background: rgba(255,255,255,.8) url(../../img/icons/arrows/left.png) no-repeat center!important;
         background-size: 32px!important;
         border-radius: 12px;
         backdrop-filter: blur(6px);
@@ -445,7 +445,7 @@
 
     .content-btn-right {
         right: 14px;
-        background: rgba(255,255,255,.8) url(img/icons/arrows/right.png) no-repeat center!important;
+        background: rgba(255,255,255,.8) url(../../img/icons/arrows/right.png) no-repeat center!important;
         background-size: 32px!important;
         border-radius: 12px;
         backdrop-filter: blur(6px);
@@ -455,7 +455,7 @@
 
     .content-btn-left:hover {
         left: 6px;
-        background: rgba(255,255,255,.8) url(img/icons/arrows/left-a.png) no-repeat center!important;
+        background: rgba(255,255,255,.8) url(../../img/icons/arrows/left-a.png) no-repeat center!important;
         background-size: 32px!important;
         border-radius: 12px;
         backdrop-filter: blur(6px);
@@ -464,7 +464,7 @@
 
     .content-btn-right:hover {
         right: 14px;
-        background: rgba(255,255,255,.8) url(img/icons/arrows/right-a.png) no-repeat center!important;
+        background: rgba(255,255,255,.8) url(../../img/icons/arrows/right-a.png) no-repeat center!important;
         background-size: 32px!important;
         border-radius: 12px;
         backdrop-filter: blur(6px);
@@ -479,7 +479,7 @@
     }
 
     .dm-gradient {
-        background: url(img/graphics/landing/gradient-dark.png) no-repeat center bottom;
+        background: url(../../img/graphics/landing/gradient-dark.png) no-repeat center bottom;
         background-size: contain
     }
 
@@ -574,7 +574,7 @@
     }
 
     .user-img-avatar {
-        background: url(img/users/avatars/nekotekina.png) no-repeat center;
+        background: url(../../img/users/avatars/katakanaconf.png) no-repeat center;
         background-size: cover;
         top: 0;
         margin-top: unset

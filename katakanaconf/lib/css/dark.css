@@ -1,12 +1,12 @@
 @charset "utf-8";@media screen and (max-width: 800px) {
     .dm-menu-ico-logo {
-        background:url(img/icons/menu/logo-wide-dark.png) center center/36px no-repeat!important;
+        background:url(../../img/icons/menu/logo-wide-dark.png) center center/36px no-repeat!important;
         background-size: contain!important
     }
 }
 
 .dm-gradient {
-    background: url(img/graphics/landing/gradient-dark.png) no-repeat center top!important;
+    background: url(../../img/graphics/landing/gradient-dark.png) no-repeat center top!important;
     background-size: contain!important
 }
 
@@ -52,7 +52,7 @@
 }
 
 .dm-discord {
-    background: #2331b5!important
+    /* background: #2331b5!important; */
 }
 
 .dm-github {
@@ -74,19 +74,19 @@
 
 .dm-icon {
     opacity: 1!important;
-    background: url(img/icons/menu/darkmode-on.png) no-repeat center!important;
+    background: url(../../img/icons/menu/darkmode-on.png) no-repeat center!important;
     background-size: 20px!important
 }
 
 .dm-arrow-left {
     opacity: 1!important;
-    background: url(img/icons/arrows/left-h.png) no-repeat center!important;
+    background: url(../../img/icons/arrows/left-h.png) no-repeat center!important;
     background-size: 64px!important
 }
 
 .dm-arrow-right {
     opacity: 1!important;
-    background: url(img/icons/arrows/right-h.png) no-repeat center!important;
+    background: url(../../img/icons/arrows/right-h.png) no-repeat center!important;
     background-size: 64px!important
 }
 
@@ -154,9 +154,6 @@
     border: solid 2px #293358!important
 }
 
-.dm-compat-status {
-}
-
 .dm-compat-con-pages {
     background: #191f36!important;
     color: #fff!important
@@ -189,7 +186,7 @@
 }
 
 .dm-compat-searchbox-div {
-    background: url(img/icons/menu/search-h.png) no-repeat center!important;
+    background: url(../../img/icons/menu/search-h.png) no-repeat center!important;
     background-size: 20px!important
 }
 

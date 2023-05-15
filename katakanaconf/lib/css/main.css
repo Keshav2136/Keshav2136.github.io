@@ -1,112 +1,107 @@
-@charset "utf-8";ul,li,ol,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {
+ul, li, ol, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
     font-size: inherit;
     font-weight: inherit;
     font-style: inherit;
-    margin: 0;
-    padding: 0;
-    color: inherit
+    margin: 0px;
+    padding: 0px;
+    color: inherit;
 }
 
 @font-face {
     font-family: Roboto-Thin;
-    src: url(lib/font/Roboto-Thin.woff) format("woff")
+    src: url("../../lib/font/Roboto-Thin.woff") format("woff");
 }
 
 @font-face {
     font-family: Roboto-Light;
-    src: url(lib/font/Roboto-Light.woff) format("woff")
+    src: url("../../lib/font/Roboto-Light.woff") format("woff");
 }
 
 @font-face {
     font-family: Roboto-Regular;
-    src: url(lib/font/Roboto-Regular.woff) format("woff")
+    src: url("../../lib/font/Roboto-Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: Roboto-Bold;
-    src: url(lib/font/Roboto-Bold.woff) format("woff")
+    src: url("../../lib/font/Roboto-Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: SunlightGothic;
-    src: url(lib/font/SunlightGothic.woff) format("woff")
+    src: url("../../lib/font/SunlightGothic.woff") format("woff");
 }
 
 body {
     width: 100%;
     height: 100%;
-    border: none
+    border: none;
 }
 
 iframe {
     width: 100%;
     height: 100%;
-    border: none
+    border: none;
 }
 
 input:focus {
-    outline: none
+    outline: none;
 }
 
-a:visited,a:active {
+a:visited, a:active {
     text-decoration: none;
-    color: #0074e7
+    color: rgb(0, 116, 231);
 }
 
 a:link {
     text-decoration: none;
-    color: #0074e7
+    color: rgb(0, 116, 231);
 }
 
 a:hover {
     text-decoration: none;
-    color: #39f
-}
-
-::-moz-selection {
-    background: #39f;
-    color: #fff
+    color: rgb(51, 153, 255);
 }
 
 ::selection {
-    background: #39f;
-    color: #fff
+    background: rgb(51, 153, 255);
+    color: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar {
-    width: 8px
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #dcdcdc
+    background: rgb(220, 220, 220);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #a9a9a9
+    background: rgb(169, 169, 169);
 }
 
 ::placeholder {
-    color: #0074e7
+    color: rgb(0, 116, 231);
 }
 
 .page-con-content {
     position: relative;
-    top: 0;
+    top: 0px;
     width: 100%;
-    min-height: 100%
+    min-height: 100%;
 }
 
 .page-con-container {
     position: relative;
-    top: 0;
+    top: 0px;
     height: auto;
-    margin: auto 60px
+    margin: auto 60px;
 }
 
 .page-in-container {
     max-width: 1200px;
     min-height: 60px;
-    margin: 0 auto
+    margin: 0px auto;
 }
 
 .wavebar-con-container-theme {
@@ -115,7 +110,7 @@ a:hover {
     position: absolute;
     z-index: 1;
     overflow: hidden;
-    display: none
+    display: none;
 }
 
 .wavebar-con-container-master {
@@ -123,7 +118,9 @@ a:hover {
     height: 100%;
     position: absolute;
     z-index: 1;
-    overflow: hidden
+    overflow: hidden;
+    /* background: rgb(17, 21, 37); */
+    background: linear-gradient(-135deg, rgb(51 0 0 / 57%) 25%, rgb(0 12 169) 100%);
 }
 
 .wavebar-con-container {
@@ -131,29 +128,29 @@ a:hover {
     height: 100%;
     position: absolute;
     z-index: 1;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .wavebar-con-wrap {
     width: 100%;
     position: absolute;
-    bottom: 0;
-    transition: all 1s ease-in-out 0s
+    bottom: 0px;
+    transition: all 1s ease-in-out 0s;
 }
 
 .wavebar-svg-object {
-    background: url(img/graphics/svg/wavebar.svg) repeat-x;
+    background: url("../../img/graphics/svg/wavebar.svg") repeat-x;
     position: absolute;
     top: -198px;
     width: 6144px;
     height: 198px;
-    animation: 11s cubic-bezier(.36,.45,.63,.53) 0s infinite normal none running wavebar-svg-object;
-    transform: translate3d(0px,0px,0px)
+    animation: 11s cubic-bezier(0.36, 0.45, 0.63, 0.53) 0s infinite normal none running wavebar-svg-object;
+    transform: translate3d(0px, 0px, 0px);
 }
 
 .wavebar-svg-object:nth-of-type(2) {
     top: -174px;
-    animation: 11s cubic-bezier(.4,.2,.2,.2) -.124s infinite normal none running wavebar-svg-object,11s ease -1.24s infinite normal none running swell;
+    animation: 11s cubic-bezier(0.4, 0.2, 0.2, 0.2) -0.124s infinite normal none running wavebar-svg-object, 11s ease -1.24s infinite normal none running swell;
     opacity: 1;
 }
 
@@ -162,32 +159,31 @@ a:hover {
     height: 100%;
     position: fixed;
     z-index: 9999;
-    top: 0;
+    top: 0px;
     display: none;
-    background: rgba(0,0,0,.6)
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .mini-menu-con-container {
     position: fixed;
     height: 506px;
     width: 356px;
-    background: rgba(255,255,255,.9);
+    background: rgba(255, 255, 255, 0.9);
     margin-left: -178px;
     margin-top: -253px;
     top: 50%;
     left: 50%;
     border-radius: 12px;
-    box-shadow: rgba(0,0,0,.2) 0 32px 32px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 32px 32px 0px;
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    -webkit-backdrop-filter: blur(14px) saturate(500%);
     backdrop-filter: blur(14px) saturate(500%);
-    border: 2px solid rgba(255,255,255,.1)
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .mini-menu-ico-logo {
-    background: url("img/icons/menu/logo-wide-color.png") left center/180px no-repeat;
+    background: url("../../img/icons/menu/logo-wide-color.png") left center / 180px no-repeat;
     position: relative;
     width: 200px;
     height: 40px;
@@ -196,7 +192,7 @@ a:hover {
     margin-bottom: 10px;
     animation-name: fadeInUp;
     animation-duration: 1s;
-    animation-iteration-count: 1
+    animation-iteration-count: 1;
 }
 
 .mini-menu-tx1-block {
@@ -205,7 +201,7 @@ a:hover {
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .mini-menu-tx2-block {
@@ -213,7 +209,7 @@ a:hover {
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .mini-menu-tx1-block h2 {
@@ -221,7 +217,7 @@ a:hover {
     font-size: 24px;
     line-height: 37px;
     padding-left: 30px;
-    padding-right: 30px
+    padding-right: 30px;
 }
 
 .mini-menu-tx2-block p {
@@ -229,11 +225,11 @@ a:hover {
     font-size: 14px;
     line-height: 26px;
     padding-left: 30px;
-    padding-right: 30px
+    padding-right: 30px;
 }
 
 .mini-menu-emp-block {
-    background: #686de0;
+    background: rgb(104, 109, 224);
     width: 4px;
     height: 20px;
     border-radius: 2px;
@@ -241,7 +237,7 @@ a:hover {
     float: left;
     margin-top: 9px;
     position: relative;
-    margin-left: 30px
+    margin-left: 30px;
 }
 
 .mini-menu-btn-agree {
@@ -249,8 +245,8 @@ a:hover {
     line-height: 60px;
     font-size: 18px;
     text-align: center;
-    color: #fff;
-    background: #686de0;
+    color: rgb(255, 255, 255);
+    background: rgb(104, 109, 224);
     width: 100%;
     height: 60px;
     position: absolute;
@@ -260,14 +256,14 @@ a:hover {
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    transition: all .1s ease-in-out 0s;
-    bottom: 0;
-    box-shadow: #686de0 0 0 64px 0
+    transition: all 0.1s ease-in-out 0s;
+    bottom: 0px;
+    box-shadow: rgb(104, 109, 224) 0px 0px 64px 0px;
 }
 
 .mini-menu-btn-agree:hover {
-    background: #1abc9c;
-    box-shadow: rgba(46,204,113,.5) 0 0 64px 0
+    background: rgb(26, 188, 156);
+    box-shadow: rgba(46, 204, 113, 0.5) 0px 0px 64px 0px;
 }
 
 .menu-con-message {
@@ -275,7 +271,7 @@ a:hover {
     z-index: 9990;
     top: 82px;
     width: 100%;
-    height: 40px
+    height: 40px;
 }
 
 .menu-tx1-message {
@@ -285,19 +281,18 @@ a:hover {
     position: relative;
     height: 40px;
     text-align: center;
-    color: #fff;
-    background: rgba(255,52,52,.8);
-    -webkit-backdrop-filter: blur(4px);
+    color: rgb(255, 255, 255);
+    background: rgba(255, 52, 52, 0.8);
     backdrop-filter: blur(4px);
     border-radius: 12px;
     margin-left: 20px;
     margin-right: 20px;
-    border: 2px solid rgba(255,52,52,.8);
-    box-shadow: rgba(255,52,52,.4) 0 10px 32px 0
+    border: 2px solid rgba(255, 52, 52, 0.8);
+    box-shadow: rgba(255, 52, 52, 0.4) 0px 10px 32px 0px;
 }
 
 .menu-btn-close {
-    border: 2px solid #fff;
+    border: 2px solid rgb(255, 255, 255);
     position: fixed;
     z-index: 12;
     top: 20px;
@@ -305,26 +300,26 @@ a:hover {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    transition: all .1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
     animation-name: zoomIn;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     border-radius: 100%;
-    background-image: url(img/icons/menu/close.png);
+    background-image: url("../../img/icons/menu/close.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: #4e34c9;
-    box-shadow: rgba(0,0,0,.05) 0 10px 16px 0;
-    background-size: cover!important
+    background-color: rgb(78, 52, 201);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 16px 0px;
+    background-size: cover !important;
 }
 
 .menu-btn-close:hover {
-    transform: scale(.9);
+    transform: scale(0.9);
     border-color: red;
-    background: url("img/icons/menu/close.png") center center/cover no-repeat rgb(255,0,0)!important
+    background: url("../../img/icons/menu/close.png") center center / cover no-repeat rgb(255, 0, 0) !important;
 }
 
 .menu-tx1-tooltip {
@@ -333,19 +328,19 @@ a:hover {
     font-family: Roboto-Regular;
     font-size: 18px;
     line-height: 16px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 12px;
     padding-left: 60px;
     animation-name: fadeIn;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
-    display: none
+    display: none;
 }
 
-.menu-btn-close:hover>.menu-tx1-tooltip {
+.menu-btn-close:hover > .menu-tx1-tooltip {
     transform: scale(1.1);
-    display: block!important
+    display: block !important;
 }
 
 .menu-con-logo {
@@ -354,7 +349,7 @@ a:hover {
     display: inline-block;
     float: left;
     width: 50px;
-    height: 70px
+    height: 70px;
 }
 
 .menu-ico-logo {
@@ -362,28 +357,26 @@ a:hover {
     width: 45px;
     height: 70px;
     border-bottom: 2px solid transparent;
-    background: url("img/icons/menu/logo.png") center center/36px no-repeat;
-    transition: all .1s ease-in-out 0s
+    background: url("../../img/icons/menu/logo.png") center center / 36px no-repeat;
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .menu-ico-logo:hover {
     height: 70px;
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .menu-con-container {
     position: fixed;
     z-index: 9997;
-    top: 0;
+    top: 0px;
     width: 100%;
     height: auto;
-    background: rgba(255,255,255,.05);
-    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    border-bottom: 1px solid rgba(255,255,255,.1);
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    user-select: none;
+    /* background: rgba(17, 17, 17, 0.79); */
+    background: linear-gradient(-135deg, rgb(70 0 255 / 22%) 25%, rgb(0, 6, 83) 100%);
 }
 
 .menu-con-backdrop {
@@ -391,24 +384,23 @@ a:hover {
     display: none;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-135deg,rgba(0,42,135,0.8) 25%,rgba(147,64,255,0.8) 100%)
 }
 
 .menu-con-outer {
     position: relative;
-    top: 0;
+    top: 0px;
     height: auto;
-    margin: auto 70px
+    margin: auto 70px;
 }
 
 .menu-con-inner {
     max-width: 1200px;
     min-height: 70px;
-    margin: 0 auto
+    margin: 0px auto;
 }
 
 .menu-con-inner a:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .menu-btn-select {
@@ -416,43 +408,43 @@ a:hover {
     font-size: 16px;
     line-height: 70px;
     position: relative;
-    top: 0;
+    top: 0px;
     display: inline-block;
     width: auto;
     height: 70px;
     padding-right: 12px;
     padding-left: 12px;
     margin-bottom: -2px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     border-bottom: 2px solid transparent;
-    transition: all .1s ease-in-out 0s
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .menu-btn-select:hover {
     height: 70px;
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .menu-btn-backtotop {
-    background: url("img/icons/buttons/backtotop.png") center center/24px no-repeat rgb(255,255,255);
+    background: url("../../img/icons/buttons/backtotop.png") center center / 24px no-repeat rgb(255, 255, 255);
     width: 44px;
     height: 44px;
     position: fixed;
     border-radius: 100%;
     bottom: 20px;
     right: 20px;
-    box-shadow: rgba(0,0,0,.2) 0 10px 32px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 32px 0px;
     z-index: 9999;
     cursor: pointer;
-    transition: all .1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
     display: none;
-    border: 2px solid #fff
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .menu-btn-backtotop:hover {
-    background: url("img/icons/buttons/backtotop-h.png") center center/24px no-repeat rgb(26,188,156);
-    box-shadow: rgba(46,204,113,.4) 0 10px 32px 0;
-    border: 2px solid #57e694
+    background: url("../../img/icons/buttons/backtotop-h.png") center center / 24px no-repeat rgb(26, 188, 156);
+    box-shadow: rgba(46, 204, 113, 0.4) 0px 10px 32px 0px;
+    border: 2px solid rgb(87, 230, 148);
 }
 
 .menu-con-divider {
@@ -462,10 +454,10 @@ a:hover {
     height: 18px;
     border-radius: 4px;
     margin-bottom: -2px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     border-bottom: 2px solid transparent;
-    background: rgba(255,255,255,.2);
-    top: 2px
+    background: rgba(255, 255, 255, 0.2);
+    top: 2px;
 }
 
 .mobile-menu-btn-open {
@@ -479,11 +471,11 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 2px solid transparent;
-    background: url("img/icons/menu/menu.png") center center/32px no-repeat
+    background: url("../../img/icons/menu/menu.png") center center / 32px no-repeat;
 }
 
 .mobile-menu-btn-open:hover {
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .mobile-menu-btn-darkmode {
@@ -496,58 +488,56 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 2px solid transparent;
-    background: url("img/icons/submenu/darkmode-h.png") center center/26px no-repeat;
+    background: url("../../img/icons/submenu/darkmode-h.png") center center / 26px no-repeat;
     z-index: 9999;
-    display: none
+    display: none;
 }
 
 .mobile-menu-btn-darkmode:hover {
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .menu-con-release {
     position: fixed;
     width: auto;
     height: 22px;
-    background: rgb(0 0 0/10%);
+    background: rgba(0, 0, 0, 0.1);
     z-index: 1111;
     bottom: 10px;
     left: 10px;
     font-family: Roboto-Regular;
     font-size: 12px;
-    color: rgb(255 255 255);
+    color: rgb(255, 255, 255);
     line-height: 22px;
     border-radius: 22px;
     padding-left: 10px;
     padding-right: 10px;
-    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    display: none
+    display: none;
 }
 
 .mobile-menu-con-container {
     position: fixed;
     z-index: 8990;
-    top: 0;
+    top: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(17,21,37,.9);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px)
+    background: rgba(17, 21, 37, 0.9);
+    backdrop-filter: blur(14px);
 }
 
 .mobile-menu-con-outter {
     position: relative;
-    top: 0;
+    top: 0px;
     height: auto;
     margin: auto 20px;
-    padding-top: 20px
+    padding-top: 20px;
 }
 
 .mobile-menu-con-inner {
     max-width: 512px;
     min-height: 60px;
-    margin: 50px auto 0
+    margin: 50px auto 0px;
 }
 
 .mobile-menu-btn-select {
@@ -557,23 +547,23 @@ a:hover {
     position: relative;
     height: 50px;
     padding-left: 20px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     animation-name: fadeInDown;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     border-radius: 6px;
     margin-bottom: 10px;
-    border: 2px solid rgba(255,255,255,.03)
+    border: 2px solid rgba(255, 255, 255, 0.03);
 }
 
 .mobile-menu-btn-select:hover {
-    color: #4e34c9;
-    box-shadow: rgba(0,0,0,.1) 10px 10px 32px 0;
-    background: hsl(0 0% 100%/0.9)!important
+    color: rgb(78, 52, 201);
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 32px 0px;
+    background: rgba(255, 255, 255, 0.9) !important;
 }
 
 .mobile-menu-con-scroll::-webkit-scrollbar {
-    display: none
+    display: none;
 }
 
 .mobile-menu-con-scroll {
@@ -582,91 +572,91 @@ a:hover {
     width: 100%;
     height: 100%;
     padding-right: 17px;
-    padding-bottom: 17px
+    padding-bottom: 17px;
 }
 
 .mobile-menu-con-inner a:nth-child(2n+1) .mobile-menu-btn-select {
-    background: rgba(255,255,255,.05)
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .mobile-menu-tx1-group {
     font-family: Roboto-Regular;
     font-size: 16px;
     line-height: 20px;
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, 0.5);
     height: 20px;
     position: relative;
     margin-top: 20px;
     animation-name: fadeInDown;
-    animation-duration: .5s;
-    animation-iteration-count: 1
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 
 .mobile-menu-con-divider {
     width: 100%;
     height: 2px;
     border-radius: 2px;
-    background: linear-gradient(to left,rgba(255,255,255,0),rgba(255,255,255,0.5));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
     margin-top: 10px;
     margin-bottom: 30px;
     position: relative;
     animation-name: fadeInRight;
-    animation-duration: .5s;
-    animation-iteration-count: 1
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 
 .mobile-menu-btn-icon {
     width: 50px;
     height: 54px;
-    background: url("img/icons/arrows/left-h.png") center center/18px no-repeat;
+    background: url("../../img/icons/arrows/left-h.png") center center / 18px no-repeat;
     position: relative;
     animation-name: fadeInDown;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
-    float: left
+    float: left;
 }
 
 .mobile-menu-btn-spacer {
     position: relative;
-    height: 100px
+    height: 100px;
 }
 
 .menu-btn-settings {
     position: absolute;
     z-index: 9998;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     width: 70px;
     height: 100%;
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    background: url("img/icons/menu/settings.png") center center/20px no-repeat;
+    background: url("../../img/icons/menu/settings.png") center center / 20px no-repeat;
     animation-name: fadeIn;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
-    transition: all .1s ease-in-out 0s
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .menu-btn-settings:hover {
     width: 70px;
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .menu-btn-darkmode {
     position: fixed;
     z-index: 9998;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     width: 60px;
     height: 60px;
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    background: url("img/icons/menu/darkmode-off.png") center center/20px no-repeat
+    background: url("../../img/icons/menu/darkmode-off.png") center center / 20px no-repeat;
 }
 
 .menu-btn-darkmode:hover {
     width: 60px;
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .settings-menu-con-outer {
@@ -677,15 +667,14 @@ a:hover {
     display: none;
     width: 222px;
     height: 395px;
-    box-shadow: rgba(0,0,0,.2) 0 0 80px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 80px 0px;
     border-radius: 12px;
     animation-name: fadeInRight;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-iteration-count: 1;
-    -webkit-backdrop-filter: blur(12px) saturate(500%);
     backdrop-filter: blur(12px) saturate(500%);
-    border: 1px solid rgba(255,255,255,.1);
-    background: rgba(17,21,37,.8)!important
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(17, 21, 37, 0.8) !important;
 }
 
 .settings-menu-con-wrapper {
@@ -693,63 +682,63 @@ a:hover {
     width: 100%;
     height: 64px;
     cursor: pointer;
-    transition: all .1s ease-in-out 0s
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .settings-menu-upper {
-    border-radius: 10px 10px 0 0
+    border-radius: 10px 10px 0px 0px;
 }
 
 .settings-menu-lower {
-    border-radius: 0 0 10px 10px
+    border-radius: 0px 0px 10px 10px;
 }
 
 .settings-menu-con-wrapper:hover {
-    background: #1abc9c;
-    box-shadow: rgba(26,188,156,.5) 0 0 32px 0
+    background: rgb(26, 188, 156);
+    box-shadow: rgba(26, 188, 156, 0.5) 0px 0px 32px 0px;
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-btn-button {
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-darkmode {
-    background: url("img/icons/submenu/darkmode.png") center center/24px no-repeat;
-    filter: invert(1)
+    background: url("../../img/icons/submenu/darkmode.png") center center / 24px no-repeat;
+    filter: invert(1);
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-particles {
-    background: url("img/icons/submenu/particles.png") center center/24px no-repeat;
-    filter: invert(1)
+    background: url("../../img/icons/submenu/particles.png") center center / 24px no-repeat;
+    filter: invert(1);
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-pulsate {
-    background: url("img/icons/submenu/pulsate.png") center center/24px no-repeat;
-    filter: invert(1)
+    background: url("../../img/icons/submenu/pulsate.png") center center / 24px no-repeat;
+    filter: invert(1);
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-waves {
-    background: url("img/icons/submenu/waves.png") center center/24px no-repeat;
-    filter: invert(1)
+    background: url("../../img/icons/submenu/waves.png") center center / 24px no-repeat;
+    filter: invert(1);
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-transparency {
-    background: url("img/icons/submenu/transparency.png") center center/24px no-repeat;
-    filter: invert(1)
+    background: url("../../img/icons/submenu/transparency.png") center center / 24px no-repeat;
+    filter: invert(1);
 }
 
 .settings-menu-con-wrapper:hover .settings-menu-ico-theme {
-    background: url("img/icons/submenu/theme.png") center center/24px no-repeat;
-    filter: invert(1)
+    background: url("../../img/icons/submenu/theme.png") center center / 24px no-repeat;
+    filter: invert(1);
 }
 
 .settings-menu-con-divider {
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, 0.1);
     height: 1px;
     border-radius: 2px;
     position: relative;
     margin-left: 12px;
-    margin-right: 12px
+    margin-right: 12px;
 }
 
 .settings-menu-btn-button {
@@ -763,7 +752,7 @@ a:hover {
     height: 64px;
     text-align: left;
     pointer-events: none;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .settings-menu-ico-darkmode {
@@ -771,7 +760,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/darkmode-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/darkmode-h.png") center center / 24px no-repeat;
 }
 
 .settings-menu-ico-particles {
@@ -779,7 +768,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/particles-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/particles-h.png") center center / 24px no-repeat;
 }
 
 .settings-menu-ico-pulsate {
@@ -787,7 +776,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/pulsate-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/pulsate-h.png") center center / 24px no-repeat;
 }
 
 .settings-menu-ico-waves {
@@ -795,7 +784,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/waves-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/waves-h.png") center center / 24px no-repeat;
 }
 
 .settings-menu-ico-transparency {
@@ -803,7 +792,7 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/transparency-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/transparency-h.png") center center / 24px no-repeat;
 }
 
 .settings-menu-ico-theme {
@@ -811,45 +800,45 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/theme-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/theme-h.png") center center / 24px no-repeat;
 }
 
 .support-con-menu {
     position: relative;
-    top: 0;
+    top: 0px;
     display: inline-block;
     float: right;
     width: 120px;
     height: 70px;
     margin-bottom: -2px;
     border-bottom: 2px solid transparent;
-    transition: all .1s ease-in-out 0s
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .support-ico-menu {
     position: absolute;
-    right: 0;
+    right: 0px;
     width: 120px;
     height: 70px;
-    background: url("img/icons/submenu/support.png") center center/contain no-repeat;
+    background: url("../../img/icons/submenu/support.png") center center / contain no-repeat;
     cursor: pointer;
-    transition: all .1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
     animation-name: fadeInRight;
-    animation-duration: .5s;
-    animation-iteration-count: 1
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 
 .support-ico-menu:hover {
     position: absolute;
-    right: 0;
+    right: 0px;
     width: 120px;
     height: 70px;
-    background: url("img/icons/submenu/support-h.png") center center/contain no-repeat;
-    cursor: pointer
+    background: url("../../img/icons/submenu/support-h.png") center center / contain no-repeat;
+    cursor: pointer;
 }
 
 .support-con-menu:hover {
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .support-con-outer {
@@ -859,57 +848,56 @@ a:hover {
     display: none;
     width: 228px;
     height: 261px;
-    box-shadow: rgba(0,0,0,.2) 0 0 80px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 80px 0px;
     border-radius: 12px;
-    border: 2px solid rgba(255,255,255,.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     animation-name: fadeInUp;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-iteration-count: 1;
-    -webkit-backdrop-filter: blur(12px) saturate(500%);
     backdrop-filter: blur(12px) saturate(500%);
-    background: rgba(17,21,37,.8)!important
+    background: rgba(17, 21, 37, 0.8) !important;
 }
 
 .support-con-wrapper {
     position: relative;
     width: 100%;
     height: 64px;
-    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     cursor: pointer;
-    transition: all .1s ease-in-out 0s
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .support-upper {
-    border-radius: 10px 10px 0 0
+    border-radius: 10px 10px 0px 0px;
 }
 
 .support-lower {
-    border-radius: 0 0 8px 8px
+    border-radius: 0px 0px 8px 8px;
 }
 
 .support-con-wrapper:hover {
-    background: #1abc9c;
-    box-shadow: rgba(26,188,156,.5) 0 0 32px 0
+    background: rgb(26, 188, 156);
+    box-shadow: rgba(26, 188, 156, 0.5) 0px 0px 32px 0px;
 }
 
 .support-con-wrapper:hover .support-btn-button {
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .support-con-wrapper:hover .support-ico-patreon {
-    background: url("img/icons/submenu/patreon-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/patreon-h.png") center center / 24px no-repeat;
 }
 
 .support-con-wrapper:hover .support-ico-alipay {
-    background: url("img/icons/submenu/alipay-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/alipay-h.png") center center / 24px no-repeat;
 }
 
 .support-con-wrapper:hover .support-ico-github {
-    background: url("img/icons/submenu/code-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/code-h.png") center center / 24px no-repeat;
 }
 
 .support-con-wrapper:hover .support-ico-testing {
-    background: url("img/icons/submenu/testing-h.png") center center/24px no-repeat
+    background: url("../../img/icons/submenu/testing-h.png") center center / 24px no-repeat;
 }
 
 .support-btn-button {
@@ -923,7 +911,7 @@ a:hover {
     height: 64px;
     text-align: left;
     pointer-events: none;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .support-ico-patreon {
@@ -931,8 +919,8 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/patreon.png") center center/28px no-repeat;
-    transition: all .1s ease-in-out 0s
+    background: url("../../img/icons/submenu/patreon.png") center center / 28px no-repeat;
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .support-ico-alipay {
@@ -940,8 +928,8 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/alipay-h.png") center center/28px no-repeat;
-    transition: all .1s ease-in-out 0s
+    background: url("../../img/icons/submenu/alipay-h.png") center center / 28px no-repeat;
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .support-ico-github {
@@ -949,8 +937,8 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/code-h.png") center center/28px no-repeat;
-    transition: all .1s ease-in-out 0s
+    background: url("../../img/icons/submenu/code-h.png") center center / 28px no-repeat;
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .support-ico-testing {
@@ -958,8 +946,8 @@ a:hover {
     float: left;
     width: 64px;
     height: 64px;
-    background: url("img/icons/submenu/testing-h.png") center center/28px no-repeat;
-    transition: all .1s ease-in-out 0s
+    background: url("../../img/icons/submenu/testing-h.png") center center / 28px no-repeat;
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .window-con-theme {
@@ -967,34 +955,34 @@ a:hover {
     height: 100%;
     position: fixed;
     z-index: 4;
-    background: #000;
+    background: rgb(0, 0, 0);
     display: none;
-    top: 0
+    top: 0px;
 }
 
 .window-bg-theme {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: linear-gradient(-135deg,rgb(135,0,93) 25%,rgb(255,64,64) 100%);
-    display: none
+    background: linear-gradient(-135deg, rgb(135, 0, 93) 25%, rgb(255, 64, 64) 100%);
+    display: none;
 }
 
 .theme-btn-close {
     width: 62px;
     height: 62px;
     position: fixed;
-    background: url("img/icons/menu/exit.png") center center/16px no-repeat;
-    right: 0;
-    top: 0;
+    background: url("../../img/icons/menu/exit.png") center center / 16px no-repeat;
+    right: 0px;
+    top: 0px;
     z-index: 4;
     cursor: pointer;
     display: none;
-    border-bottom: 2px solid transparent
+    border-bottom: 2px solid transparent;
 }
 
 .theme-btn-close:hover {
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .theme-tx1-description {
@@ -1007,9 +995,9 @@ a:hover {
     font-family: Roboto-Regular;
     font-size: 16px;
     line-height: 60px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
-    display: none
+    display: none;
 }
 
 .theme-con-spinner {
@@ -1021,15 +1009,15 @@ a:hover {
     z-index: 4;
     margin-left: -50px;
     margin-top: -50px;
-    display: none
+    display: none;
 }
 
 .theme-ico-spinner {
-    background: url("img/icons/menu/loading.png") center center/46px no-repeat;
+    background: url("../../img/icons/menu/loading.png") center center / 46px no-repeat;
     width: 100px;
     height: 100px;
     position: absolute;
-    animation: 1s linear 0s infinite normal none running spinnerRotate
+    animation: 1s linear 0s infinite normal none running spinnerRotate;
 }
 
 .alipay-con-alipay {
@@ -1042,18 +1030,17 @@ a:hover {
     height: auto;
     margin: -295px -190px;
     animation-name: fadeInUp;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     border-radius: 12px;
-    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    background: rgba(255,255,255,.1)
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .alipay-ico-logo {
     position: relative;
     width: 100%;
     height: 90px;
-    background: url("img/icons/services/alipay.png") center center/130px no-repeat
+    background: url("../../img/icons/services/alipay.png") center center / 130px no-repeat;
 }
 
 .alipay-ico-alipay {
@@ -1061,7 +1048,7 @@ a:hover {
     width: 100%;
     height: 384px;
     cursor: pointer;
-    background: url("img/icons/qr/alipay.png") center center/304px no-repeat rgb(255,255,255)
+    background: url("../../img/icons/qr/alipay.png") center center / 304px no-repeat rgb(255, 255, 255);
 }
 
 .alipay-tx1-prompt {
@@ -1075,10 +1062,10 @@ a:hover {
     height: 60px;
     margin: -30px -30px -38px;
     text-align: center;
-    color: #fff;
-    border: 4px solid #fff;
+    color: rgb(255, 255, 255);
+    border: 4px solid rgb(255, 255, 255);
     border-radius: 100%;
-    background: #000
+    background: rgb(0, 0, 0);
 }
 
 .alipay-tx2-prompt {
@@ -1089,7 +1076,7 @@ a:hover {
     width: 100%;
     height: 115px;
     text-align: center;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .alipay-con-footer {
@@ -1098,37 +1085,37 @@ a:hover {
     line-height: 100px;
     position: fixed;
     z-index: 1;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     height: 100px;
     text-align: center;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .sidebar-con-container {
     position: relative;
     animation-name: fadeInLeft;
-    animation-duration: .3s;
-    margin-top: 10px
+    animation-duration: 0.3s;
+    margin-top: 10px;
 }
 
 .sidebar-btn-open {
     position: fixed;
     z-index: 9998;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 70px;
     height: 70px;
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    background: url("img/icons/menu/menu.png") center center/18px no-repeat;
-    transition: all .1s ease-in-out 0s
+    background: url("../../img/icons/menu/menu.png") center center / 18px no-repeat;
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .sidebar-btn-open:hover {
     width: 70px;
     height: 70px;
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .sidebar-con-dimmer {
@@ -1137,43 +1124,42 @@ a:hover {
     display: none;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.4)
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .sidebar-con-anim {
     z-index: 9999;
     overflow: hidden scroll;
     width: 378px;
-    transition: all .2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
     animation-name: fadeInLeft;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-iteration-count: 1;
-    -webkit-backdrop-filter: blur(12px) saturate(500%);
     backdrop-filter: blur(12px) saturate(500%);
-    box-shadow: rgba(0,0,0,.2) 20px 20px 64px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 64px 0px;
     display: block;
     position: fixed;
     height: auto;
-    inset: 0;
+    inset: 0px;
     margin: 20px;
     border-radius: 12px;
-    border: 1px solid rgba(255,255,255,.1);
-    background: rgba(17,21,37,.9)!important
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(17, 21, 37, 0.9) !important;
 }
 
 .sidebar-con-anim::-webkit-scrollbar {
     display: none;
-    width: 5px
+    width: 5px;
 }
 
 .sidebar-emp-block {
-    background: #686de0;
+    background: rgb(104, 109, 224);
     width: 4px;
     height: 20px;
     border-radius: 2px;
     margin-right: 10px;
     float: left;
-    margin-top: 24px
+    margin-top: 24px;
 }
 
 .sidebar-tx1-title {
@@ -1184,8 +1170,8 @@ a:hover {
     z-index: 2;
     height: 70px;
     padding-left: 20px;
-    color: #fff;
-    background: rgba(0,0,0,.1)
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-tx1-subtitle {
@@ -1196,7 +1182,7 @@ a:hover {
     height: 40px;
     padding-left: 20px;
     text-align: left;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .sidebar-tx2-subtitle {
@@ -1208,46 +1194,45 @@ a:hover {
     margin-left: 40px;
     padding-left: 16px;
     text-align: left;
-    border-left: 1px solid rgba(255,255,255,.2);
-    color: rgba(255,255,255,.5);
-    transition: all .1s ease-in-out 0s
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .sidebar-tx2-subtitle:hover {
-    background: rgba(255,255,255,.1);
-    color: #fff
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
 }
 
 .sidebar-con-spacer {
     width: 100%;
     height: 100px;
-    position: relative
+    position: relative;
 }
 
 .blogbar-con-anim {
     z-index: 9999;
     overflow: hidden scroll;
     width: 378px;
-    transition: all .2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
     animation-name: fadeInLeft;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-iteration-count: 1;
-    -webkit-backdrop-filter: blur(12px) saturate(500%);
     backdrop-filter: blur(12px) saturate(500%);
-    box-shadow: rgba(0,0,0,.2) 20px 20px 64px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 64px 0px;
     display: block;
     position: fixed;
     height: auto;
-    inset: 0;
+    inset: 0px;
     margin: 20px;
     border-radius: 12px;
-    border: 2px solid rgba(255,255,255,.1);
-    background: rgba(17,21,37,.9)!important
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(17, 21, 37, 0.9) !important;
 }
 
 .blogbar-con-anim::-webkit-scrollbar {
     display: none;
-    width: 5px
+    width: 5px;
 }
 
 .blogbar-tx1-title {
@@ -1259,8 +1244,8 @@ a:hover {
     z-index: 2;
     height: 70px;
     padding-left: 20px;
-    color: #fff;
-    background: rgba(0,0,0,.1)
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .banner-con-container {
@@ -1269,14 +1254,14 @@ a:hover {
     overflow: hidden;
     width: 100%;
     height: 380px;
-    background: linear-gradient(-135deg,rgb(0,42,135) 25%,rgb(147,64,255) 100%)
+    background: linear-gradient(-135deg, rgb(0, 42, 135) 25%, rgb(147, 64, 255) 100%);
 }
 
 .banner-con-backdrop {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-135deg,rgb(0,42,135) 25%,rgb(147,64,255) 100%)
+    background: linear-gradient(-135deg, rgb(0, 42, 135) 25%, rgb(147, 64, 255) 100%);
 }
 
 .banner-con-title {
@@ -1286,7 +1271,7 @@ a:hover {
     left: 50%;
     width: 860px;
     height: 134px;
-    margin: -37px -430px
+    margin: -37px -430px;
 }
 
 .banner-tx1-title {
@@ -1296,7 +1281,7 @@ a:hover {
     line-height: 80px;
     height: 80px;
     text-align: center;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .banner-tx1-title span {
@@ -1304,7 +1289,7 @@ a:hover {
     font-size: inherit;
     line-height: inherit;
     text-align: inherit;
-    color: inherit
+    color: inherit;
 }
 
 .banner-tx2-title {
@@ -1313,24 +1298,24 @@ a:hover {
     line-height: 50px;
     height: 50px;
     text-align: center;
-    color: #fff;
-    text-shadow: rgba(0,0,0,.5) 2px 0 16px
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 0px 16px;
 }
 
 .banner-con-divider {
-    background: rgba(255,255,255,.2);
+    background: rgba(255, 255, 255, 0.2);
     height: 2px;
     border-radius: 2px;
     width: 50px;
     left: 50%;
     margin-left: -25px;
-    position: relative
+    position: relative;
 }
 
 .container-con-block {
     position: relative;
     height: auto;
-    min-height: 30px
+    min-height: 30px;
 }
 
 .container-con-wrapper {
@@ -1338,7 +1323,7 @@ a:hover {
     width: auto;
     height: auto;
     padding-top: 15px;
-    padding-bottom: 15px
+    padding-bottom: 15px;
 }
 
 .container-tx1-block {
@@ -1352,11 +1337,11 @@ a:hover {
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: left;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .container-tx1-block h2 {
-    line-height: 40px
+    line-height: 40px;
 }
 
 .container-tx2-block {
@@ -1367,7 +1352,7 @@ a:hover {
     width: 100%;
     height: auto;
     text-align: left;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .container-tx3-block {
@@ -1379,21 +1364,21 @@ a:hover {
     height: auto;
     min-height: 26px;
     text-align: left;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .container-emp-block {
-    background: #686de0;
+    background: rgb(104, 109, 224);
     width: 4px;
     height: 20px;
     border-radius: 2px;
     margin-right: 10px;
     float: left;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .container-tx2-block a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .container-tx1-heading {
@@ -1407,12 +1392,12 @@ a:hover {
     padding-top: 30px;
     margin-bottom: 30px;
     text-align: left;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .splitter-con-container {
     position: relative;
-    display: flex
+    display: flex;
 }
 
 .splitter-img-container {
@@ -1424,26 +1409,26 @@ a:hover {
     overflow: hidden;
     margin-top: 40px;
     margin-bottom: 20px;
-    box-shadow: rgba(0,0,0,.2) 20px 20px 64px 0
+    box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 64px 0px;
 }
 
 .splitter-img-wrapper {
     position: relative;
-    height: 100%
+    height: 100%;
 }
 
 .splitter-txt-wrapper {
     position: relative;
     width: 50%;
-    height: auto
+    height: auto;
 }
 
 .splitter-con-right {
-    margin-left: 40px
+    margin-left: 40px;
 }
 
 .splitter-con-left {
-    margin-right: 40px
+    margin-right: 40px;
 }
 
 .generic-con-button {
@@ -1451,36 +1436,36 @@ a:hover {
     width: auto;
     height: auto;
     padding-top: 15px;
-    padding-bottom: 15px
+    padding-bottom: 15px;
 }
 
 .generic-con-button-single {
     position: relative;
     width: auto;
     height: auto;
-    padding-top: 15px
+    padding-top: 15px;
 }
 
 .generic-btn-button {
     width: auto;
     height: 46px;
     border-radius: 46px;
-    background: linear-gradient(-135deg,rgb(73,164,255) 25%,rgb(0,116,231) 100%);
+    background: linear-gradient(-135deg, rgb(73, 164, 255) 25%, rgb(0, 116, 231) 100%);
     cursor: pointer;
     padding-left: 4px;
     padding-right: 16px;
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 15px;
-    box-shadow: rgba(0,116,231,.4) 0 10px 32px 0;
-    transition: all .1s ease-in-out 0s;
-    border: 1px solid #0080ff!important
+    box-shadow: rgba(0, 116, 231, 0.4) 0px 10px 32px 0px;
+    transition: all 0.1s ease-in-out 0s;
+    border: 1px solid rgb(0, 128, 255) !important;
 }
 
 .generic-btn-button:hover {
-    background: linear-gradient(-135deg,rgb(46,204,113) 25%,rgb(26,188,156) 100%);
-    box-shadow: rgba(46,204,113,.4) 0 10px 32px 0;
-    border: 1px solid #57e694!important
+    background: linear-gradient(-135deg, rgb(46, 204, 113) 25%, rgb(26, 188, 156) 100%);
+    box-shadow: rgba(46, 204, 113, 0.4) 0px 10px 32px 0px;
+    border: 1px solid rgb(87, 230, 148) !important;
 }
 
 .generic-ico-button {
@@ -1489,7 +1474,7 @@ a:hover {
     float: left;
     position: relative;
     display: inline-block;
-    background-size: 24px!important
+    background-size: 24px !important;
 }
 
 .generic-tx1-button {
@@ -1498,17 +1483,17 @@ a:hover {
     font-size: 16px;
     line-height: 46px;
     height: 100%;
-    color: #fff;
+    color: rgb(255, 255, 255);
     position: relative;
-    display: inline-block
+    display: inline-block;
 }
 
 .generic-tx2-label {
     font-family: Roboto-Regular;
-    background: rgba(255,255,255,.2);
+    background: rgba(255, 255, 255, 0.2);
     padding: 4px 8px;
     border-radius: 30px;
-    margin-left: 4px
+    margin-left: 4px;
 }
 
 .spec-con-container {
@@ -1516,42 +1501,42 @@ a:hover {
     height: auto;
     position: relative;
     display: inline-block;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .spec-con-max {
     width: 50%;
     height: auto;
     display: block;
-    float: left
+    float: left;
 }
 
 .spec-con-min {
     width: 50%;
     height: auto;
     display: block;
-    float: left
+    float: left;
 }
 
 .spec-con-title {
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 8px 16px;
-    border-radius: 6px
+    border-radius: 6px;
 }
 
 .spec-max {
-    background: linear-gradient(-45deg,rgba(255,255,255,0.1) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.1) 75%,transparent 75%,transparent) 0% 0%/40px 40px rgb(39 174 96);
-    box-shadow: rgba(39,174,96,.5) 10px 10px 32px 0;
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent) 0% 0% / 40px 40px rgb(39, 174, 96);
+    box-shadow: rgba(39, 174, 96, 0.5) 10px 10px 32px 0px;
     margin-right: 20px;
     margin-bottom: 10px;
-    border: 2px solid #3db670
+    border: 2px solid rgb(61, 182, 112);
 }
 
 .spec-min {
-    background: linear-gradient(-45deg,rgba(255,255,255,0.1) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.1) 75%,transparent 75%,transparent) 0% 0%/40px 40px rgb(250,152,58);
-    box-shadow: rgba(231,76,60,.4) 10px 10px 32px 0;
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent) 0% 0% / 40px 40px rgb(250, 152, 58);
+    box-shadow: rgba(231, 76, 60, 0.4) 10px 10px 32px 0px;
     margin-bottom: 10px;
-    border: 2px solid #fba34e
+    border: 2px solid rgb(251, 163, 78);
 }
 
 .spec-con-title h2 {
@@ -1561,7 +1546,7 @@ a:hover {
     font-size: 24px;
     line-height: 32px;
     padding-top: 4px;
-    padding-bottom: 4px
+    padding-bottom: 4px;
 }
 
 .spec-con-desc h3 {
@@ -1570,41 +1555,41 @@ a:hover {
     font-family: Roboto-Regular;
     font-size: 16px;
     line-height: 26px;
-    padding-top: 10px
+    padding-top: 10px;
 }
 
 .spec-con-divider {
     width: 100%;
     height: 2px;
     border-radius: 4px;
-    background: linear-gradient(to left,rgba(255,255,255,0),rgba(0,0,0,0.05));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.05));
     margin-top: 30px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 
 .spec-con-item {
     width: 100%;
     height: auto;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .item-con-inner {
-    display: inline-block
+    display: inline-block;
 }
 
 .item-ico-text {
     width: 28px;
     height: 28px;
     position: relative;
-    top: 0;
-    float: left
+    top: 0px;
+    float: left;
 }
 
 .item-con-text {
     height: auto;
     position: relative;
     margin-left: 48px;
-    margin-bottom: 2px
+    margin-bottom: 2px;
 }
 
 .item-tx1-title h3 {
@@ -1613,7 +1598,7 @@ a:hover {
     font-family: Roboto-Bold;
     font-size: 18px;
     line-height: 18px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 .item-tx2-desc p {
@@ -1621,7 +1606,7 @@ a:hover {
     height: auto;
     font-family: Roboto-Bold;
     font-size: 14px;
-    line-height: 18px
+    line-height: 18px;
 }
 
 .item-tx2-desc span {
@@ -1629,29 +1614,29 @@ a:hover {
     height: auto;
     font-family: Roboto-Regular;
     font-size: 12px;
-    line-height: 20px
+    line-height: 20px;
 }
 
 .content-con-outside {
     position: relative;
     max-width: 1220px;
     height: 100%;
-    margin: 0 auto;
-    z-index: 1
+    margin: 0px auto;
+    z-index: 1;
 }
 
 .content-con-inside {
     position: relative;
     height: 100%;
     margin-right: 60px;
-    margin-left: 60px
+    margin-left: 60px;
 }
 
 .content-con-backdrop {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-135deg,rgb(0,42,135) 25%,rgb(147,64,255) 100%)
+    background: linear-gradient(-135deg, rgb(0, 42, 135) 25%, rgb(147, 64, 255) 100%);
 }
 
 .content-btn-left {
@@ -1661,12 +1646,12 @@ a:hover {
     width: 100px;
     height: 100px;
     margin-top: -50px;
-    background: url("img/icons/arrows/left.png") center center/64px no-repeat;
-    transition: all .1s ease-in-out 0s;
+    background: url("../../img/icons/arrows/left.png") center center / 64px no-repeat;
+    transition: all 0.1s ease-in-out 0s;
     animation-name: drifting-left;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    z-index: 4
+    z-index: 4;
 }
 
 .content-btn-right {
@@ -1676,24 +1661,24 @@ a:hover {
     width: 100px;
     height: 100px;
     margin-top: -50px;
-    background: url("img/icons/arrows/right.png") center center/64px no-repeat;
-    transition: all .1s ease-in-out 0s;
+    background: url("../../img/icons/arrows/right.png") center center / 64px no-repeat;
+    transition: all 0.1s ease-in-out 0s;
     animation-name: drifting-right;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    z-index: 4
+    z-index: 4;
 }
 
 .content-btn-left:hover {
     cursor: pointer;
     text-decoration: underline;
-    background: url("img/icons/arrows/left-a.png") center center/64px no-repeat!important
+    background: url("../../img/icons/arrows/left-a.png") center center / 64px no-repeat !important;
 }
 
 .content-btn-right:hover {
     cursor: pointer;
     text-decoration: underline;
-    background: url("img/icons/arrows/right-a.png") center center/64px no-repeat!important
+    background: url("../../img/icons/arrows/right-a.png") center center / 64px no-repeat !important;
 }
 
 .landing-ico-scrolldown {
@@ -1703,18 +1688,18 @@ a:hover {
     left: 50%;
     width: 80px;
     height: 80px;
-    margin: 0 0 0 -40px;
+    margin: 0px 0px 0px -40px;
     animation-name: bobbing;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    background: url("img/icons/arrows/down.png") center center/42px no-repeat
+    background: url("../../img/icons/arrows/down.png") center center / 42px no-repeat;
 }
 
 .landing-img-backdrop {
     height: 100%;
     width: 100%;
     position: absolute;
-    opacity: .06
+    opacity: 0.06;
 }
 
 .landing-con-main {
@@ -1724,13 +1709,13 @@ a:hover {
     height: 100%;
     min-height: 600px;
     max-height: unset;
-    background: #000
+    background: rgb(0, 0, 0);
 }
 
 .landing-con-override {
-    position: absolute!important;
-    height: 100%!important;
-    min-height: 100%!important
+    position: absolute !important;
+    height: 100% !important;
+    min-height: 100% !important;
 }
 
 .landing-con-search {
@@ -1738,7 +1723,7 @@ a:hover {
     overflow: hidden;
     width: 100%;
     height: 140px;
-    background: #f9f9f9
+    background: rgb(249, 249, 249);
 }
 
 .landing-con-adsense {
@@ -1746,7 +1731,7 @@ a:hover {
     overflow: hidden;
     width: 100%;
     height: 140px;
-    background: #f7f7f7
+    background: rgb(247, 247, 247);
 }
 
 .landing-con-video {
@@ -1754,7 +1739,7 @@ a:hover {
     overflow: hidden;
     width: 100%;
     height: 700px;
-    background: #fff
+    background: rgb(255, 255, 255);
 }
 
 .landing-con-content {
@@ -1764,7 +1749,7 @@ a:hover {
     height: 700px;
     min-height: 600px;
     max-height: 1080px;
-    background: linear-gradient(-135deg,rgb(0,42,135) 25%,rgb(147,64,255) 100%)
+    background: linear-gradient(-135deg, rgb(0, 42, 135) 25%, rgb(147, 64, 255) 100%);
 }
 
 .landing-con-patreon {
@@ -1774,7 +1759,7 @@ a:hover {
     height: 700px;
     min-height: 500px;
     max-height: 938px;
-    background: #fff
+    background: rgb(255, 255, 255);
 }
 
 .landing-con-contribute {
@@ -1784,7 +1769,7 @@ a:hover {
     height: 700px;
     min-height: 500px;
     max-height: 938px;
-    background: #632bb0
+    background: rgb(50, 0, 120);
 }
 
 .landing-con-discord {
@@ -1794,33 +1779,33 @@ a:hover {
     height: 700px;
     min-height: 500px;
     max-height: 938px;
-    background: #404eed
+    background: rgb(0, 6, 83);
 }
 
 .landing-con-container-invert {
-    color: #455971!important
+    color: rgb(69, 89, 113) !important;
 }
 
 .landing-con-left {
     position: absolute;
-    left: 0;
+    left: 0px;
     width: 47%;
-    height: 100%
+    height: 100%;
 }
 
 .landing-con-right {
     position: absolute;
-    right: 0;
+    right: 0px;
     width: 47%;
     height: 100%;
     animation-name: fadeInLeft;
     animation-duration: 1s;
-    animation-iteration-count: 1
+    animation-iteration-count: 1;
 }
 
 .landing-con-container {
     position: absolute;
-    z-index: 2
+    z-index: 2;
 }
 
 .landing-btn-container {
@@ -1830,7 +1815,7 @@ a:hover {
     margin-top: 30px;
     animation-name: fadeInUp;
     animation-duration: 1.4s;
-    animation-iteration-count: 1
+    animation-iteration-count: 1;
 }
 
 .build-btn-button {
@@ -1838,28 +1823,28 @@ a:hover {
     height: 46px;
     border-radius: 46px;
     margin-top: 35px;
-    background: #fff;
-    box-shadow: rgba(0,0,0,.05) 0 10px 32px 0;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 32px 0px;
     cursor: pointer;
     padding-left: 4px;
     padding-right: 4px;
-    transition: all .1s ease-in-out 0s;
-    border: 2px solid #fff
+    transition: all 0.1s ease-in-out 0s;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .build-btn-button:hover {
-    background: #1abc9c;
-    box-shadow: rgba(46,204,113,.4) 0 10px 32px 0;
-    border: 2px solid #57e694!important
+    background: rgb(26, 188, 156);
+    box-shadow: rgba(46, 204, 113, 0.4) 0px 10px 32px 0px;
+    border: 2px solid rgb(87, 230, 148) !important;
 }
 
 .build-btn-button:hover .build-tx1-button {
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .build-btn-button:hover .build-tx2-label {
-    color: #1abc9c;
-    background: #fff
+    color: rgb(26, 188, 156);
+    background: rgb(255, 255, 255);
 }
 
 .build-ico-button {
@@ -1867,10 +1852,10 @@ a:hover {
     width: 22px;
     float: left;
     top: 12px;
-    left: 0;
+    left: 0px;
     position: relative;
     margin-right: 10px;
-    margin-left: 10px
+    margin-left: 10px;
 }
 
 .build-tx1-button {
@@ -1879,29 +1864,29 @@ a:hover {
     font-size: 18px;
     line-height: 46px;
     height: 100%;
-    color: #000;
-    text-shadow: none
+    color: rgb(0, 0, 0);
+    text-shadow: none;
 }
 
 .build-tx2-label {
     font-family: Roboto-Regular;
-    background: #1abc9c;
+    background: rgb(26, 188, 156);
     padding: 4px 8px;
     border-radius: 30px;
     margin-left: 4px;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .build-ico-os {
     position: relative;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .build-ico-os img {
     position: absolute;
-    top: 0;
-    left: 0
+    top: 0px;
+    left: 0px;
 }
 
 .landing-ico-logo {
@@ -1909,10 +1894,10 @@ a:hover {
     width: 100%;
     height: 64px;
     margin-bottom: 18px;
-    background: url("img/icons/menu/logo.png") left center/64px no-repeat;
+    background: url("../../img/icons/menu/logo.png") left center / 64px no-repeat;
     animation-name: fadeInUp;
     animation-duration: 1s;
-    animation-iteration-count: 1
+    animation-iteration-count: 1;
 }
 
 .landing-img-hero {
@@ -1920,7 +1905,7 @@ a:hover {
     width: 100%;
     height: 100%;
     display: block;
-    opacity: .8
+    opacity: 0.8;
 }
 
 .landing-tx1-heading {
@@ -1930,11 +1915,11 @@ a:hover {
     position: relative;
     height: auto;
     margin-bottom: 16px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    text-rendering: optimizelegibility
+    text-rendering: optimizelegibility;
 }
 
 .landing-tx2-heading {
@@ -1942,21 +1927,21 @@ a:hover {
     font-size: 16px;
     line-height: 30px;
     position: relative;
-    color: #fff;
+    color: rgb(255, 255, 255);
     animation-name: fadeInUp;
     animation-duration: 1.2s;
     animation-iteration-count: 1;
-    text-shadow: rgba(0,0,0,.4) 2px 0 16px
+    text-shadow: rgba(0, 0, 0, 0.4) 2px 0px 16px;
 }
 
 .landing-con-divider {
-    background: #fff;
+    background: rgb(255, 255, 255);
     height: 4px;
     border-radius: 4px;
     width: 50px;
-    left: 0;
+    left: 0px;
     position: relative;
-    top: 8px
+    top: 8px;
 }
 
 .github-con-container {
@@ -1964,39 +1949,39 @@ a:hover {
     width: 100%;
     position: absolute;
     top: 50%;
-    margin-top: -250px
+    margin-top: -250px;
 }
 
 .github-img-backdrop {
-    background: url("img/graphics/landing/bg-github.png") center center/cover repeat;
+    background: url("../../img/graphics/landing/github.jpeg") center center / cover repeat;
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: .2
+    opacity: 0.2;
 }
 
 .github-wrp-mantra {
     height: auto;
-    width: auto
+    width: auto;
 }
 
 .github-con-logo {
     width: 45%;
     height: 100%;
-    float: right
+    float: right;
 }
 
 .github-con-mantra {
     width: 55%;
     height: 100%;
     float: left;
-    position: relative
+    position: relative;
 }
 
 .github-img-logo {
     height: 100%;
     width: 100%;
-    background: url("img/graphics/landing/hero-github.png") center center/contain no-repeat
+    background: url("../../img/graphics/landing/hero-github.png") center center / contain no-repeat;
 }
 
 .github-tx1-mantra {
@@ -2005,8 +1990,8 @@ a:hover {
     line-height: 64px;
     height: auto;
     padding-left: 100px;
-    color: #fff;
-    margin-bottom: 20px
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
 }
 
 .github-tx2-mantra {
@@ -2014,7 +1999,7 @@ a:hover {
     font-size: 16px;
     line-height: 30px;
     padding-left: 100px;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .github-btn-button {
@@ -2023,34 +2008,34 @@ a:hover {
     border-radius: 46px;
     margin-left: 100px;
     margin-top: 35px;
-    background: #fff;
-    box-shadow: rgba(0,0,0,.2) 0 10px 32px 0;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 32px 0px;
     cursor: pointer;
     padding-left: 4px;
     padding-right: 4px;
-    transition: all .1s ease-in-out 0s;
-    border: 2px solid #fff
+    transition: all 0.1s ease-in-out 0s;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .github-btn-button:hover {
-    background: #1abc9c;
-    box-shadow: rgba(46,204,113,.4) 0 10px 32px 0;
-    border: 2px solid #57e694!important
+    background: rgb(26, 188, 156);
+    box-shadow: rgba(46, 204, 113, 0.4) 0px 10px 32px 0px;
+    border: 2px solid rgb(87, 230, 148) !important;
 }
 
 .github-btn-button:hover .github-ico-button {
-    background: url("img/icons/buttons/github-h.png") center center/24px no-repeat
+    background: url("../../img/icons/buttons/github-h.png") center center / 24px no-repeat;
 }
 
 .github-btn-button:hover .github-tx1-button {
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .github-ico-button {
-    background: url("img/icons/buttons/github.png") center center/24px no-repeat;
+    background: url("../../img/icons/buttons/github.png") center center / 24px no-repeat;
     height: 46px;
     width: 46px;
-    float: left
+    float: left;
 }
 
 .github-tx1-button {
@@ -2059,19 +2044,19 @@ a:hover {
     font-size: 16px;
     line-height: 46px;
     height: 100%;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .discord-con-animate {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0px;
+    left: 0px;
     height: 50%;
-    width: 100%
+    width: 100%;
 }
 
 .discord-svg-animate {
-    animation: 30s linear 0s infinite alternate none running blobby
+    animation: 30s linear 0s infinite alternate none running blobby;
 }
 
 .discord-con-container {
@@ -2079,7 +2064,7 @@ a:hover {
     width: 100%;
     position: absolute;
     top: 50%;
-    margin-top: -250px
+    margin-top: -250px;
 }
 
 .discord-left-logo {
@@ -2089,7 +2074,7 @@ a:hover {
     height: auto;
     left: -10%;
     float: left;
-    z-index: 1
+    z-index: 1;
 }
 
 .discord-right-logo {
@@ -2099,38 +2084,38 @@ a:hover {
     height: auto;
     right: -10%;
     float: right;
-    z-index: 1
+    z-index: 1;
 }
 
 .discord-center-logo {
     position: absolute;
     top: auto;
     bottom: -1%;
-    width: 100%
+    width: 100%;
 }
 
 .discord-wrp-mantra {
     height: auto;
-    width: auto
+    width: auto;
 }
 
 .discord-con-logo {
     width: 45%;
     height: 100%;
-    float: left
+    float: left;
 }
 
 .discord-con-mantra {
     width: 55%;
     height: 100%;
     float: right;
-    position: relative
+    position: relative;
 }
 
 .discord-img-logo {
     height: 100%;
     width: 100%;
-    background: url("img/graphics/landing/hero-discord.png") center center/400px no-repeat
+    background: url("../../img/graphics/landing/hero-discord.png") center center / 400px no-repeat;
 }
 
 .discord-tx1-mantra {
@@ -2139,9 +2124,9 @@ a:hover {
     line-height: 64px;
     height: auto;
     padding-left: 100px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
-    text-rendering: optimizelegibility
+    text-rendering: optimizelegibility;
 }
 
 .discord-tx2-mantra {
@@ -2149,7 +2134,7 @@ a:hover {
     font-size: 16px;
     line-height: 30px;
     padding-left: 100px;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .discord-btn-button {
@@ -2158,34 +2143,34 @@ a:hover {
     border-radius: 46px;
     margin-left: 100px;
     margin-top: 35px;
-    background: #fff;
-    box-shadow: rgba(0,0,0,.2) 0 10px 32px 0;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 32px 0px;
     cursor: pointer;
     padding-left: 4px;
     padding-right: 4px;
-    transition: all .1s ease-in-out 0s;
-    border: 2px solid #fff
+    transition: all 0.1s ease-in-out 0s;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .discord-btn-button:hover {
-    background: #1abc9c;
-    box-shadow: rgba(46,204,113,.4) 0 10px 32px 0;
-    border: 2px solid #57e694!important
+    background: rgb(26, 188, 156);
+    box-shadow: rgba(46, 204, 113, 0.4) 0px 10px 32px 0px;
+    border: 2px solid rgb(87, 230, 148) !important;
 }
 
 .discord-btn-button:hover .discord-ico-button {
-    background: url("img/icons/buttons/discord-h.png") center center/24px no-repeat
+    background: url("../../img/icons/buttons/discord-h.png") center center / 24px no-repeat;
 }
 
 .discord-btn-button:hover .discord-tx1-button {
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .discord-ico-button {
-    background: url("img/icons/buttons/discord.png") center center/24px no-repeat;
+    background: url("../../img/icons/buttons/discord.png") center center / 24px no-repeat;
     height: 46px;
     width: 46px;
-    float: left
+    float: left;
 }
 
 .discord-tx1-button {
@@ -2194,7 +2179,7 @@ a:hover {
     font-size: 16px;
     line-height: 46px;
     height: 100%;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .patreon-con-container {
@@ -2202,39 +2187,39 @@ a:hover {
     width: 100%;
     position: absolute;
     top: 50%;
-    margin-top: -250px
+    margin-top: -250px;
 }
 
 .patreon-img-backdrop {
-    background: url("img/graphics/landing/bg-patreon.jpg") center bottom/cover repeat;
+    background: url("../../img/graphics/landing/laptop.jpeg") right bottom / cover repeat;
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: .1
+    opacity: 0.1;
 }
 
 .patreon-wrp-mantra {
     height: auto;
-    width: auto
+    width: auto;
 }
 
 .patreon-con-logo {
     width: 45%;
     height: 100%;
-    float: left
+    float: left;
 }
 
 .patreon-con-mantra {
     width: 55%;
     height: 100%;
     float: right;
-    position: relative
+    position: relative;
 }
 
 .patreon-img-logo {
     height: 100%;
     width: 100%;
-    background: url("img/graphics/landing/hero-patreon.png") center center/400px no-repeat
+    background: url("../../img/graphics/landing/hero-patreon.png") center center / 400px no-repeat;
 }
 
 .patreon-tx1-mantra {
@@ -2243,8 +2228,8 @@ a:hover {
     line-height: 64px;
     height: auto;
     padding-left: 100px;
-    color: #ff424d;
-    margin-bottom: 20px
+    color: rgb(255, 66, 77);
+    margin-bottom: 20px;
 }
 
 .patreon-tx2-mantra {
@@ -2252,47 +2237,47 @@ a:hover {
     font-size: 16px;
     line-height: 30px;
     padding-left: 100px;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .patreon-btn-button {
     width: 188px;
     height: 46px;
-    background: #ff424d;
+    background: rgb(255, 66, 77);
     border-radius: 46px;
     margin-left: 100px;
     margin-top: 35px;
-    box-shadow: rgba(255,66,77,.5) 0 10px 32px 0;
+    box-shadow: rgba(255, 66, 77, 0.5) 0px 10px 32px 0px;
     cursor: pointer;
     padding-left: 4px;
     padding-right: 4px;
-    transition: all .1s ease-in-out 0s;
-    border: 2px solid #ff2633
+    transition: all 0.1s ease-in-out 0s;
+    border: 2px solid rgb(255, 38, 51);
 }
 
 .patreon-btn-button:hover {
-    background: linear-gradient(-135deg,rgb(255,145,130) 25%,rgb(255,177,117) 100%)
+    background: linear-gradient(-135deg, rgb(255, 145, 130) 25%, rgb(255, 177, 117) 100%);
 }
 
 .patreon-btn-button:hover {
-    background: #1abc9c;
-    box-shadow: rgba(46,204,113,.4) 0 10px 32px 0;
-    border: 2px solid #57e694!important
+    background: rgb(26, 188, 156);
+    box-shadow: rgba(46, 204, 113, 0.4) 0px 10px 32px 0px;
+    border: 2px solid rgb(87, 230, 148) !important;
 }
 
 .patreon-btn-button:hover .patreon-ico-patreon {
-    background: url("img/icons/buttons/patreon-h.png") center center/24px no-repeat
+    background: url("../../img/icons/buttons/patreon-h.png") center center / 24px no-repeat;
 }
 
 .patreon-btn-button:hover .patreon-tx1-patreon {
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .patreon-ico-button {
-    background: url("img/icons/buttons/patreon.png") center center/24px no-repeat;
+    background: url("../../img/icons/buttons/patreon.png") center center / 24px no-repeat;
     height: 46px;
     width: 46px;
-    float: left
+    float: left;
 }
 
 .patreon-tx1-button {
@@ -2301,7 +2286,7 @@ a:hover {
     font-size: 16px;
     line-height: 46px;
     height: 100%;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .adsense-con-container {
@@ -2309,20 +2294,20 @@ a:hover {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    min-height: 35px
+    min-height: 35px;
 }
 
 .adsense-con-frame {
     text-align: center;
     top: 26px;
     position: relative;
-    z-index: 2
+    z-index: 2;
 }
 
 .adsense-con-insert {
     display: inline-block;
     width: 728px;
-    height: 90px
+    height: 90px;
 }
 
 .adsense-tx1-description {
@@ -2338,8 +2323,8 @@ a:hover {
     height: 82px;
     margin: -41px -360px;
     text-align: center;
-    color: #c4c4c4;
-    background-size: 30px
+    color: rgb(196, 196, 196);
+    background-size: 30px;
 }
 
 .search-con-container {
@@ -2347,29 +2332,29 @@ a:hover {
     top: 50%;
     width: 100%;
     height: auto;
-    margin: -25px 0;
+    margin: -25px 0px;
     animation-name: fadeInUp;
     animation-duration: 1s;
-    animation-iteration-count: 1
+    animation-iteration-count: 1;
 }
 
 .search-con-outer {
     position: relative;
-    top: 0;
+    top: 0px;
     height: auto;
-    margin: auto 60px
+    margin: auto 60px;
 }
 
 .search-con-inner {
     max-width: 1080px;
     min-height: 50px;
-    margin: 0 auto
+    margin: 0px auto;
 }
 
 .search-ovr-container {
     position: absolute;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .search-inp-search {
@@ -2378,20 +2363,20 @@ a:hover {
     overflow: hidden;
     width: 100%;
     height: 50px;
-    margin: 0 auto;
+    margin: 0px auto;
     border-radius: 50px;
-    box-shadow: rgba(0,0,0,.1) 0 16px 32px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 16px 32px 0px;
     border: 2px solid transparent;
-    transition: all .1s ease-in-out 0s
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .search-inp-search:hover {
     cursor: pointer;
     border-width: 2px;
     border-style: solid;
-    border-color: #686de0;
-    color: #686de0;
-    box-shadow: rgba(0,0,0,.1) 0 16px 32px 0
+    border-color: rgb(104, 109, 224);
+    color: rgb(104, 109, 224);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 16px 32px 0px;
 }
 
 .search-inp-search input {
@@ -2400,41 +2385,41 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    padding-left: 50px;
-    color: #000;
-    border: 0
+    padding-left: 100px;
+    color: rgb(0, 0, 0);
+    border: 0px;
 }
 
 .search-inp-search:hover input {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .search-inp-search input:focus {
     cursor: text;
-    outline: 0;
-    color: #0074e7
+    outline: 0px;
+    color: rgb(0, 116, 231);
 }
 
 .search-inp-search input::placeholder {
-    transition: all .1s ease-in-out 0s;
-    color: inherit
+    transition: all 0.1s ease-in-out 0s;
+    color: inherit;
 }
 
 .search-inp-search:hover input::placeholder {
-    color: #686de0
+    color: rgb(104, 109, 224);
 }
 
 .search-inp-search input:focus::placeholder {
-    color: #686de0
+    color: rgb(104, 109, 224);
 }
 
 .search-ico-search {
     position: absolute;
     z-index: 1;
-    left: 0;
+    left: 0px;
     width: 50px;
     height: 50px;
-    background: url("img/icons/menu/search.png") center center/20px no-repeat
+    background: url("../../img/icons/menu/search.png") center center / 20px no-repeat;
 }
 
 .search-con-author {
@@ -2443,17 +2428,17 @@ a:hover {
     line-height: 50px;
     position: absolute;
     z-index: 1;
-    right: 0;
+    right: 0px;
     width: auto;
     height: 50px;
     top: -6px;
     padding-right: 20px;
-    color: #000;
-    cursor: default
+    color: rgb(0, 0, 0);
+    cursor: default;
 }
 
 .search-con-author a:hover .search-img-author {
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 .search-img-author {
@@ -2465,19 +2450,19 @@ a:hover {
     top: 14px;
     margin-left: 4px;
     margin-right: 4px;
-    box-shadow: rgba(0,0,0,.2) 0 0 10px 0;
-    border: 2px solid #fff;
-    background: url("img/users/ani.png") center center/cover no-repeat;
-    transition: all .2s ease-in-out 0s
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    border: 2px solid rgb(255, 255, 255);
+    background: url("../../img/users/ani.png") center center / cover no-repeat;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 .search-con-author a {
-    color: #000;
-    top: 12px
+    color: rgb(0, 0, 0);
+    top: 12px;
 }
 
 .search-con-author a:hover {
-    color: #686de0
+    color: rgb(104, 109, 224);
 }
 
 .video-con-container {
@@ -2487,56 +2472,56 @@ a:hover {
     float: left;
     top: 50%;
     margin-top: -155px;
-    position: absolute
+    position: absolute;
 }
 
 .video-con-wrapper {
     position: relative;
     width: 550px;
     height: 309px;
-    box-shadow: rgba(0,0,0,.2) 20px 20px 64px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 64px 0px;
     border-radius: 12px;
-    transition: all .2s ease-in-out 0s;
-    z-index: 2
+    transition: all 0.2s ease-in-out 0s;
+    z-index: 2;
 }
 
-.video-con-wrapper:hover>.video-btn-play {
-    transform: scale(1.2)
+.video-con-wrapper:hover > .video-btn-play {
+    transform: scale(1.2);
 }
 
 .video-con-left {
     width: 50%;
     height: auto;
     display: inline-block;
-    float: left
+    float: left;
 }
 
 .video-con-right {
     width: 50%;
     height: 100%;
     display: inline-block;
-    float: left
+    float: left;
 }
 
 .video-emp-block {
-    background: #686de0;
+    background: rgb(104, 109, 224);
     width: 4px;
     height: 20px;
     margin-top: 7px;
     border-radius: 4px;
     margin-right: 10px;
-    float: left
+    float: left;
 }
 
 .video-con-divider {
-    background: linear-gradient(-70deg,rgb(78,52,201),rgb(104,109,224));
+    background: linear-gradient(-70deg, rgb(78, 52, 201), rgb(104, 109, 224));
     height: 4px;
     border-radius: 4px;
     width: 50px;
     left: 50%;
     margin-left: -25px;
     position: relative;
-    top: 120px
+    top: 120px;
 }
 
 .video-tx1-heading {
@@ -2547,16 +2532,14 @@ a:hover {
     width: 320px;
     margin-left: -158px;
     left: 50%;
-    color: #000;
+    color: rgb(0, 0, 0);
     text-align: center;
     position: absolute;
     top: 44px;
     z-index: 1;
-    background: linear-gradient(-70deg,#4e34c9,#686de0);
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(-70deg, rgb(78, 52, 201), rgb(104, 109, 224)) text;
     -webkit-box-decoration-break: clone;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 .video-tx1-description {
@@ -2564,22 +2547,22 @@ a:hover {
     font-size: 26px;
     line-height: 32px;
     height: auto;
-    color: #000;
+    color: rgb(0, 0, 0);
     position: relative;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    padding: 0 30px;
-    animation-name: fadeInUp!important
+    padding: 0px 30px;
+    animation-name: fadeInUp !important;
 }
 
 .video-tx1-description h2 {
     font-family: Roboto-Bold;
     font-size: 26px;
     line-height: 34px;
-    padding: 0 15px;
+    padding: 0px 15px;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-name: fadeInUp!important
+    animation-name: fadeInUp !important;
 }
 
 .video-tx1-description h3 {
@@ -2589,7 +2572,7 @@ a:hover {
     margin-top: 20px;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-name: fadeInUp!important
+    animation-name: fadeInUp !important;
 }
 
 .video-img-thumbnail {
@@ -2597,8 +2580,8 @@ a:hover {
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    transition: all .2s ease-in-out 0s;
-    overflow: hidden
+    transition: all 0.2s ease-in-out 0s;
+    overflow: hidden;
 }
 
 .video-btn-play {
@@ -2609,14 +2592,13 @@ a:hover {
     margin: -35px;
     width: 70px;
     height: 70px;
-    transition: all .2s ease-in-out 0s;
-    background: url("img/icons/menu/play.png") center center/cover no-repeat rgba(255,255,255,0.1);
-    -webkit-backdrop-filter: blur(6px);
+    transition: all 0.2s ease-in-out 0s;
+    background: url("../../img/icons/menu/play.png") center center / cover no-repeat rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(6px);
     border-radius: 100%;
     pointer-events: none;
     animation-duration: 1s;
-    animation-iteration-count: 1
+    animation-iteration-count: 1;
 }
 
 .video-ico-service {
@@ -2627,7 +2609,7 @@ a:hover {
     width: 114px;
     height: 40px;
     pointer-events: none;
-    background: url("img/icons/services/youtube.png") right center/contain no-repeat
+    background: url("../../img/icons/services/youtube.png") right center / contain no-repeat;
 }
 
 .video-con-animate {
@@ -2638,7 +2620,7 @@ a:hover {
     z-index: 1;
     cursor: pointer;
     transform: scale(1.01);
-    border-radius: 12px
+    border-radius: 12px;
 }
 
 .video-con-animate::after {
@@ -2650,25 +2632,25 @@ a:hover {
     height: 200%;
     opacity: 0;
     transform: rotate(30deg);
-    background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0.14) 77%,rgba(255,255,255,0.5) 92%,rgba(255,255,255,0) 100%);
-    transition: all .7s ease-in-out 0s
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.14) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+    transition: all 0.7s ease-in-out 0s;
 }
 
 .video-con-animate:hover::after {
     opacity: 1;
     top: -30%;
     left: -30%;
-    transition-property: left,top,opacity;
-    transition-duration: .7s,.7s,.15s;
-    transition-timing-function: ease
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
 }
 
 .video-con-animate:active::after {
-    opacity: 0
+    opacity: 0;
 }
 
-.video-con-animate:hover+.video-img-thumbnail {
-    transform: scale(1.01)
+.video-con-animate:hover + .video-img-thumbnail {
+    transform: scale(1.01);
 }
 
 .video-con-dimmer {
@@ -2676,23 +2658,23 @@ a:hover {
     z-index: 9999;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.9);
+    background: rgba(0, 0, 0, 0.9);
     display: none;
-    top: 0
+    top: 0px;
 }
 
 .video-ico-viewport {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("img/icons/services/youtube.png") center center/360px no-repeat rgba(0,0,0,0.2);
-    z-index: 1
+    background: url("../../img/icons/services/youtube.png") center center / 360px no-repeat rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .video-img-viewport {
     position: absolute;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .video-con-viewport {
@@ -2704,36 +2686,36 @@ a:hover {
     margin-top: -338px;
     margin-left: -600px;
     animation-name: zoomIn;
-    animation-duration: .4s;
+    animation-duration: 0.4s;
     animation-iteration-count: 1;
-    background: #000;
+    background: rgb(0, 0, 0);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: rgba(0,0,0,.4) 0 0 64px 0
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 64px 0px;
 }
 
 .palette-con-container {
     width: 100%;
     height: 180px;
     margin-top: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .palette-con-outer {
-    width: 33.3333333333%;
+    width: 33.3333%;
     height: 100%;
     position: relative;
-    float: left
+    float: left;
 }
 
 .palette-con-inner-a {
     height: 100%;
     border-radius: 12px;
-    background-color: #32353a;
-    background-image: linear-gradient(45deg,#222427 25%,transparent 0,transparent 75%,#222427 0,#222427),linear-gradient(45deg,#222427 25%,transparent 0,transparent 75%,#222427 0,#222427);
+    background-color: rgb(50, 53, 58);
+    background-image: linear-gradient(45deg, rgb(34, 36, 39) 25%, transparent 0px, transparent 75%, rgb(34, 36, 39) 0px, rgb(34, 36, 39)), linear-gradient(45deg, rgb(34, 36, 39) 25%, transparent 0px, transparent 75%, rgb(34, 36, 39) 0px, rgb(34, 36, 39));
     background-size: 30px 30px;
-    background-position: 0 0,45px 45px;
-    box-shadow: rgb(0 0 0/20%) 0 10px 16px 0
+    background-position: 0px 0px, 45px 45px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px;
 }
 
 .palette-con-inner-b {
@@ -2741,37 +2723,37 @@ a:hover {
     margin-right: 20px;
     height: 100%;
     border-radius: 12px;
-    background-color: #fff;
-    background-image: linear-gradient(45deg,#e4e4e4 25%,transparent 0,transparent 75%,#e4e4e4 0,#e4e4e4),linear-gradient(45deg,#e4e4e4 25%,transparent 0,transparent 75%,#e4e4e4 0,#e4e4e4);
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(45deg, rgb(228, 228, 228) 25%, transparent 0px, transparent 75%, rgb(228, 228, 228) 0px, rgb(228, 228, 228)), linear-gradient(45deg, rgb(228, 228, 228) 25%, transparent 0px, transparent 75%, rgb(228, 228, 228) 0px, rgb(228, 228, 228));
     background-size: 30px 30px;
-    background-position: 0 0,45px 45px;
-    box-shadow: rgb(0 0 0/20%) 0 10px 16px 0
+    background-position: 0px 0px, 45px 45px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px;
 }
 
 .palette-con-text h3 {
     font-family: Roboto-Bold;
     font-size: 24px;
     line-height: 26px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     height: 24px;
     padding-left: 20px;
     padding-top: 20px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .palette-con-text p {
     font-family: roboto-regular;
     font-size: 16px;
     line-height: 18px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     height: 18px;
     padding-left: 20px;
-    padding-top: 5px
+    padding-top: 5px;
 }
 
 .palette-con-text-bold {
-    color: rgb(255 255 255/50%);
-    font-family: roboto-bold
+    color: rgba(255, 255, 255, 0.5);
+    font-family: roboto-bold;
 }
 
 .palette-con-image {
@@ -2783,7 +2765,7 @@ a:hover {
     top: 50%;
     left: 50%;
     margin-left: -125px;
-    margin-top: -50px
+    margin-top: -50px;
 }
 
 .palette-con-download {
@@ -2791,110 +2773,100 @@ a:hover {
     height: 28px;
     position: relative;
     bottom: -120px;
-    right: -24px
+    right: -24px;
 }
 
 .palette-btn-download {
     width: auto;
     height: 20px;
-    background: rgb(0 0 0/30%);
+    background: rgba(0, 0, 0, 0.3);
     font-family: Roboto-Regular;
     font-size: 14px;
     line-height: 20px;
     position: relative;
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 4px 10px;
     float: right;
     border-radius: 6px;
     margin-right: 12px;
-    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    border: solid 2px rgb(255 255 255/10%);
-    transition: all .1s ease-in-out 0s
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .palette-btn-download:hover {
-    background: #1abc9c;
-    border: solid 2px #49ffdb
+    background: rgb(26, 188, 156);
+    border: 2px solid rgb(73, 255, 219);
 }
 
 .palette-swatch-a {
-    background-image: none;
-    background: #686de0;
-    box-shadow: rgb(104 109 224/50%) 0 10px 16px 0
+    background: rgb(104, 109, 224);
+    box-shadow: rgba(104, 109, 224, 0.5) 0px 10px 16px 0px;
 }
 
 .palette-swatch-b {
-    background-image: none;
-    background: #4e34c9;
-    box-shadow: rgb(78 52 201/50%) 0 10px 16px 0
+    background: rgb(78, 52, 201);
+    box-shadow: rgba(78, 52, 201, 0.5) 0px 10px 16px 0px;
 }
 
 .palette-swatch-c {
-    background-image: none;
-    background: #2e1f78;
-    box-shadow: rgb(46 31 120/50%) 0 10px 16px 0
+    background: rgb(46, 31, 120);
+    box-shadow: rgba(46, 31, 120, 0.5) 0px 10px 16px 0px;
 }
 
 .palette-swatch-d {
-    background-image: none;
-    background: #212947;
-    box-shadow: rgb(33 41 71/50%) 0 10px 16px 0
+    background: rgb(33, 41, 71);
+    box-shadow: rgba(33, 41, 71, 0.5) 0px 10px 16px 0px;
 }
 
 .palette-swatch-e {
-    background-image: none;
-    background: #191f36;
-    box-shadow: rgb(25 31 54/50%) 0 10px 16px 0
+    background: rgb(25, 31, 54);
+    box-shadow: rgba(25, 31, 54, 0.5) 0px 10px 16px 0px;
 }
 
 .palette-swatch-f {
-    background-image: none;
-    background: #111525;
-    box-shadow: rgb(17 21 37/50%) 0 10px 16px 0
+    background: rgb(17, 21, 37);
+    box-shadow: rgba(17, 21, 37, 0.5) 0px 10px 16px 0px;
 }
 
 .palette-swatch-g {
-    background-image: none;
-    background: #03a9f4;
-    box-shadow: rgb(3 169 244/50%) 0 10px 16px 0
+    background: rgb(3, 169, 244);
+    box-shadow: rgba(3, 169, 244, 0.5) 0px 10px 16px 0px;
 }
 
 .palette-swatch-h {
-    background-image: none;
-    background: #ff3434;
-    box-shadow: rgb(255 52 52/50%) 0 10px 16px 0
+    background: rgb(255, 52, 52);
+    box-shadow: rgba(255, 52, 52, 0.5) 0px 10px 16px 0px;
 }
 
 .palette-swatch-i {
-    background-image: none;
-    background: #ff9f43;
-    box-shadow: rgb(255 159 67/50%) 0 10px 16px 0
+    background: rgb(255, 159, 67);
+    box-shadow: rgba(255, 159, 67, 0.5) 0px 10px 16px 0px;
 }
 
 .user-con-content {
     position: relative;
     height: auto;
-    overflow: visible!important;
-    min-height: 114px!important;
-    padding-bottom: 15px
+    padding-bottom: 15px;
+    overflow: visible !important;
+    min-height: 114px !important;
 }
 
 .user-con-content:hover .user-img-flag {
     display: block;
-    transition: all .2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
     animation-name: fadeInLeft;
-    animation-duration: .2s;
-    animation-iteration-count: 1
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
 }
 
 .user-con-content:hover .user-con-role {
     opacity: 1;
-    transition: all .2s ease-in-out 0s
+    transition: all 0.2s ease-in-out 0s;
 }
 
 .user-con-content:hover .user-img-avatar {
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 .user-con-wrapper {
@@ -2902,7 +2874,7 @@ a:hover {
     width: auto;
     height: auto;
     padding-bottom: 30px;
-    padding-left: 100px
+    padding-left: 100px;
 }
 
 .user-tx1-content {
@@ -2916,14 +2888,14 @@ a:hover {
     margin-top: 8px;
     margin-bottom: 18px;
     text-align: left;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .user-tx2-member {
     font-family: Roboto-Bold;
     font-size: 20px;
     font-weight: 400;
-    float: left
+    float: left;
 }
 
 .user-tx3-content {
@@ -2934,11 +2906,11 @@ a:hover {
     width: 100%;
     height: auto;
     text-align: left;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .user-tx3-content a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .user-con-divider {
@@ -2947,18 +2919,18 @@ a:hover {
     position: relative;
     border-radius: 4px;
     margin-bottom: 12px;
-    background: linear-gradient(to left,rgba(255,255,255,0),rgba(0,0,0,0.05))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.05));
 }
 
 .user-img-avatar {
     position: absolute;
-    top: 0;
+    top: 0px;
     width: 80px;
     height: 80px;
-    transition: all .2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
     border-radius: 100%;
-    box-shadow: rgba(0,0,0,.15) 0 16px 16px 0;
-    border: 2px solid #fff
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 16px 16px 0px;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .user-img-flag {
@@ -2969,10 +2941,10 @@ a:hover {
     width: 56px;
     height: 36px;
     margin-top: -24px;
-    transition: all .2s ease-in-out 0s;
-    border: 2px solid #fff;
-    box-shadow: rgba(0,0,0,.2) 10px 10px 32px 0;
-    border-radius: 6px
+    transition: all 0.2s ease-in-out 0s;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 32px 0px;
+    border-radius: 6px;
 }
 
 .user-con-role {
@@ -2986,141 +2958,141 @@ a:hover {
     height: 20px;
     margin-left: 10px;
     padding: 6px 8px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     border-radius: 6px;
     opacity: 0;
-    transition: all .2s ease-in-out 0s
+    transition: all 0.2s ease-in-out 0s;
 }
 
 .user-role-lead {
-    background: #0984e3;
-    box-shadow: rgba(9,132,227,.4) 0 8px 16px 0
+    background: rgb(9, 132, 227);
+    box-shadow: rgba(9, 132, 227, 0.4) 0px 8px 16px 0px;
 }
 
 .role-lead {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(9,132,227))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(9, 132, 227));
 }
 
 .user-role-graphics {
-    background: #fd79a8;
-    box-shadow: rgba(253,121,168,.4) 0 8px 16px 0
+    background: rgb(253, 121, 168);
+    box-shadow: rgba(253, 121, 168, 0.4) 0px 8px 16px 0px;
 }
 
 .role-graphics {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(253,121,168))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(253, 121, 168));
 }
 
 .user-role-manager {
-    background: #fea47f;
-    box-shadow: rgba(253,163,127,.4) 0 8px 16px 0
+    background: rgb(254, 164, 127);
+    box-shadow: rgba(253, 163, 127, 0.4) 0px 8px 16px 0px;
 }
 
 .role-manager {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(254,164,127))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(254, 164, 127));
 }
 
 .user-role-web {
-    background: #6c5ce7;
-    box-shadow: rgba(108,92,231,.4) 0 5px 16px 0
+    background: rgb(108, 92, 231);
+    box-shadow: rgba(108, 92, 231, 0.4) 0px 5px 16px 0px;
 }
 
 .role-web {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(108,92,231))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(108, 92, 231));
 }
 
 .user-role-designer {
-    background: #0fbcf9;
-    box-shadow: rgba(15,188,249,.4) 0 5px 16px 0
+    background: rgb(15, 188, 249);
+    box-shadow: rgba(15, 188, 249, 0.4) 0px 5px 16px 0px;
 }
 
 .user-role-ui {
-    background: #cf6a87;
-    box-shadow: rgba(207,106,135,.4) 0 8px 16px 0
+    background: rgb(207, 106, 135);
+    box-shadow: rgba(207, 106, 135, 0.4) 0px 8px 16px 0px;
 }
 
 .role-ui {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(207,106,135))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(207, 106, 135));
 }
 
 .user-role-firmware {
-    background: #9b59b6;
-    box-shadow: rgba(155,89,182,.4) 0 8px 16px 0
+    background: rgb(155, 89, 182);
+    box-shadow: rgba(155, 89, 182, 0.4) 0px 8px 16px 0px;
 }
 
 .user-role-developer {
-    background: #00b894;
-    box-shadow: rgba(0,184,148,.4) 0 8px 16px 0
+    background: rgb(0, 184, 148);
+    box-shadow: rgba(0, 184, 148, 0.4) 0px 8px 16px 0px;
 }
 
 .role-developer {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(0,184,148))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 184, 148));
 }
 
 .user-role-contributor {
-    background: #ff8c67;
-    box-shadow: rgba(230,131,100,.4) 0 8px 16px 0
+    background: rgb(255, 140, 103);
+    box-shadow: rgba(230, 131, 100, 0.4) 0px 8px 16px 0px;
 }
 
 .role-contributor {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(255,140,103))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 140, 103));
 }
 
 .user-role-editor {
-    background: #4a69bd;
-    box-shadow: rgba(74,105,189,.4) 0 8px 16px 0
+    background: rgb(74, 105, 189);
+    box-shadow: rgba(74, 105, 189, 0.4) 0px 8px 16px 0px;
 }
 
 .role-editor {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(74,105,189))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(74, 105, 189));
 }
 
 .user-role-wiki {
-    background: #78e08f;
-    box-shadow: rgba(120,224,143,.4) 0 5px 16px 0
+    background: rgb(120, 224, 143);
+    box-shadow: rgba(120, 224, 143, 0.4) 0px 5px 16px 0px;
 }
 
 .role-wiki {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(120,224,143))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(120, 224, 143));
 }
 
 .user-role-server {
-    background: #38ada9;
-    box-shadow: rgba(56,173,169,.4) 0 8px 16px 0
+    background: rgb(56, 173, 169);
+    box-shadow: rgba(56, 173, 169, 0.4) 0px 8px 16px 0px;
 }
 
 .user-role-debugger {
-    background-color: #f1c40f;
-    box-shadow: rgba(241,196,15,.4) 0 5px 16px 0
+    background-color: rgb(241, 196, 15);
+    box-shadow: rgba(241, 196, 15, 0.4) 0px 5px 16px 0px;
 }
 
 .user-role-founder {
-    background: #9079ff;
-    box-shadow: rgba(76,91,215,.4) 0 8px 16px 0
+    background: rgb(144, 121, 255);
+    box-shadow: rgba(76, 91, 215, 0.4) 0px 8px 16px 0px;
 }
 
 .role-founder {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(144,121,255))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(144, 121, 255));
 }
 
 .user-role-former {
-    background: #00cec9;
-    box-shadow: rgba(0,206,201,.4) 0 8px 16px 0
+    background: rgb(0, 206, 201);
+    box-shadow: rgba(0, 206, 201, 0.4) 0px 8px 16px 0px;
 }
 
 .role-former {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(0,206,201))
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 206, 201));
 }
 
 .user-con-specsheet {
     height: auto;
     position: relative;
-    margin-top: 12px
+    margin-top: 12px;
 }
 
 .user-con-specbox {
     height: auto;
     position: relative;
-    border-radius: 12px
+    border-radius: 12px;
 }
 
 .specbox-con-part {
@@ -3128,20 +3100,20 @@ a:hover {
     margin-right: 2px;
     border-radius: 6px;
     padding: 6px 8px;
-    background: #fff;
-    box-shadow: rgba(0,0,0,.1) 0 8px 24px 0;
-    margin-bottom: 4px
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px 0px;
+    margin-bottom: 4px;
 }
 
 .specbox-tx1-part {
-    color: #000;
+    color: rgb(0, 0, 0);
     font-family: Roboto-Regular;
     font-size: 14px;
     line-height: 25px;
     width: auto;
     height: 25px;
     position: relative;
-    display: inline-block
+    display: inline-block;
 }
 
 .specbox-ico-part {
@@ -3150,7 +3122,7 @@ a:hover {
     position: relative;
     float: left;
     margin-right: 6px;
-    background-size: 18px!important
+    background-size: 18px !important;
 }
 
 .downloadable-con-container {
@@ -3158,68 +3130,68 @@ a:hover {
     height: auto;
     margin-top: 20px;
     margin-left: -10px;
-    display: inline-block
+    display: inline-block;
 }
 
 .downloadable-con-outer {
-    width: 33.3333333333%;
+    width: 33.3333%;
     height: 100%;
     position: relative;
-    float: left
+    float: left;
 }
 
 .downloadable-con-inner-a {
     border-radius: 12px;
-    background: #fff;
-    box-shadow: rgb(0 0 0/10%) 0 10px 32px 0;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 32px 0px;
     margin: 10px;
     overflow: hidden;
     position: relative;
-    transition: all .1s ease-in-out 0s
+    transition: all 0.1s ease-in-out 0s;
 }
 
 .downloadable-con-inner-a:hover {
-    transform: translate(0,-10px)
+    transform: translate(0px, -10px);
 }
 
 .downloadable-con-text h3 {
     font-family: Roboto-Bold;
     font-size: 24px;
     line-height: 26px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     height: 24px;
     padding-left: 20px;
     padding-top: 20px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .downloadable-con-text p {
     font-family: roboto-regular;
     font-size: 16px;
     line-height: 18px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     height: 18px;
     padding-left: 20px;
-    padding-top: 5px
+    padding-top: 5px;
 }
 
 .downloadable-con-text-bold {
-    color: rgb(255 255 255/50%);
-    font-family: roboto-bold
+    color: rgba(255, 255, 255, 0.5);
+    font-family: roboto-bold;
 }
 
 .downloadable-con-image {
-    background-size: 32px!important;
     height: 80px;
     position: relative;
-    margin-left: 20px
+    margin-left: 20px;
+    background-size: 32px !important;
 }
 
 .downloadable-con-graphic {
-    background-size: contain!important;
     height: 184px;
     width: 206px;
-    position: absolute
+    position: absolute;
+    background-size: contain !important;
 }
 
 .downloadable-tx1-title {
@@ -3228,7 +3200,7 @@ a:hover {
     line-height: 26px;
     margin-left: 20px;
     margin-bottom: 20px;
-    margin-right: 20px
+    margin-right: 20px;
 }
 
 .downloadable-tx2-desc {
@@ -3237,7 +3209,7 @@ a:hover {
     line-height: 26px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .package-tx1-title {
@@ -3246,7 +3218,7 @@ a:hover {
     line-height: 24px;
     margin-left: 20px;
     width: 150px;
-    margin-bottom: 4px
+    margin-bottom: 4px;
 }
 
 .package-tx2-desc {
@@ -3259,18 +3231,18 @@ a:hover {
     width: 170px;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .package-tx2-desc span {
     font-size: 14px;
     font-family: roboto-bold;
-    background: rgb(0 0 0/5%);
+    background: rgba(0, 0, 0, 0.05);
     padding: 6px 12px;
     border-radius: 12px;
     position: relative;
     line-height: 36px;
-    margin-top: 6px
+    margin-top: 6px;
 }
 
 .package-tx2-desc-wide {
@@ -3278,7 +3250,7 @@ a:hover {
     font-size: 14px;
     line-height: 26px;
     position: relative;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .sha2-tx1-title {
@@ -3287,7 +3259,7 @@ a:hover {
     line-height: 16px;
     margin-left: 20px;
     width: 150px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .sha2-tx2-desc {
@@ -3299,18 +3271,18 @@ a:hover {
     margin-right: 20px;
     position: relative;
     text-overflow: ellipsis;
-    word-wrap: break-word;
+    overflow-wrap: break-word;
     border-radius: 6px;
     padding: 6px 8px;
     margin-bottom: 17px;
-    color: #1abc9c;
-    background: rgb(26 188 156/10%)
+    color: rgb(26, 188, 156);
+    background: rgba(26, 188, 156, 0.1);
 }
 
 .package-con-button-disabled {
     filter: grayscale(100%);
     cursor: not-allowed;
-    background: #525252!important
+    background: rgb(82, 82, 82) !important;
 }
 
 .package-con-button {
@@ -3322,114 +3294,114 @@ a:hover {
     margin-left: 20px;
     border-radius: 12px;
     bottom: 22px;
-    background: linear-gradient( -135deg,rgb(73,164,255) 25%,rgb(0,116,231) 100%);
-    box-shadow: rgb(0 116 231/40%) 0 10px 32px 0;
-    transition: all .1s ease-in-out 0s;
-    border: 2px solid #0080ff!important
+    background: linear-gradient(-135deg, rgb(73, 164, 255) 25%, rgb(0, 116, 231) 100%);
+    box-shadow: rgba(0, 116, 231, 0.4) 0px 10px 32px 0px;
+    transition: all 0.1s ease-in-out 0s;
+    border: 2px solid rgb(0, 128, 255) !important;
 }
 
 .package-con-button:hover {
-    background: linear-gradient(-135deg,rgb(46,204,113) 25%,rgb(26,188,156) 100%);
-    box-shadow: rgba(46,204,113,.4) 0 10px 32px 0;
-    border: 2px solid #57e694!important
+    background: linear-gradient(-135deg, rgb(46, 204, 113) 25%, rgb(26, 188, 156) 100%);
+    box-shadow: rgba(46, 204, 113, 0.4) 0px 10px 32px 0px;
+    border: 2px solid rgb(87, 230, 148) !important;
 }
 
 .package-tx1-button {
     font-family: roboto-regular;
     font-size: 18px;
     line-height: 44px;
-    color: #fff;
-    height: 100%
+    color: rgb(255, 255, 255);
+    height: 100%;
 }
 
 .package-ico-button {
     height: 44px;
     width: 44px;
     float: left;
-    margin-right: 0
+    margin-right: 0px;
 }
 
 .package-pr {
-    background: #8256d0;
+    background: rgb(130, 86, 208);
     border-radius: 12px;
     padding: 8px 12px;
-    box-shadow: rgb(130 86 208/.5) 0 8px 24px 0;
+    box-shadow: rgba(130, 86, 208, 0.5) 0px 8px 24px 0px;
     margin-right: 5px;
     float: left;
-    border: solid 2px transparent;
-    transition: all .1s ease-in-out 0s;
-    margin-bottom: 10px
+    border: 2px solid transparent;
+    transition: all 0.1s ease-in-out 0s;
+    margin-bottom: 10px;
 }
 
 .package-pr:hover {
-    border: solid 2px #af81ff
+    border: 2px solid rgb(175, 129, 255);
 }
 
 .package-pr a {
-    color: #fff;
-    background: rgb(255 255 255/20%);
-    border-radius: 6px;
-    padding: 4px 8px;
-    margin-left: 8px;
-    font-weight: 700
-}
-
-.package-commit {
-    background: #ff9f43;
-    border-radius: 12px;
-    padding: 8px 12px;
-    box-shadow: rgb(255 159 67/.5) 0 8px 24px 0;
-    margin-left: 5px;
-    margin-right: 5px;
-    float: left;
-    border: solid 2px transparent;
-    transition: all .1s ease-in-out 0s;
-    margin-bottom: 10px
-}
-
-.package-commit:hover {
-    border: solid 2px #ffc690
-}
-
-.package-commit a {
-    color: #fff;
-    background: rgb(255 255 255/20%);
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 6px;
     padding: 4px 8px;
     margin-left: 8px;
     font-weight: 700;
-    text-transform: uppercase
 }
 
-.package-author {
-    background: #1abc9c;
+.package-commit {
+    background: rgb(255, 159, 67);
     border-radius: 12px;
     padding: 8px 12px;
-    box-shadow: rgb(26 188 156/.5) 0 8px 24px 0;
+    box-shadow: rgba(255, 159, 67, 0.5) 0px 8px 24px 0px;
     margin-left: 5px;
-    margin-right: 25px;
+    margin-right: 5px;
     float: left;
-    border: solid 2px transparent;
-    transition: all .1s ease-in-out 0s;
-    margin-bottom: 10px
+    border: 2px solid transparent;
+    transition: all 0.1s ease-in-out 0s;
+    margin-bottom: 10px;
 }
 
-.package-author a {
-    color: #fff;
-    background: rgb(255 255 255/20%);
+.package-commit:hover {
+    border: 2px solid rgb(255, 198, 144);
+}
+
+.package-commit a {
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 6px;
     padding: 4px 8px;
     margin-left: 8px;
-    font-weight: 700
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.package-author {
+    background: rgb(26, 188, 156);
+    border-radius: 12px;
+    padding: 8px 12px;
+    box-shadow: rgba(26, 188, 156, 0.5) 0px 8px 24px 0px;
+    margin-left: 5px;
+    margin-right: 25px;
+    float: left;
+    border: 2px solid transparent;
+    transition: all 0.1s ease-in-out 0s;
+    margin-bottom: 10px;
+}
+
+.package-author a {
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin-left: 8px;
+    font-weight: 700;
 }
 
 .package-author:hover {
-    border: solid 2px #57e694
+    border: 2px solid rgb(87, 230, 148);
 }
 
 .version-con-container {
-    background: #fff;
-    box-shadow: rgb(0 0 0/10%) 0 10px 32px 0;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 32px 0px;
     width: calc(100% - 20px);
     height: auto;
     border-radius: 12px;
@@ -3437,92 +3409,90 @@ a:hover {
     padding-bottom: 25px;
     margin-right: 52px;
     overflow: hidden;
-    position: relative
+    position: relative;
 }
 
 .version-ico-package {
-    background: url(img/graphics/download/package.png) no-repeat center;
-    background-size: cover;
+    background: url("../../img/graphics/download/package.png") center center / cover no-repeat;
     width: 100px;
     height: 100px;
     position: relative;
     margin-left: 20px;
     margin-bottom: 20px;
     top: 20px;
-    float: left
+    float: left;
 }
 
 .version-img-package {
-    background: url(img/graphics/download/playstation.png) no-repeat center;
-    background-size: 600px;
+    background: url("../../img/graphics/download/playstation.png") center center / 600px no-repeat;
     width: 100%;
     height: 100%;
-    position: relative
+    position: relative;
 }
 
 .version-img-container {
     width: 290px;
     height: 100%;
     position: absolute;
-    right: 0
+    right: 0px;
 }
 
 .version-tx1-package {
     font-family: roboto-bold;
     font-size: 24px;
     line-height: 26px;
-    color: #000;
-    margin-bottom: 4px
+    color: rgb(0, 0, 0);
+    margin-bottom: 4px;
 }
 
 .version-tx2-package {
     font-family: roboto-regular;
     font-size: 16px;
     line-height: 26px;
-    color: #000;
-    margin-bottom: 16px
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px;
 }
 
 .version-txt-container {
-    color: #000;
+    color: rgb(0, 0, 0);
     float: left;
     margin-top: 20px;
-    padding-left: 15px
+    padding-left: 15px;
 }
 
 .version-builddate {
-    color: #03a9f4
+    color: rgb(3, 169, 244);
 }
 
 .version-buildversion {
-    color: #686de0
+    color: rgb(104, 109, 224);
 }
 
 .version-ico-git {
-    color: #686de0;
+    color: rgb(104, 109, 224);
     width: 26px;
     height: 26px;
     float: left;
     margin-right: 8px;
-    position: relative
+    position: relative;
 }
 
 .reqs-con-container {
     position: relative;
     height: auto;
     display: inline-block;
-    width: 100%
+    width: 100%;
 }
 
 .drives-con-container {
     display: block;
     overflow: hidden;
-    padding-bottom: 40px
+    padding-bottom: 40px;
 }
 
 .drives-con-outer {
     height: 50px;
-    position: relative
+    position: relative;
 }
 
 .drives-con-inner {
@@ -3532,17 +3502,16 @@ a:hover {
     font-size: 14px;
     line-height: 50px;
     text-align: left;
-    color: #000;
+    color: rgb(0, 0, 0);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-user-select: all;
-    user-select: all
+    user-select: all;
 }
 
 .drives-txt-revisions {
     position: absolute;
-    background: rgba(0,0,0,.1);
+    background: rgba(0, 0, 0, 0.1);
     height: 20px;
     line-height: 20px;
     font-size: 12px;
@@ -3550,70 +3519,68 @@ a:hover {
     border-radius: 6px;
     margin-left: 7px;
     padding: 2px 8px;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none
+    user-select: none;
 }
 
 .drives-txt-hidden {
-    color: transparent
+    color: transparent;
 }
 
 .drives-con-divider {
     width: 100%;
     height: 2px;
     border-radius: 4px;
-    background: linear-gradient(to left,rgba(255,255,255,0),rgba(0,0,0,0.05));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.05));
     margin-top: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .drives-ico-bluray {
-    background: url("img/icons/list/bd.png") left center/26px no-repeat;
+    background: url("../../img/icons/list/bd.png") left center / 26px no-repeat;
     height: 50px;
     width: 38px;
     position: relative;
-    float: left
+    float: left;
 }
 
-@media(min-width: 906px) {
+@media (min-width: 906px) {
     .drives-con-inner {
-        width:25%
+        width: 25%;
     }
 }
 
-@media(max-width: 906px) {
+@media (max-width: 906px) {
     .drives-txt-hidden {
-        display:none
+        display: none;
     }
 
     .drives-con-inner:nth-child(2n+1) {
-        background: rgba(0,0,0,.03)
+        background: rgba(0, 0, 0, 0.03);
     }
 
     .drives-con-outer:nth-child(2n+2) {
-        background: unset
+        background: unset;
     }
 }
 
 .context-important {
-    font-weight: 700
+    font-weight: 700;
 }
 
 .context-windows {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgba(9,132,227,0.2))!important
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(9, 132, 227, 0.2)) !important;
 }
 
 .context-linux {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgba(240,147,43,0.2))!important
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(240, 147, 43, 0.2)) !important;
 }
 
 .context-macos {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgb(55 43 240/20%))!important
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(55, 43, 240, 0.2)) !important;
 }
 
 .context-bsd {
-    background: linear-gradient(to left,rgba(255,255,255,0),rgba(255,52,52,0.2))!important
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 52, 52, 0.2)) !important;
 }
 
 .guide-con-content {
@@ -3623,7 +3590,7 @@ a:hover {
     margin-bottom: 28px;
     border-radius: 12px;
     overflow: hidden;
-    background: #fff
+    background: rgb(255, 255, 255);
 }
 
 .guide-ico-content {
@@ -3632,7 +3599,7 @@ a:hover {
     float: left;
     width: 60px;
     height: 60px;
-    background-size: 26px!important
+    background-size: 26px !important;
 }
 
 .guide-tx1-content {
@@ -3645,15 +3612,15 @@ a:hover {
     width: 72px;
     height: 72px;
     text-align: center;
-    color: #000
+    color: rgb(0, 0, 0);
 }
 
 .guide-tx1-content span {
     padding: 8px 14px;
     border-radius: 100%;
-    border: 2px solid #0080ff;
-    background: #49a4ff;
-    color: #fff
+    border: 2px solid rgb(0, 128, 255);
+    background: rgb(73, 164, 255);
+    color: rgb(255, 255, 255);
 }
 
 .guide-tx1-heading {
@@ -3667,72 +3634,68 @@ a:hover {
     padding-right: 24px;
     padding-left: 24px;
     text-align: left;
-    color: inherit
+    color: inherit;
 }
 
 .windows-highlight {
     padding: 4px 10px;
     white-space: nowrap;
     border-radius: 4px;
-    background: rgba(0,128,255,.1);
-    color: #0074e7
+    background: rgba(0, 128, 255, 0.1);
+    color: rgb(0, 116, 231);
 }
 
 .linux-highlight {
     padding: 2px 8px;
     white-space: nowrap;
-    background: rgba(240,147,43,.1);
+    background: rgba(240, 147, 43, 0.1);
     border-radius: 24px;
-    color: #f0932b;
-    -webkit-user-select: all;
+    color: rgb(240, 147, 43);
     user-select: all;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .macos-highlight {
     padding: 2px 8px;
     white-space: nowrap;
-    background: rgb(55 43 240/10%);
+    background: rgba(55, 43, 240, 0.1);
     border-radius: 24px;
-    color: #372bf0;
-    -webkit-user-select: all;
+    color: rgb(55, 43, 240);
     user-select: all;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .bsd-highlight {
     padding: 2px 8px;
     white-space: nowrap;
-    background: rgba(255,52,52,.1);
+    background: rgba(255, 52, 52, 0.1);
     border-radius: 24px;
-    color: #ff3434;
-    -webkit-user-select: all;
+    color: rgb(255, 52, 52);
     user-select: all;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .highlight {
-    color: #0074e7;
+    color: rgb(0, 116, 231);
     border-radius: 21px;
-    background: rgba(0,128,255,.1);
-    -webkit-user-select: all;
+    background: rgba(0, 128, 255, 0.1);
     user-select: all;
-    padding: 2px 8px
+    padding: 2px 8px;
 }
 
 .list-con-container {
     position: relative;
     height: auto;
     padding: 10px;
-    border-radius: 12px
+    border-radius: 12px;
 }
 
 .list-con-container:hover {
-    background: rgba(0,0,0,.04)
+    background: rgba(0, 0, 0, 0.04);
 }
 
 .list-con-container:last-child {
-    margin-bottom: 40px
+    margin-bottom: 40px;
 }
 
 .list-tx1-item {
@@ -3743,12 +3706,12 @@ a:hover {
     text-align: center;
     height: 46px;
     border-radius: 100%;
-    color: #000;
+    color: rgb(0, 0, 0);
     float: left;
     top: 50%;
     margin-top: -23px;
     position: absolute;
-    box-shadow: rgba(0,0,0,.1) 0 16px 32px 0
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 16px 32px 0px;
 }
 
 .list-tx2-description {
@@ -3757,7 +3720,7 @@ a:hover {
     line-height: 26px;
     position: relative;
     margin-left: 60px;
-    padding: 8px 16px
+    padding: 8px 16px;
 }
 
 .footer-con-container {
@@ -3766,7 +3729,7 @@ a:hover {
     overflow: hidden;
     width: 100%;
     height: auto;
-    background: #000
+    background: rgb(0, 0, 0);
 }
 
 .footer-con-overlay {
@@ -3775,7 +3738,7 @@ a:hover {
     overflow: hidden;
     width: 100%;
     height: auto;
-    background: linear-gradient(-135deg,rgb(0,42,135) 25%,rgb(147,64,255) 100%)
+    background: linear-gradient(-135deg, rgba(70, 0, 255, 0.22) 25%, rgb(0, 6, 83) 100%);
 }
 
 .footer-con-header {
@@ -3784,46 +3747,46 @@ a:hover {
     width: 100%;
     height: 290px;
     padding-top: 56px;
-    padding-bottom: 50px
+    padding-bottom: 50px;
 }
 
 .footer-con-outer {
     position: relative;
     max-width: 1320px;
     height: 100%;
-    margin: 0 auto
+    margin: 0px auto;
 }
 
 .footer-con-inner {
     position: relative;
-    bottom: 0;
+    bottom: 0px;
     height: 100%;
     margin-right: 60px;
-    margin-left: 60px
+    margin-left: 60px;
 }
 
 .footer-con-foot {
     position: relative;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .footer-ico-logo {
     position: absolute;
     top: -6px;
-    left: 0;
+    left: 0px;
     width: 42px;
     height: 42px;
-    background: url("img/icons/menu/logo.png") center center/36px no-repeat
+    background: url("../../img/icons/menu/logo.png") center center / 36px no-repeat;
 }
 
 .footer-con-bound {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     width: 100px;
-    height: auto
+    height: auto;
 }
 
 .footer-tx1-bound {
@@ -3834,8 +3797,8 @@ a:hover {
     height: 20px;
     margin-bottom: 16px;
     text-align: left;
-    color: #fff;
-    text-rendering: optimizelegibility
+    color: rgb(255, 255, 255);
+    text-rendering: optimizelegibility;
 }
 
 .footer-tx2-bound {
@@ -3843,21 +3806,21 @@ a:hover {
     font-size: 14px;
     line-height: 28px;
     position: relative;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .footer-tx2-bound a {
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .footer-tx2-bound a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .footer-con-credits {
     display: block;
     width: 100%;
-    height: 200px
+    height: 200px;
 }
 
 .footer-con-side {
@@ -3866,7 +3829,7 @@ a:hover {
     position: relative;
     display: inline-block;
     float: left;
-    top: 60px
+    top: 60px;
 }
 
 .footer-tx1-webmaster {
@@ -3876,16 +3839,16 @@ a:hover {
     z-index: 1;
     width: auto;
     height: 100%;
-    color: #fff;
-    right: 0
+    color: rgb(255, 255, 255);
+    right: 0px;
 }
 
 .footer-tx1-webmaster a {
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .footer-tx1-webmaster a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .footer-tx1-founder {
@@ -3895,16 +3858,16 @@ a:hover {
     z-index: 1;
     width: auto;
     height: 100%;
-    color: #fff;
-    left: 0
+    color: rgb(255, 255, 255);
+    left: 0px;
 }
 
 .footer-tx1-founder a {
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .footer-tx1-founder a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .footer-ico-developer {
@@ -3913,11 +3876,9 @@ a:hover {
     display: inline-block;
     width: 42px;
     height: 42px;
-    margin-right: 6px;
+    margin-right: 26px;
     border-radius: 100%;
-    box-shadow: rgba(0,0,0,.2) 6px 6px 10px 0;
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px)
+    backdrop-filter: blur(6px);
 }
 
 .footer-con-powered {
@@ -3925,8 +3886,8 @@ a:hover {
     width: 100%;
     height: auto;
     position: relative;
-    opacity: .2;
-    padding-top: 30px
+    opacity: 0.2;
+    padding-top: 30px;
 }
 
 .footer-tx1-powered {
@@ -3939,7 +3900,7 @@ a:hover {
     font-family: Roboto-Regular;
     font-size: 16px;
     line-height: 16px;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .footer-ico-powered {
@@ -3949,49 +3910,49 @@ a:hover {
     margin-right: 30px;
     display: inline-block;
     margin-bottom: 20px;
-    background-size: contain!important
+    background-size: contain !important;
 }
 
 .footer-con-seprator {
     height: 2px;
-    background: rgba(255,255,255,.1);
-    border-radius: 2px
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
 }
 
 .footer-table-out {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
-    margin-top: 0;
-    padding: 0;
-    border-collapse: collapse
+    margin-top: 0px;
+    padding: 0px;
+    border-collapse: collapse;
 }
 
 .footer-table-out tr:nth-child(2n+1) {
-    background: 0 0!important
+    background: 0px 0px !important;
 }
 
 .footer-table-out tr:last-child {
-    border-bottom: 1px solid transparent!important
+    border-bottom: 1px solid transparent !important;
 }
 
 .footer-table-out tr {
-    background: 0 0!important
+    background: 0px 0px !important;
 }
 
 .footer-table-out tr td {
     position: relative;
-    height: 100%
+    height: 100%;
 }
 
 .footer-table-in {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .error-con-content {
@@ -4001,7 +3962,7 @@ a:hover {
     left: 50%;
     width: 500px;
     height: 146px;
-    margin: -73px -250px
+    margin: -73px -250px;
 }
 
 .error-ico-content {
@@ -4009,7 +3970,7 @@ a:hover {
     width: 100%;
     height: 60px;
     animation-name: fadeInUp;
-    animation-duration: .5s
+    animation-duration: 0.5s;
 }
 
 .error-tx1-content {
@@ -4021,9 +3982,9 @@ a:hover {
     width: 100%;
     height: 60px;
     animation-name: fadeInUp;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     text-align: center;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .error-tx2-content {
@@ -4034,56 +3995,55 @@ a:hover {
     width: 100%;
     height: 25px;
     animation-name: fadeInUp;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     text-align: center;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .button-disabled {
     pointer-events: none;
-    opacity: .5
+    opacity: 0.5;
 }
 
 .button-enabled {
     border-radius: 6px;
-    background: linear-gradient(-135deg,rgb(73,164,255) 25%,rgb(0,116,231) 100%);
+    background: linear-gradient(-135deg, rgb(73, 164, 255) 25%, rgb(0, 116, 231) 100%);
     cursor: pointer;
-    color: #fff;
-    box-shadow: rgba(0,116,231,.2) 10px 10px 32px 0;
-    border: 2px solid #0080ff!important
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 116, 231, 0.2) 10px 10px 32px 0px;
+    border: 2px solid rgb(0, 128, 255) !important;
 }
 
 .button-enabled:hover {
-    border: 2px solid #80bfff!important
+    border: 2px solid rgb(128, 191, 255) !important;
 }
 
 .disable-transparency {
-    -webkit-backdrop-filter: unset;
-    backdrop-filter: unset
+    backdrop-filter: unset;
 }
 
 .disable-pulsate {
-    text-shadow: none!important
+    text-shadow: none !important;
 }
 
 .markdown {
     padding-bottom: 15px;
-    box-sizing: border-box!important;
-    margin-bottom: 20px!important;
-    padding-top: 0!important
+    box-sizing: border-box !important;
+    margin-bottom: 20px !important;
+    padding-top: 0px !important;
 }
 
 .markdown a {
-    color: #0074e7
+    color: rgb(0, 116, 231);
 }
 
 .markdown a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .markdown {
     font-family: Roboto-Regular;
-    font-size: 16px
+    font-size: 16px;
 }
 
 .markdown h2 {
@@ -4095,22 +4055,22 @@ a:hover {
     padding-bottom: 30px;
     text-align: left;
     text-transform: capitalize;
-    color: #000;
-    border-bottom: 2px solid rgba(234,234,234,.4)
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgba(234, 234, 234, 0.4);
 }
 
 .markdown p:first-child {
     font-family: Roboto-Regular;
     font-size: 14px;
     display: block;
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .markdown ul {
     font-family: Roboto-Regular;
     font-size: 14px;
     line-height: 35px;
-    padding-left: 45px
+    padding-left: 45px;
 }
 
 .entry-content ul li {
@@ -4118,66 +4078,66 @@ a:hover {
     font-weight: inherit;
     margin-left: 36px;
     text-align: inherit;
-    color: #455971;
-    font-size: 14px!important;
-    line-height: 24px!important
+    color: rgb(69, 89, 113);
+    font-size: 14px !important;
+    line-height: 24px !important;
 }
 
 .image-container {
     text-align: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .flex-row-wrap {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    flex-flow: row wrap
+    flex-flow: row wrap;
 }
 
 .flex-col-wrap {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    flex-flow: column wrap
+    flex-flow: column wrap;
 }
 
 .flexchild-img {
     flex-grow: 1;
-    margin: 10px
+    margin: 10px;
 }
 
 .img-col-2 {
-    flex-basis: 50%
+    flex-basis: 50%;
 }
 
 .img-col-3 {
-    flex-basis: 33.33%
+    flex-basis: 33.33%;
 }
 
 .img-row-2 {
-    flex-basis: 450px
+    flex-basis: 450px;
 }
 
 .img-row-3 {
-    flex-basis: 250px
+    flex-basis: 250px;
 }
 
 .img-row-4 {
-    flex-basis: 200px
+    flex-basis: 200px;
 }
 
 .horizontal-center {
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
-.carousel,.item,.active {
-    height: 100%
+.carousel, .item, .active {
+    height: 100%;
 }
 
 .carousel-inner {
-    height: 100%
+    height: 100%;
 }
 
 .fill {
@@ -4185,65 +4145,65 @@ a:hover {
     width: 100%;
     height: 100%;
     background-position: center center;
-    background-size: cover
+    background-size: cover;
 }
 
 .carousel {
     position: relative;
     backface-visibility: hidden;
-    perspective: 1000px
+    perspective: 1000px;
 }
 
 .carousel-inner {
     position: relative;
-    width: 100%
+    width: 100%;
 }
 
-.carousel-inner>.item {
+.carousel-inner > .item {
     position: relative;
     display: none;
-    transition: left .6s ease-in-out 0s
+    transition: left 0.6s ease-in-out 0s;
 }
 
-.carousel-inner>.item>img,.carousel-inner>.item>a>img {
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
     line-height: 1;
-    display: block
+    display: block;
 }
 
-.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev {
-    display: block
+.carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
+    display: block;
 }
 
-.carousel-inner>.active {
-    left: 0;
-    animation-duration: .6s;
-    animation-iteration-count: 1
+.carousel-inner > .active {
+    left: 0px;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
 }
 
-.carousel-inner>.next,.carousel-inner>.prev {
+.carousel-inner > .next, .carousel-inner > .prev {
     position: absolute;
-    top: 0;
-    width: 100%
+    top: 0px;
+    width: 100%;
 }
 
-.carousel-inner>.next {
-    left: 100%
+.carousel-inner > .next {
+    left: 100%;
 }
 
-.carousel-inner>.prev {
-    left: -100%
+.carousel-inner > .prev {
+    left: -100%;
 }
 
-.carousel-inner>.next.left,.carousel-inner>.prev.right {
-    left: 0
+.carousel-inner > .next.left, .carousel-inner > .prev.right {
+    left: 0px;
 }
 
-.carousel-inner>.active.left {
-    left: -100%
+.carousel-inner > .active.left {
+    left: -100%;
 }
 
-.carousel-inner>.active.right {
-    left: 100%
+.carousel-inner > .active.right {
+    left: 100%;
 }
 
 .carousel-control {
@@ -4257,22 +4217,22 @@ a:hover {
     height: 40px;
     margin-top: -20px;
     text-align: center;
-    opacity: .5;
-    color: #fff;
-    border: 3px solid #fff;
+    opacity: 0.5;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 23px;
-    background: #222
+    background: rgb(34, 34, 34);
 }
 
 .carousel-control.right {
     right: 15px;
-    left: auto
+    left: auto;
 }
 
-.carousel-control:hover,.carousel-control:focus {
+.carousel-control:hover, .carousel-control:focus {
     text-decoration: none;
-    opacity: .9;
-    color: #fff
+    opacity: 0.9;
+    color: rgb(255, 255, 255);
 }
 
 .carousel-indicators {
@@ -4280,8 +4240,8 @@ a:hover {
     z-index: 5;
     top: 15px;
     right: 15px;
-    margin: 0;
-    list-style: none
+    margin: 0px;
+    list-style: none;
 }
 
 .carousel-indicators li {
@@ -4292,41 +4252,41 @@ a:hover {
     margin-left: 5px;
     text-indent: -999px;
     border-radius: 5px;
-    background-color: rgba(255,255,255,.25)
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .carousel-indicators .active {
-    background-color: #fff
+    background-color: rgb(255, 255, 255);
 }
 
 .carousel-caption {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     padding: 15px;
-    background: rgba(0,0,0,.75)
+    background: rgba(0, 0, 0, 0.75);
 }
 
-.carousel-caption h4,.carousel-caption p {
+.carousel-caption h4, .carousel-caption p {
     line-height: 20px;
-    color: #fff
+    color: rgb(255, 255, 255);
 }
 
 .carousel-caption h4 {
-    margin: 0 0 5px
+    margin: 0px 0px 5px;
 }
 
 .carousel-caption p {
-    margin-bottom: 0
+    margin-bottom: 0px;
 }
 
 .carousel-left {
-    animation-name: fadeInLeft
+    animation-name: fadeInLeft;
 }
 
 .carousel-right {
-    animation-name: fadeInRight
+    animation-name: fadeInRight;
 }
 
 #object-particles {
@@ -4339,47 +4299,47 @@ a:hover {
     background-position: 50% 50%;
     z-index: 1;
     pointer-events: none;
-    opacity: .3
+    opacity: 0.3;
 }
 
 .object-focused {
-    transition: all .1s ease-in-out 0s;
-    border: 2px solid #686de0!important;
-    box-shadow: rgba(104,109,224,.2) 0 16px 32px 0!important
+    transition: all 0.1s ease-in-out 0s;
+    border: 2px solid rgb(104, 109, 224) !important;
+    box-shadow: rgba(104, 109, 224, 0.2) 0px 16px 32px 0px !important;
 }
 
 .object-hidden {
-    display: none
+    display: none;
 }
 
 .object-show {
-    display: block
+    display: block;
 }
 
 .anchor-point {
     position: absolute;
     top: -82px;
-    height: 1px
+    height: 1px;
 }
 
 .anchor-select {
     width: 16px;
     height: 16px;
-    display: none!important
+    display: none !important;
 }
 
 .pulsate {
-    transition: text-shadow 1s linear 0s
+    transition: text-shadow 1s linear 0s;
 }
 
 .pulsate.glow {
-    text-shadow: #fff 0 0 20px
+    text-shadow: rgb(255, 255, 255) 0px 0px 20px;
 }
 
 .google-auto-placed {
-    display: none!important
+    display: none !important;
 }
 
 #ad_position_box {
-    display: none!important
+    display: none !important;
 }
