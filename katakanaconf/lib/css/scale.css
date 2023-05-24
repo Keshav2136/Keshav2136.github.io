@@ -128,13 +128,6 @@
         display: none
     }
 
-    .mini-menu-con-container {
-        width: unset;
-        margin-left: 20px;
-        margin-right: 20px;
-        left: unset
-    }
-
     .highlight {
         white-space: unset;
         border: unset;
