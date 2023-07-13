@@ -1,0 +1,28 @@
+/*Home Screen*/
+.header{
+    text-align: center;
+    height: 100vh;
+    padding: 34vh 0;
+  }
+  .header>h1,span{
+    display: block;
+  }
+  .header>h1{
+    color:rgb(0, 141, 255);
+    width: 100%;
+    font-size: 6vw;
+  }
+  .header>h1>span{
+    color:rgb(8, 59, 88);
+  }
+  @media screen and (min-width: 660px) and (max-width:1050px) {
+  .header>h1{
+    font-size: 4vw;
+    }
+  }
+  @media screen and (min-width: 1050px) and (max-width:2000px) {
+  .header>h1{
+    font-size: 3vw;
+    }
+  }
+  /*Home Screen End*/
