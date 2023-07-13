@@ -50,7 +50,7 @@ body {font-family: Arial, sans-serif;width: 90%;margin-left: 5%;font-size: var(-
   body {font-family: Arial, sans-serif;width: 70%;margin-left: 15%;}
   #purple-line { height: 8vh; width: 100%; background-color: rgb(199, 125, 255); }
   #volunteering-timeline {color: rgb(8, 32, 32);}
-  #ks-timeline {width: 100%;background-color: whitesmoke;}
+  #ks-timeline {width: 100%;background-color: whitesmoke;padding: 5vh 0;}
   section#ks-hackathon { position: absolute; top: 290vh; padding-top: 2vh; background-color: whitesmoke; width: 100%; }
   #krmang-hackathon { width: 100%; }
   .col-text { height: 20em; }
