@@ -1560,13 +1560,13 @@ a:hover {
 .content-btn-left:hover {
     cursor: pointer;
     text-decoration: underline;
-    background: url("../../img/icons/arrows/left-a.png") center center / 64px no-repeat !important;
+    background: url("../../img/icons/arrows/left.png") center center / 64px no-repeat !important;
 }
 
 .content-btn-right:hover {
     cursor: pointer;
     text-decoration: underline;
-    background: url("../../img/icons/arrows/right-a.png") center center / 64px no-repeat !important;
+    background: url("../../img/icons/arrows/right.png") center center / 64px no-repeat !important;
 }
 
 .landing-ico-scrolldown {

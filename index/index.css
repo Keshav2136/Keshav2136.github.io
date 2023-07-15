@@ -12,7 +12,7 @@ body {font-family: Arial, sans-serif;width: 90%;margin-left: 5%;font-size: var(-
 #volunteering-timeline{
   padding-top: 8rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   #krmang-hackathon { width: 100%; }
   .col-text { height: 20em; }
   .grid-flex { display: flex; -webkit-box-flex: 1; flex-grow: 1; flex-flow: row wrap; justify-content: space-around; }
@@ -46,7 +46,7 @@ body {font-family: Arial, sans-serif;width: 90%;margin-left: 5%;font-size: var(-
 }
   .timeline { position: absolute; top: 350vh; }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   body {font-family: Arial, sans-serif;width: 70%;margin-left: 15%;}
   #purple-line { height: 8vh; width: 100%; background-color: rgb(199, 125, 255); }
   #volunteering-timeline {color: rgb(8, 32, 32);}

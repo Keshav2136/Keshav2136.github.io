@@ -1,0 +1,52 @@
+.keshav-links{
+    margin: 10vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.keshav-links>.links-ks{
+    width: 300px;
+    height: 150px;
+    background-color: gainsboro;
+    margin: 1vw;
+    /* display: flex; */
+}
+.links-ks-img{
+    width: inherit;
+    height: 50px;
+    background-image: url(/index/images/bg.2560x1200.jpg);
+
+}
+
+
+/*Media Queries*/
+    /*Mobile*/
+    @media (min-width: 200px) and (max-width: 900px) {
+        .keshav-links{
+            margin: 10vw 0;
+        }
+        .keshav-links>.links-ks{
+            width: 150px;
+            height: 150px;
+            background-color: gainsboro;
+            margin: 1vw;
+            /* display: flex; */
+        }}
+    
+    
+    /*Media Queries*/
+        /*Mobile*/
+        @media (min-width: 200px) and (max-width: 900px) {
+            .keshav-links{
+                margin: 10vw 32vw;
+                flex-direction: column;
+                padding: 0;
+            }
+            .keshav-links>.links-ks{
+                width: 25vw;
+                height: 150px;
+                background-color: gainsboro;
+                margin: 1vw;
+                /* display: flex; */
+            }
+        }
