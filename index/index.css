@@ -3,6 +3,17 @@
 *{padding:0;margin:0;}
 body {font-family: Arial, sans-serif;width: 90%;margin-left: 5%;font-size: var(--body-font-size, 14px);}
 
+.with-jason-meyer{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.with-jason-meyer>#with-jason-meyer{
+  flex-flow: column;
+  width: 20vw;
+}
 #second-screen > h1, #volunteering-timeline {
   align-content: center;
   display: flex;
@@ -13,6 +24,16 @@ body {font-family: Arial, sans-serif;width: 90%;margin-left: 5%;font-size: var(-
   padding-top: 8rem;
 }
 @media screen and (max-width: 700px) {
+  .with-jason-meyer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .with-jason-meyer>#with-jason-meyer{
+    flex-flow: row;
+    margin: 3vw 0;
+    width: 40vw;
+  }
   #krmang-hackathon { width: 100%; }
   .col-text { height: 20em; }
   .grid-flex { display: flex; -webkit-box-flex: 1; flex-grow: 1; flex-flow: row wrap; justify-content: space-around; }
