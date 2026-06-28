@@ -1,203 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keshav Sharma: Web Development & Cyber Security</title>
-  <link rel="icon" type="image/x-icon" href="index/static/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Sharma | BCA • DSA & Backend Developer</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="BCA Graduate (IMS Noida) | NPTEL Elite | C++, Python, DSA, OOP Expert">
+    <meta property="og:title" content="Keshav Sharma | Backend & DSA Developer">
+    <meta property="og:description" content="Passionate about algorithms and building scalable systems">
+    <meta property="og:image" content="https://keshav2136.github.io/index/images/1.jpeg">
 
-<!-- Primary Meta Tags -->
-<meta name="title" content="Web Development & Cybersecurity - Keshav Sharma">
-<meta name="description" content="Building web apps with security.">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://keshav2136.github.io/">
-<meta property="og:title" content="Web Development & Cybersecurity - Keshav Sharma">
-<meta property="og:description" content="Building web apps with security.">
-<meta property="og:image" content="https://keshav2136.github.io/index/images/1.jpeg">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://keshav2136.github.io/">
-<meta property="twitter:title" content="Web Development & Cybersecurity - Keshav Sharma">
-<meta property="twitter:description" content="Building web apps with security.">
-<meta property="twitter:image" content="https://keshav2136.github.io/index/images/1.jpeg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index/links-ks.css">
-  <link rel="stylesheet" href="index/navbar.css">
-  <link rel="stylesheet" href="index/terminal-animation.css">
-  <link rel="stylesheet" href="index/home-screen-header.css">
-  <link rel="stylesheet" href="index/index.css">
-  <meta name="google-site-verification" content="Xcy5L9hix6N2rA9ELFa6nvht8IY0Yrj_vLnduXVerK0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        .heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
 </head>
-
-<body>
-  <div class="top-nav">
-    <nav>
-      <div class="navbar">
-        <div class="nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
+<body class="bg-zinc-950 text-zinc-100">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-bold text-xl">KS</div>
+                <span class="heading text-2xl font-semibold tracking-tight">Keshav Sharma</span>
             </div>
-          <div class="logo">
-          </div>
-          <div class="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="https://twitter.com/keshav2136">Twitter</a></li>
-            <li><a href="https://github.com/Keshav2136">GitHub</a></li>
-            <li><a href="">// Do not contact //</a></li>
-          </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400">About</a>
+                <a href="#education" class="hover:text-blue-400">Education</a>
+                <a href="#skills" class="hover:text-blue-400">Skills</a>
+                <a href="#projects" class="hover:text-blue-400">Projects</a>
+                <a href="#interests" class="hover:text-blue-400">Interests</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+            </div>
+            
+            <button onclick="toggleTheme()" id="theme-toggle" class="p-3 rounded-2xl hover:bg-zinc-800">
+                <i class="fas fa-moon text-xl"></i>
+            </button>
         </div>
-      </div>
     </nav>
-  </div>
-  <div class="header">
-    <h1>Web Development<span>&amp;</span>Cybersecurity</h1>
-  </div>
 
-  <div id="second-screen">
-    <img src="index/images/6.jpeg" id="krmang-hackathon">
-  </div>
-
-  <section id="ks-timeline">
-    <div class="grid-flex">
-      <div class="col col-image" style="background-image: url(index/images/1.jpeg);">
-      </div>
-      <div class="col col-text">
-        <div class="Aligner-item">
-          </p>
+    <!-- Hero -->
+    <section class="hero-bg min-h-screen pt-32 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="heading text-6xl md:text-7xl font-bold tracking-tighter">Keshav Sharma</h1>
+                <p class="text-3xl text-blue-300 mt-4">BCA Graduate • DSA &amp; Backend Developer</p>
+                <p class="mt-6 text-lg text-zinc-300 max-w-lg">
+                    IMS Noida (CCSU) • NPTEL Elite Certificate in Algorithmic Graph Theory &amp; Data Structures
+                </p>
+                <div class="mt-10 flex gap-4">
+                    <a href="#contact" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-3xl font-semibold">Hire Me</a>
+                    <a href="https://github.com/keshav2136" target="_blank" class="px-8 py-4 border border-white/60 hover:bg-white/10 rounded-3xl font-semibold">GitHub</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="https://keshav2136.github.io/index/images/1.jpeg" alt="Keshav Sharma" class="w-80 h-80 rounded-3xl object-cover shadow-2xl">
+            </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="grid-flex">
-      <div class="col col-image" style="background-image: url(index/images/5.jpeg);">
-        &nbsp;
-      </div>
-      <div class="col col-text col-left">
-        <div class="Aligner-item">
-          </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 bg-zinc-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="heading text-5xl font-semibold mb-8">About Me</h2>
+            <p class="text-lg text-zinc-300">
+                Passionate BCA graduate with strong expertise in Data Structures & Algorithms, C++, Python, and Object-Oriented Programming. 
+                I enjoy solving complex problems and building efficient, scalable software solutions.
+            </p>
         </div>
-      </div>
-    </div>
-    <div class="grid-flex">
-      <div class="col col-image" style="background-image: url(index/images/4.jpeg);">
-        &nbsp;
-      </div>
-      <div class="col col-text">
-        <div class="Aligner-item">
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading text-5xl font-semibold text-center mb-16">Education &amp; Certifications</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-zinc-900 p-10 rounded-3xl">
+                    <h3 class="text-3xl font-semibold">Bachelor of Computer Applications</h3>
+                    <p class="text-blue-400 mt-2">IMS Noida • CCS University • 2023 – 2026</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-900 to-indigo-900 p-10 rounded-3xl">
+                    <span class="px-6 py-2 bg-red-600 text-white text-sm font-bold rounded-full">ELITE</span>
+                    <h3 class="text-3xl font-semibold mt-8">Algorithmic Graph Theory and Data Structures</h3>
+                    <p class="mt-4">NPTEL • IIT Kharagpur • Jan - Apr 2026</p>
+                    <img src="/home/workdir/attachments/elite.jpg" alt="NPTEL Certificate" class="mt-10 rounded-2xl w-full">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  
-
-
-
-
-
-
-
-
-
-  <div class="wp-block-group alignfull is-style-gradient-down-section is-layout-flow">
-    
-    
-    
-    
-    <div class="wp-block-group is-layout-flow">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    
-    <div class="home-terminal">
-    
-      <div class="home-terminal__text-wrapper">
-    
-        <h2 class="has-extra-extra-large-font-size">Building software</h2>
-    
-        <div style="height:40px" aria-hidden="true" class="wp-block-spacer is-style-20-40"></div>
-    
-        <p class="home-terminal__text">Full stack or back-end web architecture.</p>
-    
-      </div>
-    
-      <div class="home-terminal__code-block">
-
-    
-        <div class="home-terminal__status-bar">
-          <div class="home-terminal__button"></div>
-          <div class="home-terminal__button"></div>
-          <div class="home-terminal__button"></div>
+    <!-- Skills -->
+    <section id="skills" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading text-5xl font-semibold text-center mb-16">Skills</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-800 p-8 rounded-3xl">
+                    <h3 class="font-semibold text-xl mb-6">Programming</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-5 py-3 bg-zinc-700 rounded-3xl">C++</span>
+                        <span class="px-5 py-3 bg-zinc-700 rounded-3xl">Python</span>
+                    </div>
+                </div>
+                <div class="bg-zinc-800 p-8 rounded-3xl">
+                    <h3 class="font-semibold text-xl mb-6">Core</h3>
+                    <ul class="space-y-4">
+                        <li>Data Structures &amp; Algorithms</li>
+                        <li>Object Oriented Programming</li>
+                        <li>Graph Theory</li>
+                    </ul>
+                </div>
+                <div class="bg-zinc-800 p-8 rounded-3xl">
+                    <h3 class="font-semibold text-xl mb-6">Tools</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-5 py-3 bg-zinc-700 rounded-3xl">Django</span>
+                        <span class="px-5 py-3 bg-zinc-700 rounded-3xl">Git</span>
+                        <span class="px-5 py-3 bg-zinc-700 rounded-3xl">Linux</span>
+                        <span class="px-5 py-3 bg-zinc-700 rounded-3xl">SQL</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="home-terminal__window">
-    
-          <img width="630" height="525" alt="Terminal displaying code examples for running cluster" class="home-terminal__image" loading="lazy" src="/index/images/terminal.svg" data-src="/index/images/terminal.svg" data-reduced-motion-src="/index/images/terminal.svg">
-          <noscript>
-            <img class="home-terminal__image" width="600" height="525" src="/index/images/terminal.svg" alt="Terminal displaying code examples for running cluster">
-            <style>
-            .home-terminal__replace {
-              display: none;
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading text-5xl font-semibold text-center mb-16">Featured Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-900 rounded-3xl overflow-hidden card-hover">
+                    <div class="h-56 bg-gradient-to-br from-violet-900 to-fuchsia-900 flex items-center justify-center text-7xl">🛍️</div>
+                    <div class="p-8">
+                        <h4 class="font-semibold text-xl">Online Retail Marketplace</h4>
+                        <p class="text-sm text-zinc-400 mt-3">Django-based platform connecting local retailers</p>
+                    </div>
+                </div>
+                <div class="bg-zinc-900 rounded-3xl overflow-hidden card-hover">
+                    <div class="h-56 bg-gradient-to-br from-rose-900 to-amber-900 flex items-center justify-center text-7xl">🛸</div>
+                    <div class="p-8">
+                        <h4 class="font-semibold text-xl">FPV-Life</h4>
+                        <p class="text-sm text-zinc-400 mt-3">Drone community &amp; marketplace</p>
+                    </div>
+                </div>
+                <div class="bg-zinc-900 rounded-3xl overflow-hidden card-hover">
+                    <div class="h-56 bg-gradient-to-br from-cyan-900 to-teal-900 flex items-center justify-center text-7xl">📸</div>
+                    <div class="p-8">
+                        <h4 class="font-semibold text-xl">Gallerio</h4>
+                        <p class="text-sm text-zinc-400 mt-3">Pinterest-style image platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading text-5xl font-semibold text-center mb-16">Interests &amp; Passions</h2>
+            <div class="flex flex-wrap justify-center gap-6 text-lg">
+                <div class="bg-zinc-800 px-8 py-6 rounded-3xl">Competitive Programming</div>
+                <div class="bg-zinc-800 px-8 py-6 rounded-3xl">Linux &amp; Cybersecurity</div>
+                <div class="bg-zinc-800 px-8 py-6 rounded-3xl">Backend Systems</div>
+                <div class="bg-zinc-800 px-8 py-6 rounded-3xl">Open Source</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-zinc-950">
+        <div class="max-w-2xl mx-auto text-center px-6">
+            <h2 class="heading text-5xl font-semibold mb-8">Let's Connect</h2>
+            <p class="text-zinc-400">I'm actively looking for internship / entry-level opportunities in Software Development &amp; Backend roles.</p>
+            <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.linkedin.com/in/keshav2136/" target="_blank" 
+                   class="px-10 py-5 bg-blue-600 rounded-3xl font-medium text-lg">LinkedIn</a>
+                <a href="https://github.com/keshav2136" target="_blank" 
+                   class="px-10 py-5 border border-zinc-400 rounded-3xl font-medium text-lg">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 text-center text-zinc-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <p>© 2026 Keshav Sharma. All Rights Reserved.</p>
+            <p class="mt-2">BCA • IMS Noida • NPTEL26CS08S562403954</p>
+            <div class="mt-8 flex justify-center gap-8">
+                <a href="https://leetcode.com/u/keshav2136/" class="hover:text-blue-400">LeetCode</a>
+                <a href="https://github.com/keshav2136" class="hover:text-blue-400">GitHub</a>
+                <a href="https://www.linkedin.com/in/keshav2136/" class="hover:text-blue-400">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            const icon = document.getElementById('theme-toggle').querySelector('i');
+            if (document.documentElement.classList.contains('dark')) {
+                icon.classList.replace('fa-sun', 'fa-moon');
+            } else {
+                icon.classList.replace('fa-moon', 'fa-sun');
             }
-            </style>
-          </noscript>
-        </div>
-      </div>
-      <!--
-      <div class="home-terminal__cta">
-        <p class="is-style-link-cta"><a href="https://contribute.replace.io/">Contribute</a></p>
-      </div>
-      -->
-    </div>
-      
-    
-    
-    
-    <div style="height:100px" aria-hidden="true" class="wp-block-spacer is-style-80-120"></div>
-    </div>
-    </div>
-
-
+        }
+        // Default dark
+        document.documentElement.classList.add('dark');
+    </script>
 </body>
 </html>
