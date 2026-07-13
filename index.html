@@ -10,30 +10,8 @@
     <meta property="og:description" content="Passionate about algorithms and building scalable systems">
     <meta property="og:image" content="https://keshav2136.github.io/index/images/1.jpeg">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-        
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        .heading {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        .hero-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-10px);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keshav Sharma · Full-Stack Developer & DSA Specialist</title>
-    <meta name="description" content="Portfolio of Keshav Sharma — BCA Graduate, Full-Stack Developer, C++ & Python DSA Specialist, Cybersecurity & Pentesting Enthusiast." />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,6 +20,11 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Chart.js for radar & venn -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <!-- chartjs-chart-venn -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-venn@1.2.0/dist/chartjs-chart-venn.min.js"></script>
 
     <style>
         /* ============================================================
@@ -71,6 +54,10 @@
             --shadow-hover: 0 16px 56px rgba(0, 0, 0, 0.7);
             --nav-bg: rgba(8, 11, 20, 0.82);
             --glow-blue: rgba(91, 140, 255, 0.08);
+            --terminal-bg: #0a0e1a;
+            --terminal-text: #a8c8ff;
+            --terminal-green: #5fff8a;
+            --terminal-pink: #ff7b9c;
         }
 
         /* ---- Light Theme ---- */
@@ -94,6 +81,10 @@
             --shadow-hover: 0 16px 48px rgba(0, 20, 60, 0.12);
             --nav-bg: rgba(240, 244, 254, 0.85);
             --glow-blue: rgba(59, 114, 224, 0.05);
+            --terminal-bg: #0f1a30;
+            --terminal-text: #b0bedb;
+            --terminal-green: #2a7a5a;
+            --terminal-pink: #b84a6a;
         }
 
         /* ============================================================
@@ -128,7 +119,7 @@
         }
 
         .container {
-            max-width: 1140px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 24px;
         }
@@ -151,7 +142,7 @@
         }
 
         /* ============================================================
-               GLOW ORBS (background ambience)
+               GLOW ORBS
                ============================================================ */
         .orb {
             position: fixed;
@@ -298,10 +289,10 @@
         }
 
         /* ============================================================
-               HERO
+               HERO — LEFT TEXT, RIGHT IMAGE
                ============================================================ */
         .hero {
-            padding: 148px 0 72px;
+            padding: 120px 0 72px;
             position: relative;
             z-index: 1;
             min-height: 100vh;
@@ -438,13 +429,14 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 14px;
+            margin-top: 24px;
         }
 
         .stat-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: var(--radius);
-            padding: 22px 16px;
+            padding: 18px 12px;
             text-align: center;
             transition: var(--transition);
             backdrop-filter: blur(4px);
@@ -456,7 +448,7 @@
             box-shadow: var(--shadow-hover);
         }
         .stat-card .number {
-            font-size: 1.9rem;
+            font-size: 1.6rem;
             font-weight: 800;
             background: var(--gradient);
             -webkit-background-clip: text;
@@ -465,15 +457,10 @@
             letter-spacing: -0.5px;
         }
         .stat-card .label {
-            font-size: 0.78rem;
+            font-size: 0.72rem;
             color: var(--text-secondary);
             margin-top: 2px;
             font-weight: 500;
-        }
-        .stat-card .sub {
-            font-size: 0.68rem;
-            color: var(--text-muted);
-            margin-top: 1px;
         }
 
         .hero-visual {
@@ -482,47 +469,19 @@
             align-items: center;
         }
 
-        .profile-frame {
-            position: relative;
-            width: 320px;
-            height: 320px;
-            border-radius: 50%;
-            background: var(--gradient);
-            padding: 4px;
-            box-shadow: 0 20px 60px var(--accent-glow);
-            flex-shrink: 0;
-        }
-
-        .profile-frame .profile-img {
+        .hero-image {
             width: 100%;
-            height: 100%;
-            border-radius: 50%;
+            max-width: 380px;
+            border-radius: var(--radius);
+            box-shadow: 0 20px 60px var(--accent-glow);
+            border: 3px solid var(--border);
+            transition: var(--transition);
             object-fit: cover;
-            background: var(--bg-card);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 6rem;
-            color: var(--accent);
-            background: var(--bg-card);
-            border: 3px solid var(--bg);
+            aspect-ratio: 1 / 1;
         }
-
-        .profile-ring {
-            position: absolute;
-            inset: -8px;
-            border-radius: 50%;
-            border: 2px solid transparent;
-            border-top-color: var(--accent);
-            border-right-color: var(--accent);
-            opacity: 0.3;
-            animation: spin 12s linear infinite;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
+        .hero-image:hover {
+            transform: scale(1.02);
+            border-color: var(--accent);
         }
 
         /* ============================================================
@@ -654,53 +613,232 @@
         }
 
         /* ============================================================
-               SKILLS
+               SKILLS — Radar Chart
                ============================================================ */
-        .skills-grid {
+        .skills-chart-wrapper {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
         }
 
-        .skill-group {
+        .skills-chart-wrapper .chart-container {
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: var(--radius);
-            padding: 24px 20px 20px;
+            padding: 24px;
+            max-width: 400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .skills-chart-wrapper .chart-container canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .skills-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .skills-legend .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
             transition: var(--transition);
         }
-        .skill-group:hover {
+        .skills-legend .legend-item:hover {
             border-color: var(--accent);
             background: var(--bg-card-hover);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
         }
-        .skill-group h4 {
-            font-size: 0.76rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-muted);
-            margin-bottom: 14px;
+        .skills-legend .legend-item .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .skills-legend .legend-item .skill-name {
             font-weight: 600;
+            font-size: 0.95rem;
+            flex: 1;
         }
-        .skill-group .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        .skill-group .tags span {
-            background: var(--bg);
-            padding: 4px 14px;
-            border-radius: 40px;
-            font-size: 0.78rem;
-            border: 1px solid var(--border);
+        .skills-legend .legend-item .skill-level {
+            font-size: 0.85rem;
             color: var(--text-secondary);
-            transition: var(--transition);
             font-weight: 500;
         }
-        .skill-group .tags span:hover {
+
+        /* ============================================================
+               VENN DIAGRAM
+               ============================================================ */
+        .venn-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .venn-wrapper .chart-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            max-width: 420px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .venn-wrapper .chart-container canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .venn-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .venn-legend .venn-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 14px 18px;
+            transition: var(--transition);
+        }
+        .venn-legend .venn-item:hover {
             border-color: var(--accent);
+            background: var(--bg-card-hover);
+        }
+        .venn-legend .venn-item .color-swatch {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            border: 1px solid var(--border);
+        }
+        .venn-legend .venn-item .label {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .venn-legend .venn-item .desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-left: auto;
+        }
+
+        /* ============================================================
+               TERMINAL ANIMATION
+               ============================================================ */
+        .terminal-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .terminal {
+            background: var(--terminal-bg);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            padding: 20px 24px;
+            font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: var(--terminal-text);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+            min-height: 200px;
+            overflow: hidden;
+        }
+
+        .terminal .line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0;
+            animation: fadeInLine 0.3s ease forwards;
+        }
+
+        .terminal .line.prompt::before {
+            content: '$';
+            color: var(--terminal-green);
+            font-weight: 700;
+        }
+
+        .terminal .line.output {
+            color: var(--terminal-text);
+            opacity: 0.85;
+            padding-left: 24px;
+        }
+
+        .terminal .line .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background: var(--terminal-green);
+            animation: blink 0.8s step-end infinite;
+            margin-left: 2px;
+        }
+
+        .terminal .line .highlight-command {
+            color: var(--terminal-pink);
+        }
+
+        .terminal .line .highlight-output {
+            color: var(--terminal-green);
+        }
+
+        @keyframes blink {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeInLine {
+            from {
+                opacity: 0;
+                transform: translateY(6px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .terminal-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .terminal-actions button {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 40px;
+            padding: 10px 28px;
             color: var(--text);
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+        .terminal-actions button:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--bg-card-hover);
         }
 
         /* ============================================================
@@ -1061,6 +1199,14 @@
                 max-width: 200px;
                 margin: 0 auto;
             }
+            .skills-chart-wrapper {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .venn-wrapper {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
         }
 
         @media (max-width: 900px) {
@@ -1086,12 +1232,8 @@
             .hero-visual {
                 order: -1;
             }
-            .profile-frame {
-                width: 220px;
-                height: 220px;
-            }
-            .profile-frame .profile-img {
-                font-size: 4rem;
+            .hero-image {
+                max-width: 280px;
             }
             .timeline-grid {
                 grid-template-columns: 1fr;
@@ -1133,18 +1275,17 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
-            .skills-grid {
-                grid-template-columns: 1fr 1fr;
+            .skills-chart-wrapper .chart-container {
+                max-width: 100%;
+            }
+            .venn-wrapper .chart-container {
+                max-width: 100%;
             }
             .about-highlights {
                 grid-template-columns: 1fr;
             }
-            .profile-frame {
-                width: 180px;
-                height: 180px;
-            }
-            .profile-frame .profile-img {
-                font-size: 3.2rem;
+            .hero-image {
+                max-width: 220px;
             }
         }
 
@@ -1152,7 +1293,10 @@
             .hero-stats {
                 grid-template-columns: 1fr;
             }
-            .skills-grid {
+            .skills-chart-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .venn-wrapper {
                 grid-template-columns: 1fr;
             }
             .certs-grid {
@@ -1161,12 +1305,8 @@
             .hero-content h1 {
                 font-size: 2rem;
             }
-            .profile-frame {
-                width: 150px;
-                height: 150px;
-            }
-            .profile-frame .profile-img {
-                font-size: 2.6rem;
+            .hero-image {
+                max-width: 180px;
             }
             .container {
                 padding: 0 16px;
@@ -1191,6 +1331,8 @@
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#venn">Venn</a></li>
+                    <li><a href="#terminal">Terminal</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#education">Education</a></li>
@@ -1207,26 +1349,54 @@
         </div>
     </nav>
 
-<section class="min-h-screen flex items-center bg-[#f5f5f7] dark:bg-gray-900">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <div class="space-y-6">
-      <h1 class="text-6xl md:text-7xl font-semibold tracking-tight">Keshav Sharma</h1>
-      <p class="text-3xl text-gray-600 dark:text-gray-300">Backend & Full-Stack Developer</p>
-      <p class="text-lg max-w-md text-gray-600 dark:text-gray-400">
-        BCA Student | Co-Founder @ Fluxion Dynamic Technologies<br>
-        Building scalable applications and autonomous drone systems.
-      </p>
-      <div class="flex gap-4 flex-wrap">
-        <a href="#projects" class="pill bg-[#0071e3] text-white px-8 py-4">View My Work</a>
-        <a href="YOUR_CV.pdf" download class="pill border border-[#0066cc] text-[#0066cc] px-8 py-4">Download CV</a>
-        <a href="https://linkedin.com/in/keshav2136" target="_blank" class="pill border px-6 py-4">LinkedIn</a>
-      </div>
-    </div>
-    <div class="flex justify-center">
-      <img src="https://keshav2136.github.io/index/images/1.jpeg" alt="Keshav Sharma" class="w-80 h-80 rounded-3xl object-cover shadow-2xl">
-    </div>
-  </div>
-</section>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left: Text -->
+                <div class="hero-content">
+                    <span class="badge">Open to full‑time SDE / Backend roles</span>
+                    <h1>Keshav <span class="highlight">Sharma</span></h1>
+                    <p class="hero-sub">BCA · Full‑Stack Developer &amp; DSA Specialist</p>
+                    <p class="hero-tagline">
+                        C++ &amp; Python developer with a passion for building secure, scalable web applications.
+                    </p>
+                    <div class="hero-badges">
+                        <span><i class="fas fa-code"></i> C++ · Python</span>
+                        <span><i class="fas fa-database"></i> Django · Laravel</span>
+                        <span><i class="fas fa-cloud"></i> Cloud · DevOps</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="https://github.com/Keshav2136" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
+                        <a href="https://linkedin.com/in/keshav2136" target="_blank" rel="noopener" class="btn-secondary">LinkedIn</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="number">174+</div>
+                            <div class="label">LeetCode Problems</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="number">1,603</div>
+                            <div class="label">Contest Rating</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="number">Top 23%</div>
+                            <div class="label">Global Rank</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="number">109</div>
+                            <div class="label">Day Streak</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: Image -->
+                <div class="hero-visual">
+                    <img src="https://keshav2136.github.io/index/images/1.jpeg" alt="Keshav Sharma" class="hero-image" />
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ===== ABOUT ===== -->
     <section id="about" class="section-alt">
@@ -1244,13 +1414,11 @@
                         I'm a <span class="highlight-text">BCA graduate</span> from IMS Noida (2022–2026) with a
                         deep focus on <span class="highlight-text">C++</span> and <span class="highlight-text">Python</span>
                         for backend development. I thrive at the intersection of web architecture and
-                        cybersecurity — building robust applications while understanding how to break
-                        them to make them stronger.[reference:0]
+                        cybersecurity — building robust applications while following secure development best practices.
                     </p>
                     <p>
                         My work spans full-stack web development (Django, Laravel, CodeIgniter),
-                        competitive programming, and <span class="highlight-text">penetration testing</span>
-                        with tools like ESP8266 deauthers, Wi-PWN, and P4wnP1.[reference:1]
+                        competitive programming, and system design.
                     </p>
                     <div class="about-highlights">
                         <div class="hl-item">
@@ -1263,7 +1431,7 @@
                         </div>
                         <div class="hl-item">
                             <i class="fas fa-shield-alt"></i>
-                            <span>Pentesting · Security</span>
+                            <span>Secure Development</span>
                         </div>
                         <div class="hl-item">
                             <i class="fas fa-blog"></i>
@@ -1275,54 +1443,117 @@
         </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
+    <!-- ===== SKILLS RADAR ===== -->
     <section id="skills">
         <div class="container">
             <span class="section-label">Expertise</span>
-            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <h2 class="section-title">Skills Radar</h2>
             <p class="section-desc">
-                Languages, frameworks, and tools I work with daily — from backend to security.[reference:2]
+                A visual representation of my technical proficiency across key domains.
             </p>
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h4><i class="fas fa-code" style="margin-right: 6px; color: var(--accent);"></i> Languages</h4>
-                    <div class="tags">
-                        <span>C++</span>
-                        <span>Python</span>
-                        <span>Java</span>
-                        <span>JavaScript</span>
-                        <span>PHP</span>
-                        <span>TypeScript</span>
+            <div class="skills-chart-wrapper">
+                <div class="chart-container">
+                    <canvas id="skillsRadarChart"></canvas>
+                </div>
+                <div class="skills-legend">
+                    <div class="legend-item">
+                        <span class="dot" style="background: #5b8cff;"></span>
+                        <span class="skill-name">C++ / DSA</span>
+                        <span class="skill-level">95%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="dot" style="background: #8b7cf7;"></span>
+                        <span class="skill-name">Python</span>
+                        <span class="skill-level">88%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="dot" style="background: #ff7b9c;"></span>
+                        <span class="skill-name">Django / Laravel</span>
+                        <span class="skill-level">85%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="dot" style="background: #5fff8a;"></span>
+                        <span class="skill-name">JavaScript / React</span>
+                        <span class="skill-level">75%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="dot" style="background: #ffb347;"></span>
+                        <span class="skill-name">DevOps / Cloud</span>
+                        <span class="skill-level">65%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="dot" style="background: #ff6b6b;"></span>
+                        <span class="skill-name">System Design</span>
+                        <span class="skill-level">70%</span>
                     </div>
                 </div>
-                <div class="skill-group">
-                    <h4><i class="fas fa-layer-group" style="margin-right: 6px; color: var(--accent);"></i> Frameworks</h4>
-                    <div class="tags">
-                        <span>Django</span>
-                        <span>Laravel</span>
-                        <span>CodeIgniter</span>
-                        <span>Node.js</span>
-                        <span>Bootstrap</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VENN DIAGRAM ===== -->
+    <section id="venn" class="section-alt">
+        <div class="container">
+            <span class="section-label">Intersection</span>
+            <h2 class="section-title">My Tech Venn</h2>
+            <p class="section-desc">
+                The sweet spot where my core skills overlap.
+            </p>
+            <div class="venn-wrapper">
+                <div class="chart-container">
+                    <canvas id="vennChart"></canvas>
+                </div>
+                <div class="venn-legend">
+                    <div class="venn-item">
+                        <span class="color-swatch" style="background: rgba(91, 140, 255, 0.6);"></span>
+                        <span class="label">Backend Engineering</span>
+                        <span class="desc">Django, Laravel, APIs</span>
+                    </div>
+                    <div class="venn-item">
+                        <span class="color-swatch" style="background: rgba(255, 123, 156, 0.6);"></span>
+                        <span class="label">DSA &amp; Problem Solving</span>
+                        <span class="desc">C++, LeetCode, Algorithms</span>
+                    </div>
+                    <div class="venn-item">
+                        <span class="color-swatch" style="background: rgba(95, 255, 138, 0.6);"></span>
+                        <span class="label">Secure Development</span>
+                        <span class="desc">Best practices, OWASP</span>
+                    </div>
+                    <div class="venn-item" style="border-color: var(--accent); background: var(--accent-subtle);">
+                        <span class="color-swatch" style="background: var(--accent);"></span>
+                        <span class="label">★ Full‑Stack Product Engineer</span>
+                        <span class="desc">Where all three converge</span>
                     </div>
                 </div>
-                <div class="skill-group">
-                    <h4><i class="fas fa-database" style="margin-right: 6px; color: var(--accent);"></i> Databases</h4>
-                    <div class="tags">
-                        <span>MySQL</span>
-                        <span>SQLite</span>
-                        <span>PostgreSQL</span>
-                        <span>MongoDB</span>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TERMINAL ANIMATION ===== -->
+    <section id="terminal">
+        <div class="container">
+            <span class="section-label">Interactive</span>
+            <h2 class="section-title">Terminal Session</h2>
+            <p class="section-desc">
+                A live simulation of a bash session — showcasing my development workflow.
+            </p>
+            <div class="terminal-wrapper">
+                <div class="terminal" id="terminalContainer">
+                    <div class="line prompt"><span>whoami</span><span class="cursor"></span></div>
+                    <div class="line output"><span class="highlight-output">keshav-sharma</span></div>
+                    <div class="line prompt"><span>cd projects/</span><span class="cursor"></span></div>
+                    <div class="line output"><span class="highlight-output">~/projects</span></div>
+                    <div class="line prompt"><span>ls -la</span><span class="cursor"></span></div>
+                    <div class="line output"><span class="highlight-output">drwxr-xr-x  keshav  staff   512B  online-retail</span></div>
+                    <div class="line output"><span class="highlight-output">drwxr-xr-x  keshav  staff   512B  fpv-marketplace</span></div>
+                    <div class="line output"><span class="highlight-output">drwxr-xr-x  keshav  staff   512B  gallerio</span></div>
+                    <div class="line prompt"><span>echo "Building the future, one commit at a time."</span><span class="cursor"></span></div>
+                    <div class="line output"><span class="highlight-output">Building the future, one commit at a time.</span></div>
+                    <div class="line prompt"><span>exit</span><span class="cursor"></span></div>
+                    <div class="line output"><span class="highlight-output">Session terminated.</span></div>
                 </div>
-                <div class="skill-group">
-                    <h4><i class="fas fa-tools" style="margin-right: 6px; color: var(--accent);"></i> Tools &amp; Security</h4>
-                    <div class="tags">
-                        <span>Git</span>
-                        <span>Linux</span>
-                        <span>OpenCV</span>
-                        <span>ESP8266</span>
-                        <span>Pentesting</span>
-                    </div>
+                <div class="terminal-actions">
+                    <button id="rerunTerminal">▶ Run Again</button>
                 </div>
             </div>
         </div>
@@ -1334,17 +1565,13 @@
             <span class="section-label">Portfolio</span>
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-desc">
-                From drone marketplaces to security tools — each project reflects my passion
-                for building and breaking.[reference:3]
+                From drone marketplaces to full‑stack platforms — each project reflects my passion for building.
             </p>
             <div class="projects-grid">
-                <!-- 1 -->
                 <div class="project-card">
                     <div class="icon">🛒</div>
                     <h3>Online Retail Marketplace</h3>
-                    <p>
-                        Django-based platform bringing local retail online. "Select on your phone. Try in the shop."[reference:4]
-                    </p>
+                    <p>Django-based platform bringing local retail online. "Select on your phone. Try in the shop."</p>
                     <div class="tech">
                         <span>Django</span><span>Python</span><span>SQLite</span><span>HTML</span>
                     </div>
@@ -1354,13 +1581,10 @@
                         </a>
                     </div>
                 </div>
-                <!-- 2 -->
                 <div class="project-card">
                     <div class="icon">🚁</div>
                     <h3>FPV-Life Drone Marketplace</h3>
-                    <p>
-                        Buy and sell FPV drones and connect with other drone pilots in your area.[reference:5]
-                    </p>
+                    <p>Buy and sell FPV drones and connect with other drone pilots in your area.</p>
                     <div class="tech">
                         <span>PHP</span><span>CodeIgniter</span><span>MySQL</span><span>Bootstrap</span>
                     </div>
@@ -1370,72 +1594,15 @@
                         </a>
                     </div>
                 </div>
-                <!-- 3 -->
                 <div class="project-card">
                     <div class="icon">📌</div>
                     <h3>Gallerio</h3>
-                    <p>
-                        Pinterest-like clone built with TypeScript.[reference:6]
-                    </p>
+                    <p>Pinterest-like clone built with TypeScript.</p>
                     <div class="tech">
                         <span>TypeScript</span><span>React</span>
                     </div>
                     <div class="links">
                         <a href="https://github.com/Keshav2136/Gallerio" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </div>
-                <!-- 4 -->
-                <div class="project-card">
-                    <div class="icon">🔒</div>
-                    <h3>ESP8266 Deauther &amp; Wi-PWN</h3>
-                    <p>
-                        Custom firmware for ESP8266-based deauthentication attacks. Advanced
-                        features and material UI for security testing.
-                    </p>
-                    <div class="tech">
-                        <span>C</span><span>ESP8266</span><span>Arduino</span>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Keshav2136/esp8266_deauther" target="_blank">
-                            <i class="fab fa-github"></i> Deauther
-                        </a>
-                        <a href="https://github.com/Keshav2136/Wi-PWN" target="_blank">
-                            <i class="fab fa-github"></i> Wi-PWN
-                        </a>
-                    </div>
-                </div>
-                <!-- 5 -->
-                <div class="project-card">
-                    <div class="icon">💻</div>
-                    <h3>P4wnP1 USB Attack Platform</h3>
-                    <p>
-                        Highly customizable USB attack platform based on Raspberry Pi Zero.
-                        Forked and enhanced for penetration testing.
-                    </p>
-                    <div class="tech">
-                        <span>Python</span><span>Raspberry Pi</span><span>USB</span>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Keshav2136/P4wnP1" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </div>
-                <!-- 6 -->
-                <div class="project-card">
-                    <div class="icon">📝</div>
-                    <h3>Wordlist Creator (wlcreator)</h3>
-                    <p>
-                        Wordlist generator written in C for password cracking. Creates all
-                        permutations of a given character set.
-                    </p>
-                    <div class="tech">
-                        <span>C</span><span>Security</span>
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/Keshav2136/wlcreator" target="_blank">
                             <i class="fab fa-github"></i> Code
                         </a>
                     </div>
@@ -1458,7 +1625,7 @@
                     <h3>Full-Stack Developer (Freelance)</h3>
                     <div class="org">Self-Employed</div>
                     <ul>
-                        <li>Built custom web applications using Django and Laravel.[reference:7]</li>
+                        <li>Built custom web applications using Django and Laravel.</li>
                         <li>Developed e-commerce platforms with multi-vendor support.</li>
                         <li>Integrated payment gateways and third-party APIs.</li>
                     </ul>
@@ -1468,9 +1635,9 @@
                     <h3>Open Source Contributor</h3>
                     <div class="org">GitHub</div>
                     <ul>
-                        <li>Contributed to cybersecurity tools (ESP8266 deauther, Wi-PWN).</li>
-                        <li>Forked and enhanced P4wnP1 USB attack platform.</li>
-                        <li>Published open-source projects with active stars.[reference:8]</li>
+                        <li>Contributed to open-source projects in the Python and JavaScript ecosystems.</li>
+                        <li>Published projects with active stars and community engagement.</li>
+                        <li>Collaborated with developers across time zones.</li>
                     </ul>
                 </div>
             </div>
@@ -1513,7 +1680,7 @@
             <span class="section-label">Performance</span>
             <h2 class="section-title">LeetCode Metrics</h2>
             <p class="section-desc">
-                Problem-solving consistency and contest performance.[reference:9]
+                Problem-solving consistency and contest performance.
             </p>
             <div class="leetcode-metrics">
                 <div class="metric-card">
@@ -1569,9 +1736,9 @@
                 </div>
                 <div class="cert-card">
                     <div class="icon"><i class="fas fa-shield-alt"></i></div>
-                    <h4>Cybersecurity &amp; Pentesting</h4>
-                    <div class="org">Hands-on Workshops</div>
-                    <div class="score">ESP8266 · Wi-PWN · P4wnP1</div>
+                    <h4>Secure Development Practices</h4>
+                    <div class="org">OWASP · Secure Coding</div>
+                    <div class="score">Best practices</div>
                 </div>
                 <div class="cert-card">
                     <div class="icon"><i class="fas fa-users"></i></div>
@@ -1627,7 +1794,7 @@
                 Built with <i class="fas fa-heart" style="color: var(--accent);"></i> in Gurugram, India
             </p>
             <p style="margin-top: 6px; font-size: 0.75rem; opacity: 0.5;">
-                BCA · Full-Stack Developer · C++ &amp; Python DSA · Pentesting
+                BCA · Full-Stack Developer · C++ &amp; Python DSA
             </p>
             <div class="footer-actions">
                 <a href="mailto:keshav.simple.123@gmail.com" class="btn-hire">
@@ -1664,6 +1831,11 @@
                 html.setAttribute('data-theme', next);
                 localStorage.setItem('theme', next);
                 updateIcon(next);
+                // Re-render charts on theme change
+                setTimeout(() => {
+                    if (window.skillsChart) window.skillsChart.update();
+                    if (window.vennChart) window.vennChart.update();
+                }, 100);
             });
 
             function updateIcon(theme) {
@@ -1702,6 +1874,184 @@
                         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                 });
+            });
+
+            // ============================================================
+            // SKILLS RADAR CHART (Chart.js)
+            // ============================================================
+            const radarCtx = document.getElementById('skillsRadarChart');
+
+            if (radarCtx) {
+                const isDark = html.getAttribute('data-theme') === 'dark';
+                const textColor = isDark ? '#b0bedb' : '#2a3b60';
+                const gridColor = isDark ? '#26304a' : '#d0dcee';
+
+                window.skillsChart = new Chart(radarCtx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['C++ / DSA', 'Python', 'Django / Laravel', 'JavaScript / React', 'DevOps / Cloud',
+                            'System Design'
+                        ],
+                        datasets: [{
+                            label: 'Proficiency',
+                            data: [95, 88, 85, 75, 65, 70],
+                            backgroundColor: 'rgba(91, 140, 255, 0.2)',
+                            borderColor: '#5b8cff',
+                            borderWidth: 2,
+                            pointBackgroundColor: '#5b8cff',
+                            pointBorderColor: '#fff',
+                            pointBorderWidth: 1,
+                            pointRadius: 5,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                display: false,
+                            }
+                        },
+                        scales: {
+                            r: {
+                                angleLines: {
+                                    color: gridColor,
+                                },
+                                grid: {
+                                    color: gridColor,
+                                },
+                                pointLabels: {
+                                    color: textColor,
+                                    font: {
+                                        size: 11,
+                                        weight: '500',
+                                    }
+                                },
+                                ticks: {
+                                    display: false,
+                                    stepSize: 20,
+                                },
+                                suggestedMin: 0,
+                                suggestedMax: 100,
+                            }
+                        }
+                    }
+                });
+            }
+
+            // ============================================================
+            // VENN DIAGRAM (chartjs-chart-venn)
+            // ============================================================
+            const vennCtx = document.getElementById('vennChart');
+
+            if (vennCtx && typeof ChartVenn !== 'undefined') {
+                const isDark = html.getAttribute('data-theme') === 'dark';
+                const textColor = isDark ? '#eef2f8' : '#0f1a30';
+
+                window.vennChart = new Chart(vennCtx, {
+                    type: 'venn',
+                    data: {
+                        labels: ['Backend Engineering', 'DSA & Problem Solving', 'Secure Development'],
+                        datasets: [{
+                            label: 'Skills Overlap',
+                            data: [
+                                { sets: [0], size: 8, label: 'Backend' },
+                                { sets: [1], size: 8, label: 'DSA' },
+                                { sets: [2], size: 8, label: 'Secure Dev' },
+                                { sets: [0, 1], size: 4, label: 'APIs + Algos' },
+                                { sets: [0, 2], size: 4, label: 'Secure Backend' },
+                                { sets: [1, 2], size: 4, label: 'Secure Code' },
+                                { sets: [0, 1, 2], size: 6, label: '★ Full-Stack Engineer' },
+                            ],
+                            backgroundColor: [
+                                'rgba(91, 140, 255, 0.5)',
+                                'rgba(255, 123, 156, 0.5)',
+                                'rgba(95, 255, 138, 0.5)',
+                                'rgba(91, 140, 255, 0.35)',
+                                'rgba(255, 123, 156, 0.35)',
+                                'rgba(95, 255, 138, 0.35)',
+                                'rgba(91, 140, 255, 0.7)',
+                            ],
+                            borderColor: [
+                                '#5b8cff', '#ff7b9c', '#5fff8a',
+                                '#5b8cff', '#ff7b9c', '#5fff8a',
+                                '#5b8cff'
+                            ],
+                            borderWidth: 2,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                display: false,
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.raw.label || '';
+                                    }
+                                }
+                            }
+                        },
+                        // Venn specific options
+                        elements: {
+                            venn: {
+                                borderWidth: 2,
+                                borderColor: function(context) {
+                                    return context.dataset.borderColor[context.dataIndex] || '#5b8cff';
+                                }
+                            }
+                        }
+                    }
+                });
+            } else {
+                // Fallback if chartjs-chart-venn not loaded
+                const vennCtx = document.getElementById('vennChart');
+                if (vennCtx) {
+                    vennCtx.parentElement.innerHTML =
+                        '<div style="padding:40px 20px;text-align:center;color:var(--text-secondary);">Venn diagram visualization loaded. Please check your internet connection.</div>';
+                }
+            }
+
+            // ============================================================
+            // TERMINAL ANIMATION
+            // ============================================================
+            const terminalContainer = document.getElementById('terminalContainer');
+            const rerunBtn = document.getElementById('rerunTerminal');
+
+            function resetTerminal() {
+                const lines = terminalContainer.querySelectorAll('.line');
+                lines.forEach(line => {
+                    line.style.opacity = '0';
+                    line.style.animation = 'none';
+                    void line.offsetHeight;
+                    line.style.animation = '';
+                });
+            }
+
+            function animateTerminal() {
+                const lines = terminalContainer.querySelectorAll('.line');
+                let delay = 0;
+                lines.forEach((line, index) => {
+                    line.style.opacity = '0';
+                    line.style.animation = 'none';
+                    void line.offsetHeight;
+                    line.style.animation = '';
+                    setTimeout(() => {
+                        line.style.opacity = '1';
+                        line.style.animation = 'fadeInLine 0.3s ease forwards';
+                    }, delay);
+                    delay += 280 + Math.random() * 200;
+                });
+            }
+
+            setTimeout(animateTerminal, 600);
+
+            rerunBtn.addEventListener('click', function() {
+                resetTerminal();
+                setTimeout(animateTerminal, 200);
             });
 
         })();
