@@ -861,6 +861,73 @@
         }
         .leetcode-chart-container canvas { width: 100% !important; height: auto !important; }
 
+        /* ===== CONTACT FORM ===== */
+        .contact-form-wrapper {
+            max-width: 620px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 36px 32px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .contact-form-wrapper:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-hover);
+        }
+        .contact-form-wrapper label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+        .contact-form-wrapper input,
+        .contact-form-wrapper textarea {
+            width: 100%;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 0.95rem;
+            color: var(--text);
+            transition: border-color 0.2s, box-shadow 0.2s;
+            outline: none;
+            resize: vertical;
+        }
+        .contact-form-wrapper input:focus,
+        .contact-form-wrapper textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+        .contact-form-wrapper button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent);
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .contact-form-wrapper button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+        .form-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 12px;
+            text-align: center;
+        }
+
         /* ===== INTERESTS ===== */
         .interests-grid {
             display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 20px;
@@ -994,6 +1061,7 @@
             .cert-prominent { padding: 24px 16px; }
             .cert-prominent .cert-image { max-width: 100%; }
             .leetcode-chart-container { padding: 16px; }
+            .contact-form-wrapper { padding: 28px 20px; }
         }
         @media (max-width: 480px) {
             .skills-chart-wrapper { grid-template-columns: 1fr; }
@@ -1024,7 +1092,7 @@
                     <li><a href="#drones">Drones</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#leetcode">LeetCode</a></li>
-                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                     <i class="fas fa-moon" id="themeIcon"></i>
@@ -1060,7 +1128,7 @@
                         <a href="https://github.com/Keshav2136" target="_blank" rel="noopener" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
                         <a href="https://linkedin.com/in/keshav2136" target="_blank" rel="noopener" class="btn-secondary"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
                         <a href="https://leetcode.com/u/keshav2136/" target="_blank" rel="noopener" class="btn-secondary"><i class="fas fa-code"></i> LeetCode</a>
-                        <a href="#" class="btn-secondary" download><i class="fas fa-file-pdf"></i> Resume</a>
+                        <a href="resume-Keshav_Sharma.pdf" class="btn-secondary" download><i class="fas fa-file-pdf"></i> Resume</a>
                     </div>
                 </div>
                 <div class="hero-visual">
@@ -1088,7 +1156,7 @@
                         robust architectures and solving complex algorithmic problems.
                     </p>
                     <p>
-                        My work spans full-stack web development (Django, Laravel, <strong>Drogon</strong>),
+                        My work spans full-stack web development (Django, Laravel, Drogon),
                         database engineering, and autonomous drone systems. I'm passionate about writing clean,
                         efficient code that powers reliable products.
                     </p>
@@ -1150,8 +1218,7 @@
                 <div class="sub">Indian Institute of Technology Kharagpur · 12 weeks</div>
                 <div class="score">Score: 61%</div>
                 <div class="meta">Jan – Apr 2026 · 942 candidates certified</div>
-                <!-- Fixed image path -->
-                <img src="index/images/graph-nptel-elite-cert.jpg" alt="NPTEL Elite Certificate" class="cert-image" />
+                <img src="elite.jpg" alt="NPTEL Elite Certificate" class="cert-image" />
                 <a href="https://nptel.ac.in/noc/E_Certificate/NOC26CS08S56240395404601786" target="_blank" class="credential-link">
                     <i class="fas fa-external-link-alt"></i> Verify Credential
                 </a>
@@ -1234,25 +1301,21 @@
                                 <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.08" />
                             </filter>
                         </defs>
-                        <!-- Circle 1: C++ / DSA / Algorithms -->
                         <circle cx="140" cy="155" r="110" fill="rgba(0, 113, 227, 0.20)" stroke="#0071e3" stroke-width="2" filter="url(#venn-shadow)" />
                         <text x="140" y="50" font-family="Inter, sans-serif" font-weight="600" font-size="13" fill="var(--text)" text-anchor="middle">
                             C++ · DSA · Algorithms
                         </text>
 
-                        <!-- Circle 2: Backend Engineering -->
                         <circle cx="260" cy="155" r="110" fill="rgba(255, 123, 156, 0.20)" stroke="#ff7b9c" stroke-width="2" filter="url(#venn-shadow)" />
                         <text x="260" y="50" font-family="Inter, sans-serif" font-weight="600" font-size="13" fill="var(--text)" text-anchor="middle">
                             Backend Engineering
                         </text>
 
-                        <!-- Circle 3: Databases & Systems -->
                         <circle cx="200" cy="245" r="110" fill="rgba(95, 255, 138, 0.20)" stroke="#5fff8a" stroke-width="2" filter="url(#venn-shadow)" />
                         <text x="200" y="335" font-family="Inter, sans-serif" font-weight="600" font-size="13" fill="var(--text)" text-anchor="middle">
                             Databases &amp; Systems
                         </text>
 
-                        <!-- Overlap labels -->
                         <text x="200" y="145" font-family="Inter, sans-serif" font-weight="500" font-size="11" fill="var(--text-secondary)" text-anchor="middle">
                             High‑Performance APIs
                         </text>
@@ -1263,7 +1326,6 @@
                             Algorithmic Systems
                         </text>
 
-                        <!-- Center intersection -->
                         <rect x="150" y="215" width="100" height="32" rx="6" fill="var(--accent)" opacity="0.12" />
                         <text x="200" y="236" font-family="Inter, sans-serif" font-weight="700" font-size="12" fill="var(--accent)" text-anchor="middle">
                             ★ Full‑Stack Engineer
@@ -1490,10 +1552,34 @@
                     <div class="label">Acceptance Rate</div>
                 </div>
             </div>
-
-            <!-- LeetCode Chart: Problem Distribution -->
             <div class="leetcode-chart-container">
                 <canvas id="leetcodeChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <div class="container">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-desc">
+                I'm currently seeking SDE / Backend roles in product‑based companies. Drop a message and I'll respond promptly.
+            </p>
+            <div class="contact-form-wrapper">
+                <form action="https://formspree.io/f/mzdnkkwq" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Hello Keshav, I'd like to discuss..." required></textarea>
+
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+                <p class="form-note">Powered by Formspree (no spam, no ads). Your email will never be shared.</p>
             </div>
         </div>
     </section>
@@ -1538,12 +1624,11 @@
             </p>
             <div class="footer-actions">
                 <a href="mailto:keshav.simple.123@gmail.com" class="btn-hire"><i class="fas fa-paper-plane"></i> Hire Me</a>
-                <a href="#" class="btn-resume" download><i class="fas fa-file-pdf"></i> Download CV</a>
+                <a href="resume.pdf" class="btn-resume" download><i class="fas fa-file-pdf"></i> Download CV</a>
             </div>
         </div>
     </footer>
 
-    <!-- ===== JAVASCRIPT ===== -->
     <script>
         (function() {
             'use strict';
@@ -1659,7 +1744,7 @@
                 });
             }
 
-            // ===== LEETCODE CHART (Bar Chart for Problem Distribution) =====
+            // ===== LEETCODE CHART =====
             const lcCtx = document.getElementById('leetcodeChart');
             if (lcCtx) {
                 const isDark = html.getAttribute('data-theme') === 'dark';
@@ -1714,7 +1799,6 @@
                     }
                 });
             }
-
         })();
     </script>
 
